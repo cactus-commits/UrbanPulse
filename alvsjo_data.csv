@@ -1,0 +1,826 @@
+﻿Namn,Typ,Kategori,Gata,Nr,Lat,Lon
+Konstfack,university,Skola,LM Ericssons Väg,14,59.2997731,17.9942096
+Marino,restaurant,Restaurang,Klubbacken,51,59.305325,17.9632902
+Hemköp Stockholm Älvsjö,supermarket,Matbutik,Sjättenovembervägen,208,59.2787519,18.00228
+N/A,parking,Parkering,N/A,,59.2923485,17.9857083
+McDonald's,fast_food,Snabbmat,N/A,,59.2930743,18.0012108
+Coop Västertorp,supermarket,Matbutik,Störtloppsvägen,17,59.2927384,17.9676426
+Hemköp Hägersten Västertorp,supermarket,Matbutik,Störtloppsvägen,22,59.2930981,17.9677873
+Sushi Bar,restaurant,Restaurang,N/A,,59.2924236,17.9679342
+N/A,parking,Parkering,N/A,,59.2649037,17.9837715
+N/A,parking,Parkering,N/A,,59.2718859,17.9994296
+Apoteket,pharmacy,Apotek,Fruängstorget,6,59.2857782,17.9646066
+Solberga restaurang,restaurant,Restaurang,Klacktorget,4,59.2869324,18.0104442
+Stora Coop Västberga,supermarket,Matbutik,Västbergavägen,4,59.2937143,18.0046482
+Willys Stockholm Älvsjö,supermarket,Matbutik,Älvsjö Ängsväg,2-6,59.2753,18.0132
+ICA Supermarket,supermarket,Matbutik,N/A,,59.3073101,18.0296528
+E4-baren,fast_food,Snabbmat,Kristallvägen,156,59.2897345,18.0023026
+Cafe Vintervikens Trädgård,cafe,Kafé,Vinterviksvägen,30,59.3112368,17.9990416
+Coop Gröndal,supermarket,Matbutik,N/A,,59.3160917,18.0116571
+Ekensbergs Pizza,fast_food,Snabbmat,N/A,,59.3148143,17.9953198
+Lundbergs konditori,cafe,Kafé,N/A,,59.3160215,18.0103222
+Gröndals Sushi Kök,restaurant,Restaurang,N/A,,59.3158464,18.0136582
+Tre Vänner,restaurant,Restaurang,N/A,,59.3014183,18.0120339
+Tegelbruket,cafe,Kafé,N/A,,59.3020479,18.0153506
+Restaurant Kransen,restaurant,Restaurang,N/A,,59.3022631,18.0148264
+Pita i parken,restaurant,Restaurang,N/A,,59.301094,18.0069063
+ICA Nära Telefonplan,supermarket,Matbutik,Telefonvägen,20,59.2988217,17.9969403
+Pizzeria Italia,fast_food,Snabbmat,N/A,,59.3001157,17.9957628
+Best on the best,restaurant,Restaurang,N/A,,59.29991,17.9959046
+Landet,restaurant,Restaurang,N/A,,59.2991679,17.9962667
+Telegrillen,fast_food,Snabbmat,N/A,,59.2979103,17.9971428
+JJ's,fast_food,Snabbmat,N/A,,59.3039515,18.0036438
+Coop Älvsjö,supermarket,Matbutik,Älvsjö Torg,4,59.2790528,18.0099095
+Gröndals grill & pizza,fast_food,Snabbmat,N/A,,59.3158038,18.0095939
+Gandhi,restaurant,Restaurang,N/A,,59.316601,18.0083698
+Hägern,restaurant,Restaurang,Inteckningsvägen,84,59.2944861,17.9809865
+Ica,supermarket,Matbutik,Sparbanksvägen,,59.2971133,17.982747
+Indian Lotus,restaurant,Restaurang,N/A,,59.2974935,17.9843719
+Da Dante,restaurant,Restaurang,N/A,,59.3040862,17.9591433
+Villa Fridhem,restaurant,Restaurang,Mälarhöjdsvägen,2,59.3016308,17.956049
+Coop Örnsberg,supermarket,Matbutik,Junkergatan,27,59.3057786,17.9895142
+Wintervikens cafe,cafe,Kafé,Vinterviksvägen,60,59.3116377,17.9921168
+Pizzeria Sorrento,fast_food,Snabbmat,Störtloppsvägen,26,59.2933579,17.9675477
+Nickys Thai,restaurant,Restaurang,N/A,,59.3094687,18.0026802
+Coop Aspudden,supermarket,Matbutik,N/A,,59.3053907,17.9932874
+Tellus Restaurang,restaurant,Restaurang,Dialoggatan,11,59.2991966,17.9924373
+"ICA Hallen, Axelsberg",supermarket,Matbutik,N/A,,59.3048107,17.9755631
+Mix Thai,fast_food,Snabbmat,Doktor Widerströms Gata,1,59.2840405,17.9578914
+Hemköp Stockholm Fruängen C,supermarket,Matbutik,Fruängsgången,10,59.2856612,17.9646492
+Bankomat,restaurant,Restaurang,N/A,,59.3076959,18.0305063
+Nästan hemma,cafe,Kafé,N/A,,59.3009248,17.957392
+N/A,parking,Parkering,N/A,,59.2902081,17.9576142
+Långpannan,restaurant,Restaurang,N/A,,59.2829973,17.9647493
+Coop Fruängen,supermarket,Matbutik,Fruängsgången,3,59.2854719,17.9653558
+Lucky,fast_food,Snabbmat,N/A,,59.3054372,17.98887
+Woktory,restaurant,Restaurang,Ellen Keys Gata,75,59.2846844,17.9662449
+Fruängens Läkarhus,doctor,Vårdcentral,Fruängsgången,2,59.2855867,17.9667241
+Bella Donna,fast_food,Snabbmat,N/A,,59.2853202,17.9631433
+Grillhörnan,fast_food,Snabbmat,N/A,,59.2857793,17.9652246
+Bigges,fast_food,Snabbmat,N/A,,59.2852617,17.9646355
+N/A,parking,Parkering,N/A,,59.2899947,17.988834
+N/A,parking,Parkering,N/A,,59.2901371,17.9896065
+Cafékoppen,cafe,Kafé,Fruängstorget,4,59.2858337,17.9634488
+66 Kvadrat Sushi,restaurant,Restaurang,N/A,,59.2847551,17.9618674
+Pizzeria Tropicana,fast_food,Snabbmat,N/A,,59.2937875,17.9655034
+Apotek Hjärtat,pharmacy,Apotek,N/A,,59.2940587,17.9669036
+Kronans Apotek,pharmacy,Apotek,Annebodavägen,4-6,59.2847122,18.0301247
+Kronans Apotek,pharmacy,Apotek,N/A,,59.2986734,17.9970116
+Pepe Nero,restaurant,Restaurang,Tivolivägen,2,59.2951017,18.0048473
+Pizzeria Spader Dam,restaurant,Restaurang,N/A,,59.2882766,17.9686475
+N/A,fast_food,Snabbmat,N/A,,59.2921669,17.9681563
+Korfu Orfa,restaurant,Restaurang,N/A,,59.2976427,17.9826086
+Wong Kee,restaurant,Restaurang,N/A,,59.3069965,18.0290177
+Gröna Dalen,restaurant,Restaurang,N/A,,59.3160058,18.0111341
+Thai Rung,restaurant,Restaurang,N/A,,59.3104328,18.0223051
+Di Metro,fast_food,Snabbmat,N/A,,59.3101026,18.0220192
+McDonald's,fast_food,Snabbmat,N/A,,59.3104032,18.0229847
+Coop Liljeholmen,supermarket,Matbutik,N/A,,59.3106203,18.0235883
+Äldreboendet Trekanten,restaurant,Restaurang,N/A,,59.3134648,18.0181386
+Liljeholmstorget,parking,Parkering,N/A,,59.3091934,18.0239842
+Liljeholmens Grill,fast_food,Snabbmat,N/A,,59.3100673,18.0218658
+KFC,fast_food,Snabbmat,N/A,,59.3097444,18.0221382
+Bravo,cafe,Kafé,N/A,,59.3101203,18.0232131
+Lidl,supermarket,Matbutik,N/A,,59.3100484,18.0233359
+Bara Vedugnspizza,restaurant,Restaurang,Örby Slottsväg,48,59.2797601,18.0342466
+Bella Notte,restaurant,Restaurang,N/A,,59.3023424,18.0141062
+Koi Sushi,fast_food,Snabbmat,N/A,,59.3053498,17.9975035
+Mama Ye's,restaurant,Restaurang,N/A,,59.3075449,18.0301795
+ICA Kvantum Liljeholmen,supermarket,Matbutik,N/A,,59.3094423,18.0222688
+Willys,supermarket,Matbutik,N/A,,59.3093766,18.0211932
+Brisket & friends,fast_food,Snabbmat,N/A,,59.2994274,18.0216412
+Morningstar Cafe,restaurant,Restaurang,N/A,,59.2967508,18.019543
+Hanna Rydhs förskola,kindergarten,Skola,N/A,,59.2866056,17.9743066
+Coop Midsommarkransen,supermarket,Matbutik,Svandammsvägen,20,59.301647,18.0124794
+Svenska Sushiköket,restaurant,Restaurang,Tellusborgsvägen,76,59.3003552,18.0040262
+Pizzeria Fellini,fast_food,Snabbmat,N/A,,59.300644,18.0121602
+Kransens Wok,fast_food,Snabbmat,N/A,,59.3031402,18.0127352
+Tellus Pizza,fast_food,Snabbmat,N/A,,59.3020127,18.0082047
+Nygammalt,restaurant,Restaurang,N/A,,59.2998782,18.0046563
+Pino,fast_food,Snabbmat,N/A,,59.301504,18.0160105
+The Swan,restaurant,Restaurang,N/A,,59.3006861,18.014473
+Restaurang Udden,restaurant,Restaurang,N/A,,59.3064868,18.006486
+5,parking,Parkering,N/A,,59.2775914,18.018868
+Hotell,parking,Parkering,N/A,,59.2767369,18.0170351
+6,parking,Parkering,N/A,,59.2773462,18.0183424
+4,parking,Parkering,N/A,,59.2778331,18.0193847
+7,parking,Parkering,N/A,,59.2771153,18.0178473
+8,parking,Parkering,N/A,,59.2768746,18.017332
+N/A,parking,Parkering,N/A,,59.3027762,18.0289354
+Chicha 08,restaurant,Restaurang,N/A,,59.3064952,18.0256387
+Pepe Nero,restaurant,Restaurang,N/A,,59.3060136,18.032393
+Roots & Soil,restaurant,Restaurang,N/A,,59.3097676,18.028177
+Lisebergs Café & Matsal,restaurant,Restaurang,Annebodavägen,23-25,59.2871214,18.0266966
+Hinode Sushi,fast_food,Snabbmat,Götalandsvägen,253,59.2793638,18.004151
+Bapuji,restaurant,Restaurang,Älvsjövägen,2,59.2783471,18.0063075
+Älvgården Kök & Bar,restaurant,Restaurang,Älvsjövägen,7,59.2780961,18.0061133
+Vår Pizza,restaurant,Restaurang,Johan Skyttes Väg,218,59.277762,18.0018118
+Cafe Gården,cafe,Kafé,Sedelvägen,20,59.2961996,17.9830405
+Aspuddens apotek,pharmacy,Apotek,N/A,,59.3061293,18.000954
+Bombay Taj,restaurant,Restaurang,N/A,,59.3055028,18.0031363
+Mums,fast_food,Snabbmat,N/A,,59.305703,18.001019
+EPA,fast_food,Snabbmat,N/A,,59.3054736,18.0018403
+Gröndals Apotek,pharmacy,Apotek,N/A,,59.316151,18.0123077
+Café Hitom,cafe,Kafé,Klaviaturgatan,11,59.2979163,18.0001688
+Café Momo,cafe,Kafé,N/A,,59.3098599,18.0217484
+Delfin,restaurant,Restaurang,N/A,,59.3151188,18.0149853
+DIN-DIN Club,restaurant,Restaurang,N/A,,59.3081563,18.0291693
+German Beer Hall Liljeholmen,restaurant,Restaurang,N/A,,59.3083331,18.0296139
+Älvsjö Pizzeria,restaurant,Restaurang,Älvsjövägen,90,59.2849116,17.9931883
+Memozin Kolgrill,restaurant,Restaurang,Älvsjövägen,90,59.2848081,17.9933848
+Långbro Pizzeria,fast_food,Snabbmat,Svartlösavägen,79,59.2809246,17.9860678
+Klockhusköket,restaurant,Restaurang,Glasfibergatan,6,59.2808036,18.0013698
+Stoff,cafe,Kafé,N/A,,59.273582,17.9954645
+Megagrillen,fast_food,Snabbmat,Johan Skyttes Väg,188,59.278964,18.0084016
+Hökmossens kaffestuga,restaurant,Restaurang,Hökmossevägen,22,59.2919271,17.9951927
+Cafe Elektra,cafe,Kafé,Elektravägen,33,59.2943422,18.0090461
+Djurgymnasiet,school,Skola,N/A,,59.2947791,18.0105778
+Bakstugan i Västertorp,cafe,Kafé,N/A,,59.294539,17.9668412
+Shinto Restaurang,restaurant,Restaurang,Solberga Hagväg,5,59.279555,18.0086807
+Svenska Hamburgerköket,fast_food,Snabbmat,Tellusborgsvägen,78,59.3001133,18.0039844
+Kronans Apotek,pharmacy,Apotek,Västbergavägen,4,59.2935847,18.0048911
+Arken,kindergarten,Skola,Selmedalsringen,15,59.3070434,17.9800902
+Indian Garden,restaurant,Restaurang,N/A,,59.3079045,18.0286974
+N/A,kindergarten,Skola,N/A,,59.3092342,17.9855773
+Sushi Ureshii,restaurant,Restaurang,Sedelvägen,28,59.296068,17.9823624
+Staffans trafikskola,driving_school,Trafikskola,N/A,,59.2799024,18.0011743
+Parma Kök & Bar,restaurant,Restaurang,Fruängstorget,12,59.2857916,17.96335
+Segeltorps trafikskola,driving_school,Trafikskola,N/A,,59.2836671,17.9573967
+Chong Qing,restaurant,Restaurang,N/A,,59.3128576,18.028359
+Chamsin Grill,fast_food,Snabbmat,N/A,,59.3128175,18.0281034
+Vivels,cafe,Kafé,Älvsjö Torg,6,59.2790794,18.0093028
+JM Movement,physiotherapist,Fysioterapeut,N/A,,59.2807721,18.0328046
+Älvsjö Öron-näsa-hals,doctor,Vårdcentral,Johan Skyttes Väg,198,59.278468,18.0069728
+Butsaya,restaurant,Restaurang,N/A,,59.2990374,18.0034908
+Snabb & Lugn Café,cafe,Kafé,Älvsjö Stationsgata,11,59.2784904,18.0108359
+Lius kök,restaurant,Restaurang,Vantörsvägen,279,59.2862001,17.9531322
+Spiskroken,restaurant,Restaurang,N/A,,59.2928504,18.0082976
+Älvsjö Tandläkaren,dentist,Tandläkare,Johan Skyttes Väg,202,59.2780057,18.0059938
+Mejram,restaurant,Restaurang,N/A,,59.2981398,18.0105611
+Asian Garden,restaurant,Restaurang,N/A,,59.2980092,18.0104411
+Istanbul Kolgrill,restaurant,Restaurang,N/A,,59.2915406,18.012289
+Västbergakällan,restaurant,Restaurang,N/A,,59.2959258,18.0176833
+Västberga Grillen,restaurant,Restaurang,Vretensborgsvägen,20,59.299127,18.0160865
+Nancys Freshfood,restaurant,Restaurang,N/A,,59.2985196,18.0146522
+R Han Thai Take Away,fast_food,Snabbmat,N/A,,59.2918739,17.99975
+WKB Västberga,restaurant,Restaurang,Västberga Allé,36,59.293817,18.0111796
+Erik's,restaurant,Restaurang,N/A,,59.3045093,18.0304702
+The meeting bar & restaurant,restaurant,Restaurang,N/A,,59.3050438,17.9921902
+Tokai sushi,restaurant,Restaurang,Tellusgången,27,59.2987356,17.990757
+N/A,fast_food,Snabbmat,N/A,,59.2919715,17.9684317
+Elektrikergymnasiet,school,Skola,N/A,,59.298364,18.0040943
+La Favorita,restaurant,Restaurang,Bäckvägen,,59.3016611,17.9883394
+Il Forno di Fruängen,restaurant,Restaurang,Vantörsvägen,282,59.286271,17.9508633
+GAIA,restaurant,Restaurang,N/A,,59.3024341,18.0086666
+Pizza Örnsberg,fast_food,Snabbmat,N/A,,59.3059603,17.9915981
+Hägerstens tandvårdsteam,dentist,Tandläkare,Sparbanksvägen,20-22,59.2975127,17.9826565
+Verkets Matsal,restaurant,Restaurang,N/A,,59.2895192,18.0159371
+Rain,restaurant,Restaurang,Tellusborgsvägen,84,59.2994428,18.0034208
+Ica Nära Älvsjö,supermarket,Matbutik,Svartlösavägen,181,59.2726121,17.9779185
+Lycka Thai & Sushi,fast_food,Snabbmat,N/A,,59.2729767,17.9777737
+Thanita's Thai,fast_food,Snabbmat,Bäckvägen,141a,59.3012951,17.9865035
+N/A,cafe,Kafé,N/A,,59.2980588,17.9760594
+Kronans Apotek,pharmacy,Apotek,N/A,,59.2750688,18.0130154
+Alma folkhögskola,school,Skola,N/A,,59.308828,18.026912
+Kunskapsgymnasiet,school,Skola,N/A,,59.309114,18.027307
+Apoteket,pharmacy,Apotek,Älvsjö Torg,17A,59.2785746,18.0090219
+Mälarhöjdparkens förskola,kindergarten,Skola,N/A,,59.285248,17.951836
+Olympen Älvsjö Gårds Förskola,kindergarten,Skola,N/A,,59.277263,18.0100226
+Hinode Wok,fast_food,Snabbmat,Älvsjö Torg,15A,59.2786381,18.0093297
+Krubb,restaurant,Restaurang,Telefonvägen,22,59.298455,17.9953077
+CASA del LAGO,restaurant,Restaurang,N/A,,59.2653194,17.9754574
+N/A,cafe,Kafé,N/A,,59.2653765,17.9753585
+Herrängens gård,cafe,Kafé,Segeltorpsvägen,49-51,59.273165,17.9608766
+Subway,fast_food,Snabbmat,Älvsjö Torg,13B,59.2786951,18.0094843
+Förskolan Svandammsgården,kindergarten,Skola,Cedergrensvägen,5,59.3031173,18.0027562
+Wild Flower Bakehouse Café,cafe,Kafé,Kransbindarvägen 22,,59.3024732,18.001802
+Jarla Trafikskola,driving_school,Trafikskola,Johan Skyttes Väg,189C,59.278502,18.0080988
+Stenugnsbröd På Söder,cafe,Kafé,N/A,,59.3014783,18.0130327
+N/A,kindergarten,Skola,N/A,,59.2921881,17.960868
+Pizza,fast_food,Snabbmat,N/A,,59.2772451,17.9660733
+Island Hoppers,restaurant,Restaurang,N/A,,59.3055572,17.9826465
+Pepe Rosso,fast_food,Snabbmat,Älvsjövägen,5,59.2777849,18.0060419
+Grappolo D'uva,restaurant,Restaurang,Älvsjö Torg,19A,59.2787636,18.0086926
+Internationella Engelska Skolan,school,Skola,N/A,,59.2808944,18.0054482
+Thelins,cafe,Kafé,Johan Skyttes Väg,185,59.2787234,18.008594
+WRAP'Z,restaurant,Restaurang,Svandammsvägen,5,59.3018326,18.015297
+Rosteriet,cafe,Kafé,N/A,,59.3119336,18.0239912
+Rosteriet,kindergarten,Skola,N/A,,59.31154,18.0226824
+Svedenskolan,school,Skola,N/A,,59.3013227,17.9511692
+Marrakech Resturang,restaurant,Restaurang,N/A,,59.3096235,18.030495
+Via loreto,restaurant,Restaurang,N/A,,59.3095015,18.0283179
+Milennium,parking,Parkering,N/A,,59.3096979,18.0284698
+Let's Eat Sushi,restaurant,Restaurang,N/A,,59.3082152,18.0270286
+Förskolan Marievik,kindergarten,Skola,N/A,,59.30843,18.0276452
+MGL Sushi,restaurant,Restaurang,N/A,,59.3072681,18.0268205
+Tant Maja och Fröken Emilia,cafe,Kafé,N/A,,59.3081333,18.0272421
+Sjöviks pizza & kebab,fast_food,Snabbmat,N/A,,59.3070687,18.0292022
+Haandi,restaurant,Restaurang,N/A,,59.3064883,18.0322898
+Vår Pizza,restaurant,Restaurang,N/A,,59.3059146,18.0011339
+Pizzabagaren,fast_food,Snabbmat,N/A,,59.298133,18.0025128
+Hanami Hawaiian Poké & Sushi,restaurant,Restaurang,N/A,,59.3060444,18.0325963
+N/A,parking,Parkering,N/A,,59.2921447,17.9689642
+N/A,parking,Parkering,N/A,,59.2919165,17.9686756
+Lilla Paradiset,fast_food,Snabbmat,N/A,,59.3055597,17.9890185
+Apoteket,pharmacy,Apotek,N/A,,59.304169,17.9748559
+ICA Supermarket Telefonplan,supermarket,Matbutik,Tellusborgsvägen,87,59.2966808,18.0014892
+Förskolan Höjden,kindergarten,Skola,N/A,,59.3037733,18.0320942
+Brödernas,restaurant,Restaurang,N/A,,59.3066191,18.0334682
+Café Cul-De-Sac,cafe,Kafé,N/A,,59.316319,18.0163716
+Del Mare,fast_food,Snabbmat,N/A,,59.3090971,18.0155531
+N/A,parking,Parkering,N/A,,59.301734,18.0314313
+Biocafé Tellus,cafe,Kafé,N/A,,59.3019499,18.0075039
+Thaimat Take Away,fast_food,Snabbmat,N/A,,59.3007035,17.957103
+Bakom hörnet,restaurant,Restaurang,N/A,,59.299527,18.0053741
+Masahiro,fast_food,Snabbmat,N/A,,59.2982973,18.0026717
+Bonne Femme,cafe,Kafé,N/A,,59.3062326,18.0008701
+Saigon House,restaurant,Restaurang,N/A,,59.3056332,17.9983257
+Måsens förskola,kindergarten,Skola,N/A,,59.3058094,17.9934181
+Katrinebergs förskola,kindergarten,Skola,Katrinebergsbacken,24,59.311899,18.0269547
+Körkortshuset,driving_school,Trafikskola,N/A,,59.3099318,18.0250845
+Liljeholmens bilskola,driving_school,Trafikskola,N/A,,59.3105393,18.0221584
+Sushi by Rino,restaurant,Restaurang,Svartlösavägen,52,59.2842313,17.9855051
+Parkfiken,cafe,Kafé,N/A,,59.3076579,17.9949017
+Liljeholmens gymnasium,school,Skola,N/A,,59.3128445,18.0244072
+Prepp,cafe,Kafé,N/A,,59.310603,18.0297263
+Furellios Ristorante,restaurant,Restaurang,N/A,,59.3025113,17.994733
+Bonne Femme Stenungsbageri,cafe,Kafé,N/A,,59.2995714,18.0041699
+Xi'an Köket,restaurant,Restaurang,N/A,,59.3024092,17.994269
+A.B.Café,cafe,Kafé,Valborgsmässovägen,34,59.2995931,17.998632
+NIDa Catering och festvåning,restaurant,Restaurang,N/A,,59.3100886,18.03051
+Texas Longhorn,restaurant,Restaurang,Götalandsvägen,238,59.2801143,18.00389
+800 Grader,restaurant,Restaurang,Cedergrensvägen,2,59.3034407,18.002799
+Distriktstandvården Liljeholmen,dentist,Tandläkare,N/A,,59.309844,18.021877
+Teso Sushi,restaurant,Restaurang,Kabelverksgatan,16,59.2823244,18.0028619
+Förskola Skattkistan,kindergarten,Skola,N/A,,59.2820736,18.0075601
+Oh Poké,fast_food,Snabbmat,N/A,,59.2796169,18.0120045
+Lubnan Kajen,restaurant,Restaurang,N/A,,59.3061152,18.0354217
+Bastard Burgers,restaurant,Restaurang,Liljeholmstorget,5,59.309643,18.0224993
+Slow Hands,cafe,Kafé,Sedelvägen,35,59.2952723,17.9796325
+Thailaan,supermarket,Matbutik,N/A,,59.3093456,18.0214941
+Veloce Pizza,restaurant,Restaurang,Kabelverksgatan,25,59.2820466,18.002632
+Sushi Yama,restaurant,Restaurang,N/A,,59.3095845,18.0218108
+TOVE,restaurant,Restaurang,N/A,,59.3049772,18.030666
+Coop Svandammsplan,supermarket,Matbutik,N/A,,59.3010865,18.0032136
+N/A,parking,Parkering,N/A,,59.2999958,18.0043196
+Apotek Hjärtat,pharmacy,Apotek,Fruängsgången,5,59.2855373,17.9641768
+N/A,parking,Parkering,N/A,,59.3011881,18.0302159
+Älvsjö Centrum Vårdcentral,doctor,Vårdcentral,N/A,,59.2780408,18.0085476
+Stockholms Filmskola,school,Skola,Karusellplan,11,59.2980897,18.0109296
+Midoris,restaurant,Restaurang,N/A,,59.3058102,18.0367235
+Pizzabakeren Liljeholmskajen,fast_food,Snabbmat,N/A,,59.3056373,18.0357251
+Thai Wok Orkidé,restaurant,Restaurang,Bäckvägen,80,59.3022428,17.9935758
+Ponte & Simone,restaurant,Restaurang,N/A,,59.3060783,18.0356973
+Förskolan Sjötorget,kindergarten,Skola,N/A,,59.3082451,18.02796
+3Sixty,restaurant,Restaurang,N/A,,59.3061695,18.0351583
+Färgfabrikens Kafé,restaurant,Restaurang,N/A,,59.3153217,18.0193396
+moa lärcentrum,college,Skola,N/A,,59.2766879,18.0096993
+Pizzeria Delize,fast_food,Snabbmat,N/A,,59.2939651,17.9768288
+Piatto Fresco,restaurant,Restaurang,Årsta Skolgränd,10,59.3015269,18.0297314
+Lulu,restaurant,Restaurang,TELLUSBORGSVÄGEN,77A,59.2979966,18.0023627
+Skin Team,doctor,Vårdcentral,N/A,,59.2846062,17.9604355
+My Favorit Grill,restaurant,Restaurang,N/A,,59.2853426,17.95617
+Fruängens Trafikskola,driving_school,Trafikskola,N/A,,59.284921,17.961645
+Sushi & Poke,restaurant,Restaurang,N/A,,59.2861904,17.9532279
+Il Forno,restaurant,Restaurang,N/A,,59.2863117,17.9507629
+Grill&Wok Stugan,restaurant,Restaurang,N/A,,59.2717762,18.0071086
+Sushi Kawa,restaurant,Restaurang,Fruängstorget,6,59.2858028,17.9638267
+Fruängens Tandläkare,dentist,Tandläkare,N/A,,59.2884181,17.9629296
+Fruängstandläkarna,dentist,Tandläkare,N/A,,59.2882672,17.9630587
+Fruängens Familjetandvård,dentist,Tandläkare,N/A,,59.2867241,17.9635245
+Babas,fast_food,Snabbmat,Fruängstorget,6,59.2857997,17.9639333
+Fruängen Dental,dentist,Tandläkare,N/A,,59.285451,17.9637336
+Home Food,restaurant,Restaurang,N/A,,59.2859601,17.9652138
+Folktandvården,dentist,Tandläkare,N/A,,59.2925671,17.9689012
+Surdegspizza,restaurant,Restaurang,N/A,,59.2937752,17.9655439
+Västertorps Hjärta,restaurant,Restaurang,Störtloppsvägen,30,59.2936722,17.9672747
+Vår Pizza,restaurant,Restaurang,N/A,,59.2924658,17.9689861
+Samtal Dental,dentist,Tandläkare,Jordkabelgatan,2,59.2822406,18.0020749
+Maritza Fixar,doctor,Vårdcentral,N/A,,59.2802531,18.0130392
+Älvsjö Tandvård,dentist,Tandläkare,N/A,,59.280285,18.0112353
+The Garden,restaurant,Restaurang,N/A,,59.2767476,18.0113337
+Ichiban,restaurant,Restaurang,N/A,,59.2940655,17.9767838
+Axelsbergs Tandläkarna,dentist,Tandläkare,N/A,,59.3046899,17.9740205
+Cachay,cafe,Kafé,N/A,,59.2940156,17.976807
+Tang Ji,restaurant,Restaurang,N/A,,59.3042013,17.9748353
+Tandläkare,dentist,Tandläkare,N/A,,59.3009479,17.9580862
+Brödernas,restaurant,Restaurang,N/A,,59.3041131,17.9589797
+Catarina,restaurant,Restaurang,N/A,,59.2951096,17.9838697
+Topoli,restaurant,Restaurang,N/A,,59.2910859,17.9904856
+Holy Kebab,restaurant,Restaurang,N/A,,59.2990773,17.9955577
+Texas Longhorn,restaurant,Restaurang,N/A,,59.2990535,17.9950864
+Brödernas,restaurant,Restaurang,N/A,,59.2990343,17.9952838
+Gigis Hörna,restaurant,Restaurang,N/A,,59.2987978,17.9896584
+Nataljas Medicinska Fotvård,doctor,Vårdcentral,N/A,,59.2995544,18.0046911
+Noli Deli,restaurant,Restaurang,N/A,,59.3012561,18.0120163
+Målarverkstadens Bistro,cafe,Kafé,N/A,,59.3054014,17.9937227
+Thurson & Engquist,dentist,Tandläkare,N/A,,59.3060239,17.9982697
+Lokanta,restaurant,Restaurang,N/A,,59.2899188,17.9989496
+N/A,restaurant,Restaurang,N/A,,59.290128,17.9996432
+Tandvård,dentist,Tandläkare,N/A,,59.2802409,18.0337115
+Hägerstens trafikskola,driving_school,Trafikskola,N/A,,59.3058983,18.0076915
+Kim Ban Ban,restaurant,Restaurang,N/A,,59.3095202,18.021603
+Förskolan Metronomen,kindergarten,Skola,N/A,,59.2981805,18.0041802
+Dentalisterna,dentist,Tandläkare,N/A,,59.3118095,18.024004
+Thelins konditori,cafe,Kafé,N/A,,59.3154302,18.0013803
+Beirut Lounge,restaurant,Restaurang,Fruängstorget,6,59.2857974,17.9640318
+Café Nero,cafe,Kafé,N/A,,59.3097814,18.022905
+Il Forno,restaurant,Restaurang,N/A,,59.309555,18.0220841
+Kebab-ish,restaurant,Restaurang,N/A,,59.3097263,18.022769
+Sankta Birgittas folkhögskola,college,Skola,Götalandsvägen,242,59.2799661,18.0032115
+Naked fish,restaurant,Restaurang,N/A,,59.3055101,17.9931902
+La Casa de Planka,restaurant,Restaurang,Klockhusgränd,1A,59.2810236,18.0003712
+Vittra Telefonplan,school,Skola,N/A,,59.2995197,17.9894571
+IT-Högskolan,college,Skola,N/A,,59.3143077,18.023898
+Långbroparks förskola,kindergarten,Skola,N/A,,59.2812394,17.9753115
+Magic Masala,restaurant,Restaurang,Nioörtsvägen,24,59.3015599,18.016121
+Midsommarkransens trafikskola,driving_school,Trafikskola,Tegelbruksvägen,8,59.3025534,18.014335
+Smash N Grab,fast_food,Snabbmat,N/A,,59.3059707,18.0303074
+Förskolan Sjövik,kindergarten,Skola,N/A,,59.3063015,18.0296202
+Förskolan Kajen,kindergarten,Skola,N/A,,59.3061946,18.0303717
+Förskolan Ängen,kindergarten,Skola,N/A,,59.3076889,18.0271331
+Förskolan Torget,kindergarten,Skola,N/A,,59.3071827,18.027683
+Förskolan Parken,kindergarten,Skola,N/A,,59.3064509,18.0272975
+Förskolan Berget,kindergarten,Skola,N/A,,59.3054813,18.0348577
+Kringelgården Kransen,cafe,Kafé,N/A,,59.2985575,18.0029163
+STI stockholms tekniska institute,college,Skola,N/A,,59.3098582,18.0216317
+Baltazar,kindergarten,Skola,N/A,,59.2763295,17.985566
+N/A,parking,Parkering,N/A,,59.2732814,17.9947972
+N/A,school,Skola,N/A,,59.3041317,18.0157846
+3,parking,Parkering,N/A,,59.2787895,18.0208082
+N/A,parking,Parkering,N/A,,59.2897242,17.9841097
+N/A,parking,Parkering,N/A,,59.2729385,17.9614319
+Stockholm International Academy,school,Skola,Sulvägen,52,59.2842638,18.0075451
+N/A,parking,Parkering,N/A,,59.287666,17.9640026
+Kängvägen,parking,Parkering,N/A,,59.2825036,18.0150463
+N/A,kindergarten,Skola,Sulvägen,62,59.2843302,18.0098802
+N/A,parking,Parkering,N/A,,59.313552,18.0221923
+N/A,parking,Parkering,N/A,,59.2871127,18.0277341
+Lisebergs vårdcentral,doctor,Vårdcentral,Annebodavägen,4-6,59.2848365,18.0303853
+Midsommarkransens gymnasium,school,Skola,N/A,,59.3038939,18.0157573
+N/A,parking,Parkering,N/A,,59.2988773,17.9991339
+Hjulmakaren,parking,Parkering,Västertorpsvägen,133,59.2892611,17.9520619
+Ellen Key,kindergarten,Skola,N/A,,59.2838848,17.9672253
+N/A,parking,Parkering,N/A,,59.2844864,17.9640866
+N/A,parking,Parkering,N/A,,59.2852993,17.9640724
+N/A,parking,Parkering,N/A,,59.2852147,17.9649626
+N/A,parking,Parkering,N/A,,59.2841497,17.9664169
+N/A,parking,Parkering,N/A,,59.2847946,17.9622084
+Fruängens skola,school,Skola,N/A,,59.2839201,17.9623159
+N/A,parking,Parkering,N/A,,59.2934772,18.0038837
+Kunskapsskolan,school,Skola,N/A,,59.2882184,17.9650422
+Pizzeria Lugano,restaurant,Restaurang,Fredrika Bremers Gata,63,59.2835794,17.970829
+N/A,parking,Parkering,N/A,,59.2860606,17.9641427
+N/A,parking,Parkering,N/A,,59.2883035,17.967379
+N/A,parking,Parkering,N/A,,59.2872801,17.9670463
+N/A,parking,Parkering,N/A,,59.2882755,17.970367
+Mälarhöjdens skola,school,Skola,N/A,,59.297416,17.9576631
+N/A,parking,Parkering,N/A,,59.2874798,17.962513
+N/A,parking,Parkering,N/A,,59.2866746,17.9603956
+N/A,parking,Parkering,N/A,,59.2856683,17.9587449
+Hamburgarprinsen,fast_food,Snabbmat,N/A,,59.2853476,17.9561503
+N/A,parking,Parkering,N/A,,59.2874035,17.9587041
+N/A,parking,Parkering,N/A,,59.2861004,17.957094
+N/A,parking,Parkering,N/A,,59.2854366,17.9568666
+N/A,parking,Parkering,N/A,,59.2876667,17.9541675
+N/A,kindergarten,Skola,N/A,,59.2855714,17.9581816
+N/A,parking,Parkering,N/A,,59.306472,17.9601369
+N/A,parking,Parkering,N/A,,59.3068508,17.9603508
+Johan Skytteskolan F-6,school,Skola,N/A,,59.2766722,17.9817222
+Ekbackens förskola,kindergarten,Skola,N/A,,59.2771159,17.9800542
+N/A,parking,Parkering,N/A,,59.3113575,18.029828
+N/A,parking,Parkering,N/A,,59.3075265,18.0290495
+Lidl,supermarket,Matbutik,Elisabeth Tamms Gata,2,59.285627,17.9544506
+Förskolan Sylvester,kindergarten,Skola,N/A,,59.2851864,18.0298547
+Coop Mälarhöjden,supermarket,Matbutik,Hägerstensvägen,331,59.3013291,17.9573872
+N/A,parking,Parkering,N/A,,59.3048863,17.9761071
+N/A,parking,Parkering,N/A,,59.282534,17.9702642
+Långbro värdshus,restaurant,Restaurang,Stora Mans väg,4,59.282823,17.9708426
+Förskolan Äppelängen,kindergarten,Skola,N/A,,59.2817332,18.0355851
+N/A,parking,Parkering,N/A,,59.2975301,17.9428479
+N/A,parking,Parkering,N/A,,59.3005808,18.0036258
+N/A,parking,Parkering,N/A,,59.303207,18.0157948
+N/A,parking,Parkering,N/A,,59.304445,18.0137566
+N/A,parking,Parkering,N/A,,59.3087419,18.018553
+N/A,parking,Parkering,N/A,,59.3079007,18.0206857
+N/A,parking,Parkering,N/A,,59.3087913,18.0215135
+N/A,kindergarten,Skola,N/A,,59.3079527,18.0157274
+Nybohovsskolan,school,Skola,N/A,,59.3074119,18.0155509
+N/A,parking,Parkering,N/A,,59.3066016,18.008841
+N/A,parking,Parkering,N/A,,59.2802461,17.969014
+N/A,parking,Parkering,N/A,,59.279863,17.9702613
+N/A,parking,Parkering,N/A,,59.2809828,17.9680277
+N/A,parking,Parkering,N/A,,59.2807385,17.9682495
+N/A,parking,Parkering,N/A,,59.2762879,18.011676
+N/A,parking,Parkering,N/A,,59.2958861,17.9810347
+N/A,parking,Parkering,N/A,,59.2856445,17.959186
+N/A,parking,Parkering,N/A,,59.2860887,17.960372
+N/A,parking,Parkering,N/A,,59.3110011,17.9922392
+N/A,parking,Parkering,N/A,,59.2850928,17.973719
+N/A,parking,Parkering,N/A,,59.2852353,17.9720936
+N/A,parking,Parkering,N/A,,59.28399,17.9686818
+N/A,parking,Parkering,N/A,,59.2843374,17.9696206
+N/A,parking,Parkering,N/A,,59.2827418,17.9649106
+N/A,parking,Parkering,N/A,,59.283554,17.9654066
+N/A,parking,Parkering,N/A,,59.284608,17.9675303
+N/A,parking,Parkering,N/A,,59.3022474,18.0281595
+N/A,parking,Parkering,N/A,,59.3136935,17.9884113
+N/A,parking,Parkering,N/A,,59.3061649,18.0287406
+N/A,parking,Parkering,N/A,,59.2952399,17.9742754
+N/A,parking,Parkering,N/A,,59.2941833,17.9763672
+N/A,parking,Parkering,N/A,,59.2945877,17.9754044
+N/A,parking,Parkering,N/A,,59.2953023,17.9746862
+Parkeringsdäck B,parking,Parkering,N/A,,59.3066398,17.9818055
+Parkeringsdäck A,parking,Parkering,N/A,,59.3065597,17.9807889
+N/A,parking,Parkering,N/A,,59.2917466,17.9760979
+N/A,parking,Parkering,N/A,,59.2925756,17.9684646
+N/A,parking,Parkering,N/A,,59.292765,17.9770655
+N/A,parking,Parkering,N/A,,59.2923794,17.9782544
+N/A,parking,Parkering,N/A,,59.3059291,17.9901973
+N/A,parking,Parkering,N/A,,59.2871173,18.010169
+N/A,parking,Parkering,N/A,,59.3037904,18.0012811
+N/A,parking,Parkering,N/A,,59.2845969,18.0300777
+N/A,parking,Parkering,N/A,,59.2847457,18.030712
+N/A,parking,Parkering,N/A,,59.2827349,18.0234863
+N/A,parking,Parkering,N/A,,59.279881,18.0340472
+N/A,parking,Parkering,N/A,,59.2818781,18.0251209
+Förskolan Eken,kindergarten,Skola,Sulvägen,52,59.2838704,18.0077137
+Småfinkarna,kindergarten,Skola,Gripsholmsvägen,2,59.2841876,18.0333776
+N/A,parking,Parkering,N/A,,59.2889919,18.001134
+N/A,parking,Parkering,N/A,,59.2792234,18.0314453
+Sjöängsskolan,school,Skola,N/A,,59.2803929,18.0276632
+Förskolan Citrusgården,kindergarten,Skola,N/A,,59.2850611,18.0125602
+Förskolan Skogsgläntan,kindergarten,Skola,N/A,,59.2842648,18.0100101
+N/A,parking,Parkering,N/A,,59.2873949,18.0152553
+N/A,parking,Parkering,N/A,,59.2867392,18.0243941
+N/A,parking,Parkering,N/A,,59.2876354,18.0268846
+Solberga hagväg 2,parking,Parkering,N/A,,59.2799176,18.0106735
+Gunnars Pizzeria,fast_food,Snabbmat,N/A,,59.2757484,17.9612266
+N/A,parking,Parkering,N/A,,59.2795115,18.009385
+N/A,parking,Parkering,N/A,,59.2797335,18.0101617
+N/A,parking,Parkering,N/A,,59.2805658,18.0127649
+N/A,parking,Parkering,N/A,,59.2815906,18.0106359
+N/A,parking,Parkering,N/A,,59.2802115,18.0117678
+N/A,parking,Parkering,N/A,,59.2808342,18.0140615
+N/A,parking,Parkering,N/A,,59.2806465,18.0133108
+N/A,parking,Parkering,N/A,,59.2801978,18.0308134
+SL infartsparkering,parking,Parkering,N/A,,59.2770644,18.0066673
+N/A,parking,Parkering,N/A,,59.2871405,18.0228084
+N/A,parking,Parkering,N/A,,59.2840356,17.9549064
+N/A,parking,Parkering,N/A,,59.3005867,18.01255
+Eolshälls 4 H-gård,cafe,Kafé,Eolshällsvägen,10,59.3078856,17.9694819
+Förskolan Solängen,kindergarten,Skola,N/A,,59.2812189,18.0137996
+N/A,parking,Parkering,N/A,,59.2979334,17.9575817
+N/A,parking,Parkering,N/A,,59.2837346,18.0123727
+Förskolan Pusslet,kindergarten,Skola,N/A,,59.2834358,18.0157973
+Hamngården,kindergarten,Skola,N/A,,59.3162798,18.0150895
+Affärsgymnasiet,school,Skola,N/A,,59.2979648,18.0014738
+N/A,parking,Parkering,N/A,,59.2873451,17.954043
+N/A,parking,Parkering,N/A,,59.2895862,17.9510978
+N/A,parking,Parkering,N/A,,59.2906195,17.9534072
+N/A,parking,Parkering,N/A,,59.2897603,17.9526505
+N/A,parking,Parkering,N/A,,59.2909274,17.9509296
+N/A,parking,Parkering,N/A,,59.2903906,17.9502668
+N/A,parking,Parkering,N/A,,59.3028052,18.0012805
+N/A,parking,Parkering,N/A,,59.2981456,17.9993527
+Nordiska musikgymnasiet,school,Skola,N/A,,59.3111877,18.0254667
+N/A,parking,Parkering,N/A,,59.2784089,18.0052239
+N/A,parking,Parkering,N/A,,59.3122876,18.0299483
+N/A,parking,Parkering,N/A,,59.3125269,18.030879
+N/A,parking,Parkering,N/A,,59.3044893,17.9690429
+N/A,parking,Parkering,N/A,,59.3046157,17.9723429
+N/A,parking,Parkering,N/A,,59.3045362,17.9701355
+N/A,parking,Parkering,N/A,,59.3045773,17.9712139
+N/A,parking,Parkering,N/A,,59.3046457,17.9735136
+Förskolan Prästängen,kindergarten,Skola,N/A,,59.2812402,18.0104405
+N/A,parking,Parkering,N/A,,59.3037215,18.0248447
+N/A,parking,Parkering,N/A,,59.2797967,18.0193574
+Gröndalsskolan,school,Skola,N/A,,59.3163103,18.0047083
+Förskolan Smeden,kindergarten,Skola,N/A,,59.2957701,17.9962776
+N/A,parking,Parkering,N/A,,59.2779265,18.0045008
+N/A,parking,Parkering,N/A,,59.2779348,18.0051378
+Ekensbergsskolan,school,Skola,N/A,,59.3144013,17.9873414
+N/A,parking,Parkering,N/A,,59.2916295,17.9928335
+Bulten Fritids,kindergarten,Skola,Bultvägen,12,59.2952183,17.9936051
+N/A,parking,Parkering,N/A,,59.2912189,17.9920999
+N/A,parking,Parkering,N/A,,59.2847496,17.9931179
+Förskolan Mockasinen,kindergarten,Skola,N/A,,59.2793337,18.0022148
+Förskolan Regnbågen,kindergarten,Skola,N/A,,59.2850315,17.9874186
+Förskolan Sagoträdet,kindergarten,Skola,N/A,,59.2810093,17.990263
+Förskolan Örtagården,kindergarten,Skola,N/A,,59.2801635,17.9953849
+Förskolan Trumslagaren,kindergarten,Skola,N/A,,59.2769087,17.9978247
+Förskolan Matrisen,kindergarten,Skola,N/A,,59.2743242,17.9969155
+Förskolan Upptäckarna,kindergarten,Skola,Långsjövägen,12,59.2746805,17.9977121
+N/A,parking,Parkering,N/A,,59.3102995,18.0207713
+Gamla Långbrodals skola,school,Skola,N/A,,59.2769805,17.9883532
+Västbergaskolan,school,Skola,N/A,,59.2953224,17.9992969
+Förskolan Paletten,kindergarten,Skola,N/A,,59.2997913,17.9901159
+Daisy's express,fast_food,Snabbmat,Elektravägen,32,59.2952544,18.0109716
+N/A,parking,Parkering,N/A,,59.2809661,18.0190739
+N/A,parking,Parkering,N/A,,59.2896243,17.9631423
+N/A,parking,Parkering,N/A,,59.2979418,17.9897436
+N/A,parking,Parkering,N/A,,59.2765313,18.0151638
+Café Uddvillan,cafe,Kafé,Klubbensborgsvägen,27,59.3076706,17.9584891
+N/A,parking,Parkering,N/A,,59.2906564,17.9710581
+N/A,parking,Parkering,N/A,,59.2920828,17.9702233
+N/A,parking,Parkering,N/A,,59.2920285,17.9735235
+Västertorpsskolan,school,Skola,N/A,,59.2911877,17.9699829
+Blommensbergsskolan,school,Skola,N/A,,59.3110114,18.0080915
+N/A,kindergarten,Skola,N/A,,59.311198,18.0081196
+N/A,parking,Parkering,N/A,,59.3095331,17.9995439
+N/A,parking,Parkering,N/A,,59.3103125,18.0026344
+N/A,parking,Parkering,N/A,,59.3092125,18.0011946
+N/A,parking,Parkering,N/A,,59.3099709,17.9990265
+Hägerstensåsens skola,school,Skola,N/A,,59.296525,17.9813202
+N/A,parking,Parkering,N/A,,59.298704,17.9807456
+N/A,parking,Parkering,N/A,,59.2982798,17.981121
+N/A,parking,Parkering,N/A,,59.3037766,17.9959171
+N/A,parking,Parkering,N/A,,59.2943944,17.9819954
+N/A,parking,Parkering,N/A,,59.2983066,17.9802177
+N/A,parking,Parkering,N/A,,59.2940777,17.9835046
+N/A,parking,Parkering,N/A,,59.2908017,17.9866303
+N/A,parking,Parkering,N/A,,59.2970959,17.9819874
+N/A,parking,Parkering,N/A,,59.2981766,17.9793168
+N/A,parking,Parkering,N/A,,59.2831686,18.0109583
+N/A,parking,Parkering,N/A,,59.2853195,17.9542244
+N/A,parking,Parkering,N/A,,59.3143872,17.9913577
+N/A,parking,Parkering,N/A,,59.3152939,17.9851045
+N/A,parking,Parkering,N/A,,59.2822693,17.9692529
+N/A,parking,Parkering,N/A,,59.2820345,17.9687968
+N/A,parking,Parkering,N/A,,59.2819728,17.9666531
+N/A,parking,Parkering,N/A,,59.2855486,17.9673146
+N/A,parking,Parkering,N/A,,59.2812207,17.9664785
+N/A,kindergarten,Skola,N/A,,59.2850966,17.9517623
+N/A,parking,Parkering,N/A,,59.2744062,18.0123027
+N/A,parking,Parkering,N/A,,59.2745509,18.0103863
+N/A,parking,Parkering,N/A,,59.2785061,17.9742497
+N/A,parking,Parkering,N/A,,59.2779591,17.9760975
+N/A,parking,Parkering,N/A,,59.2934362,17.9771689
+N/A,parking,Parkering,N/A,,59.2922394,17.97341
+N/A,parking,Parkering,N/A,,59.2716446,18.0073566
+N/A,parking,Parkering,N/A,,59.2704558,18.0073943
+N/A,parking,Parkering,N/A,,59.2854466,17.9534739
+Långbro bakficka,cafe,Kafé,N/A,,59.2818034,17.9715299
+N/A,parking,Parkering,N/A,,59.2822311,17.9833261
+Snöripan,kindergarten,Skola,N/A,,59.2728158,17.9783928
+Snöripan,kindergarten,Skola,N/A,,59.2728783,17.9788695
+N/A,parking,Parkering,N/A,,59.2893654,17.9534457
+N/A,parking,Parkering,N/A,,59.2898364,17.9550122
+N/A,parking,Parkering,N/A,,59.2813131,17.9567498
+N/A,parking,Parkering,N/A,,59.3093384,17.996614
+N/A,parking,Parkering,N/A,,59.2857334,17.9542554
+N/A,parking,Parkering,N/A,,59.2917913,17.9656624
+N/A,parking,Parkering,N/A,,59.2871982,17.9514612
+N/A,parking,Parkering,Slalomvägen,,59.2930358,17.9731663
+N/A,parking,Parkering,N/A,,59.2944945,17.9670732
+N/A,parking,Parkering,N/A,,59.2828537,17.9591879
+N/A,parking,Parkering,N/A,,59.282818,17.9573749
+Förskolan Solbacken,kindergarten,Skola,Personnevägen,78,59.298395,17.975206
+N/A,parking,Parkering,N/A,,59.2935367,18.0090408
+N/A,kindergarten,Skola,N/A,,59.2998487,17.9975383
+N/A,parking,Parkering,N/A,,59.2991366,18.0002758
+N/A,parking,Parkering,N/A,,59.3028693,17.9940399
+N/A,parking,Parkering,N/A,,59.3025653,17.9940605
+N/A,parking,Parkering,N/A,,59.3026493,17.9948019
+N/A,parking,Parkering,N/A,,59.2756636,17.9862081
+N/A,parking,Parkering,N/A,,59.2760167,17.9859253
+N/A,parking,Parkering,N/A,,59.2758985,17.9825793
+N/A,parking,Parkering,N/A,,59.28077,17.9776114
+N/A,parking,Parkering,N/A,,59.284186,17.9575256
+Förskolan Hovet,school,Skola,N/A,,59.309826,18.0172868
+Herrängens skola,school,Skola,Konvaljestigen,15,59.2751215,17.97312
+Rödkulla Förskola,kindergarten,Skola,Långängsvägen,56,59.2743449,17.9701066
+Mälarhöjdens skola Pärlan,school,Skola,N/A,,59.3011959,17.9559101
+Förskolan Hattis,kindergarten,Skola,Hattmakarbacken,11,59.2967675,17.9522865
+Slättgården Förskola,kindergarten,Skola,Slättgårdsvägen,72,59.291759,17.9508189
+Lögarbergets Montessoriskola,kindergarten,Skola,Traktörgränd,10,59.3014838,17.9473056
+Förskolan Toppen,kindergarten,Skola,Persmässgränd,16,59.2955309,17.956767
+Förskolan Kroppås,kindergarten,Skola,Sankt Mickelsgatan,122,59.2983853,17.9593949
+Förskolan Skogsbacken,kindergarten,Skola,Selmedalsvägen,90-92,59.3050913,17.9672341
+Johan Skytteskolan,school,Skola,Västerängsvägen,19,59.2774698,17.982741
+N/A,parking,Parkering,N/A,,59.297832,18.0108478
+N/A,parking,Parkering,N/A,,59.297123,18.0099632
+N/A,parking,Parkering,N/A,,59.295696,18.007421
+N/A,parking,Parkering,N/A,,59.2992252,18.0143699
+N/A,parking,Parkering,N/A,,59.2984826,18.0127745
+N/A,parking,Parkering,N/A,,59.292304,17.9643207
+Förhyrda,parking,Parkering,N/A,,59.2910016,17.9642335
+N/A,parking,Parkering,N/A,,59.299637,17.9818537
+N/A,parking,Parkering,N/A,,59.2930145,17.9843292
+N/A,parking,Parkering,N/A,,59.292906,17.9813234
+N/A,parking,Parkering,N/A,,59.2980105,17.9844685
+Årstadalsskolan,school,Skola,N/A,,59.3049568,18.0314277
+N/A,parking,Parkering,N/A,,59.3065156,17.9737163
+N/A,parking,Parkering,N/A,,59.309146,17.9946073
+N/A,parking,Parkering,N/A,,59.3090446,17.9923841
+N/A,parking,Parkering,N/A,,59.3097033,17.9917477
+N/A,parking,Parkering,N/A,,59.3097659,17.9938734
+Hägerstenshamnens skola,school,Skola,N/A,,59.3072705,17.9786366
+Hägerstenshamnens skola,school,Skola,N/A,,59.3064226,17.9837704
+N/A,parking,Parkering,N/A,,59.3057897,17.9809814
+N/A,parking,Parkering,N/A,,59.3033621,17.9808364
+N/A,parking,Parkering,N/A,,59.3078498,17.9859906
+Flyttfågeln,school,Skola,N/A,,59.3078244,17.9880571
+Stormfågeln,kindergarten,Skola,N/A,,59.3081169,17.9860521
+N/A,parking,Parkering,N/A,,59.3065577,17.9802307
+N/A,parking,Parkering,N/A,,59.3153647,17.98607
+N/A,parking,Parkering,N/A,,59.2928843,18.0009566
+N/A,parking,Parkering,N/A,,59.2928356,18.0050664
+N/A,parking,Parkering,N/A,,59.2913824,18.0177993
+N/A,parking,Parkering,N/A,,59.2924371,18.0165657
+N/A,kindergarten,Skola,N/A,,59.297456,18.0026592
+N/A,parking,Parkering,N/A,,59.2970754,18.0123402
+N/A,parking,Parkering,N/A,,59.2973604,18.0080598
+N/A,parking,Parkering,N/A,,59.2971587,18.0072523
+N/A,parking,Parkering,N/A,,59.2973992,18.0077875
+Gröndalsgården,kindergarten,Skola,N/A,,59.3138974,18.0073725
+Förskolan Våga Vilja,kindergarten,Skola,N/A,,59.2658182,17.9763777
+Novia Engelska Skolan,school,Skola,N/A,,59.3046375,18.029414
+N/A,parking,Parkering,N/A,,59.3146434,18.0252509
+N/A,kindergarten,Skola,N/A,,59.2942395,17.9978956
+N/A,parking,Parkering,N/A,,59.3001725,18.0101129
+N/A,parking,Parkering,N/A,,59.2786368,17.9762002
+N/A,parking,Parkering,N/A,,59.2786181,17.9755597
+N/A,parking,Parkering,N/A,,59.2800899,17.9740973
+N/A,parking,Parkering,N/A,,59.2772537,17.9782424
+N/A,parking,Parkering,N/A,,59.2775176,17.9772481
+Förskolan Älvskogen,kindergarten,Skola,N/A,,59.2729943,17.9944267
+Ellen Fries,kindergarten,Skola,N/A,,59.2872934,17.9699509
+N/A,parking,Parkering,N/A,,59.2849668,17.9682336
+N/A,parking,Parkering,N/A,,59.2881664,17.9727759
+N/A,parking,Parkering,N/A,,59.2854408,17.9758004
+N/A,parking,Parkering,N/A,,59.2861779,17.9776161
+N/A,parking,Parkering,N/A,,59.2857322,17.9767817
+Kämpetorpsskolan,school,Skola,Kedjevägen,57,59.283786,17.9966735
+N/A,parking,Parkering,N/A,,59.2870343,18.0112022
+N/A,parking,Parkering,N/A,,59.2878582,18.0099104
+N/A,parking,Parkering,N/A,,59.2875174,18.0063571
+Förskolan Trollsländan,kindergarten,Skola,N/A,,59.2864224,18.0049322
+N/A,parking,Parkering,N/A,,59.2881255,18.0045761
+N/A,parking,Parkering,N/A,,59.2905604,18.0030372
+N/A,parking,Parkering,N/A,,59.2903451,18.0024269
+Mockasinen Solbergaskolan,school,Skola,N/A,,59.2898344,18.0060886
+N/A,parking,Parkering,Tivolivägen,2,59.294994,18.0046419
+N/A,parking,Parkering,N/A,,59.2995349,17.9451896
+N/A,parking,Parkering,N/A,,59.3000021,17.9468147
+N/A,parking,Parkering,N/A,,59.3081268,18.0196129
+N/A,parking,Parkering,N/A,,59.3090048,18.0138493
+N/A,parking,Parkering,N/A,,59.3113187,18.0055276
+Förhyrda,parking,Parkering,N/A,,59.2911632,17.9646182
+N/A,parking,Parkering,N/A,,59.2922707,17.9621823
+Förhyrda,parking,Parkering,N/A,,59.2926968,17.9649574
+N/A,parking,Parkering,N/A,,59.2913956,17.9643776
+N/A,parking,Parkering,N/A,,59.2916863,17.9611095
+N/A,parking,Parkering,N/A,,59.2917196,17.9605637
+N/A,parking,Parkering,N/A,,59.2914388,17.9609866
+N/A,parking,Parkering,N/A,,59.293607,17.9662464
+N/A,parking,Parkering,N/A,,59.2908431,17.959789
+Snöbollens förskola,kindergarten,Skola,Snöbollsgränd,3,59.2912112,17.9616159
+Förskolan Vasan,kindergarten,Skola,Vasaloppsvägen,110,59.2922463,17.9611186
+N/A,parking,Parkering,N/A,,59.2926603,17.9631454
+N/A,parking,Parkering,N/A,,59.2914486,17.9653965
+Förskolan Isgränd,kindergarten,Skola,N/A,,59.2911039,17.9672238
+N/A,parking,Parkering,N/A,,59.2912279,17.9685327
+N/A,parking,Parkering,N/A,,59.29066,17.969319
+Sjöviksskolan,school,Skola,N/A,,59.3022525,18.0300622
+N/A,parking,Parkering,N/A,,59.2947769,17.9992281
+Internationella Engelska Skolan,school,Skola,N/A,,59.2970933,18.0019566
+Pilgrimsskolan,school,Skola,N/A,,59.3050587,18.0062963
+Korpen,kindergarten,Skola,N/A,,59.3063336,18.0025201
+Grågåsen,kindergarten,Skola,N/A,,59.3078851,17.9991414
+N/A,parking,Parkering,N/A,,59.3044582,17.9826948
+N/A,parking,Parkering,N/A,,59.3044362,17.982144
+N/A,parking,Parkering,N/A,,59.3122795,18.0241955
+Förskolan Svängen,school,Skola,N/A,,59.3039423,18.0297711
+Trekanten,kindergarten,Skola,N/A,,59.3131841,18.0190185
+Area Code 157,parking,Parkering,N/A,,59.3142202,18.0172062
+Entréskolan,school,Skola,N/A,,59.3130096,18.0126241
+Karlavagnen,kindergarten,Skola,N/A,,59.3142002,18.0124814
+Sjöbjörnen,kindergarten,Skola,N/A,,59.3179494,18.0057861
+N/A,parking,Parkering,N/A,,59.3162015,17.9987141
+Viken,kindergarten,Skola,N/A,,59.314508,17.9945098
+Udden,kindergarten,Skola,N/A,,59.3147439,17.9851636
+N/A,parking,Parkering,N/A,,59.3150538,17.9919415
+N/A,parking,Parkering,N/A,,59.3153637,18.002069
+N/A,parking,Parkering,N/A,,59.3152401,18.0035295
+N/A,parking,Parkering,N/A,,59.2869948,17.9731288
+N/A,parking,Parkering,N/A,,59.2883054,17.9739786
+N/A,parking,Parkering,N/A,,59.2960433,18.0125481
+N/A,parking,Parkering,N/A,,59.2966588,18.0123517
+N/A,parking,Parkering,N/A,,59.3025042,18.0336165
+N/A,parking,Parkering,N/A,,59.2983046,17.9909776
+N/A,parking,Parkering,N/A,,59.296362,18.0159493
+N/A,parking,Parkering,N/A,,59.2830175,18.0154619
+N/A,parking,Parkering,N/A,,59.2844721,18.0182498
+N/A,parking,Parkering,N/A,,59.2832182,18.01328
+N/A,parking,Parkering,N/A,,59.2983071,17.9434663
+N/A,parking,Parkering,N/A,,59.2840614,17.9604256
+N/A,parking,Parkering,N/A,,59.2841458,17.9607729
+N/A,parking,Parkering,N/A,,59.2900673,17.9538791
+Förskolan Solkatten,kindergarten,Skola,Älvsjövägen,62,59.2832517,17.9989748
+N/A,parking,Parkering,N/A,,59.3096268,18.0277085
+N/A,parking,Parkering,N/A,,59.3009887,18.0253675
+N/A,parking,Parkering,N/A,,59.3066521,18.0241314
+N/A,parking,Parkering,N/A,,59.3016249,18.0303662
+Midsommarköket,cafe,Kafé,N/A,,59.3008355,18.004508
+N/A,parking,Parkering,N/A,,59.2914713,18.0157933
+N/A,parking,Parkering,N/A,,59.2914129,18.0147255
+N/A,parking,Parkering,N/A,,59.2888475,18.0102112
+N/A,parking,Parkering,N/A,,59.2941036,17.9771953
+N/A,parking,Parkering,N/A,,59.3045365,17.9603661
+N/A,parking,Parkering,N/A,,59.3048121,17.9612841
+N/A,parking,Parkering,N/A,,59.3050757,17.9621317
+N/A,parking,Parkering,N/A,,59.2716847,18.0074174
+N/A,parking,Parkering,N/A,,59.2999015,18.0043181
+N/A,parking,Parkering,N/A,,59.2998346,18.0044571
+N/A,parking,Parkering,N/A,,59.2999765,18.0045456
+N/A,parking,Parkering,N/A,,59.2915259,18.0092665
+N/A,parking,Parkering,Kristallvägen,168,59.2898992,18.0024977
+Förskolan Höjden,school,Skola,Sturehillsvägen,29,59.3041137,18.0319562
+N/A,parking,Parkering,N/A,,59.3010838,18.0114794
+N/A,parking,Parkering,N/A,,59.2992291,17.9917145
+N/A,parking,Parkering,N/A,,59.2920248,18.0152606
+N/A,parking,Parkering,N/A,,59.2969868,17.9452225
+N/A,parking,Parkering,N/A,,59.2972272,17.9456896
+N/A,parking,Parkering,N/A,,59.302888,17.9919448
+N/A,parking,Parkering,N/A,,59.2925213,17.9754557
+N/A,parking,Parkering,N/A,,59.2796453,17.9735832
+N/A,parking,Parkering,N/A,,59.2918516,17.9845782
+N/A,parking,Parkering,N/A,,59.2919127,17.9840651
+N/A,parking,Parkering,N/A,,59.2878073,17.9818754
+N/A,parking,Parkering,N/A,,59.2833534,17.9556208
+N/A,parking,Parkering,N/A,,59.289376,17.9479327
+N/A,parking,Parkering,N/A,,59.2901012,17.9540921
+Midsommarkransens skola,school,Skola,N/A,,59.3030059,18.0050687
+Förskolan Sturehill,school,Skola,N/A,,59.3033454,18.0320068
+N/A,parking,Parkering,N/A,,59.3044583,18.0309464
+P-hus Älvsjöstaden,parking,Parkering,N/A,,59.2802014,18.0018462
+Kastanjen förskola,kindergarten,Skola,N/A,,59.3036764,18.0095273
+N/A,parking,Parkering,N/A,,59.289521,17.9562322
+N/A,parking,Parkering,N/A,,59.3032194,17.9844007
+N/A,parking,Parkering,N/A,,59.3029653,17.982994
+Pysslingen,kindergarten,Skola,N/A,,59.3036096,17.9813325
+N/A,parking,Parkering,N/A,,59.2902555,17.9660499
+N/A,parking,Parkering,N/A,,59.2795991,17.9792259
+N/A,parking,Parkering,N/A,,59.3124281,18.0226947
+N/A,parking,Parkering,N/A,,59.3141204,18.0262901
+N/A,parking,Parkering,N/A,,59.2870739,18.0057141
+N/A,parking,Parkering,N/A,,59.2867588,18.0052644
+N/A,parking,Parkering,N/A,,59.2869443,18.0057201
+N/A,parking,Parkering,N/A,,59.2867759,18.0076053
+N/A,parking,Parkering,N/A,,59.2879948,18.0077006
+N/A,parking,Parkering,N/A,,59.2878254,18.0081281
+N/A,parking,Parkering,N/A,,59.2871133,18.0096167
+N/A,parking,Parkering,N/A,,59.2864021,18.0085562
+N/A,parking,Parkering,N/A,,59.2862698,18.0089513
+N/A,parking,Parkering,N/A,,59.286305,18.0096322
+N/A,parking,Parkering,N/A,,59.2866028,18.0117681
+N/A,parking,Parkering,N/A,,59.2863516,18.0126099
+N/A,parking,Parkering,N/A,,59.2870595,18.0117855
+N/A,parking,Parkering,N/A,,59.2856695,18.0112172
+N/A,parking,Parkering,N/A,,59.2858904,18.0114922
+N/A,parking,Parkering,N/A,,59.2858124,18.0111916
+N/A,parking,Parkering,N/A,,59.2889026,17.9990732
+N/A,parking,Parkering,N/A,,59.2893602,17.9981016
+Rubinen Garage,parking,Parkering,N/A,,59.2889612,17.9979042
+N/A,parking,Parkering,N/A,,59.2909913,17.9981577
+N/A,parking,Parkering,N/A,,59.2904747,17.9986977
+N/A,parking,Parkering,N/A,,59.2906495,17.9985503
+N/A,parking,Parkering,N/A,,59.2898551,17.9985571
+N/A,parking,Parkering,N/A,,59.2900857,17.9983059
+N/A,parking,Parkering,N/A,,59.2922104,18.0021499
+N/A,parking,Parkering,N/A,,59.2915877,18.0025712
+N/A,parking,Parkering,N/A,,59.2914611,18.0024509
+N/A,parking,Parkering,N/A,,59.2916963,18.0019111
+N/A,parking,Parkering,N/A,,59.2917239,18.000158
+N/A,parking,Parkering,N/A,,59.2870829,18.0053958
+Internationella Engelska Skolan,school,Skola,N/A,,59.3032611,18.0171082
+Svanens förskola,kindergarten,Skola,N/A,,59.2979308,18.0012397
+Tellusborgsskolan,school,Skola,N/A,,59.3044441,18.0086196
+Förskolan Luren,kindergarten,Skola,N/A,,59.3016483,17.9955209
+N/A,parking,Parkering,N/A,,59.3022605,18.0032886
+Förskolan Kobran,kindergarten,Skola,N/A,,59.297933,17.9884507
+Vittra Telefonplan,school,Skola,N/A,,59.2995152,17.9901817
+Förskolan Grindslanten,kindergarten,Skola,N/A,,59.2982025,17.9855962
+N/A,parking,Parkering,N/A,,59.2957094,17.985302
+Pysslingen Förskolor Isälven,kindergarten,Skola,N/A,,59.2943429,17.9857158
+N/A,parking,Parkering,N/A,,59.2937647,17.9843778
+N/A,parking,Parkering,N/A,,59.2985378,17.9832034
+N/A,parking,Parkering,N/A,,59.3015638,17.9570223
+N/A,parking,Parkering,N/A,,59.2948512,17.9781307
+N/A,parking,Parkering,N/A,,59.2940903,17.9789275
+N/A,parking,Parkering,N/A,,59.2944402,17.9787046
+N/A,parking,Parkering,N/A,,59.2940652,17.9784563
+N/A,parking,Parkering,N/A,,59.2764875,18.0140116
+Förskolorna Upptäckarna,kindergarten,Skola,N/A,,59.2805221,17.9789977
+Metapontum,school,Skola,N/A,,59.2807876,17.9757235
+N/A,parking,Parkering,N/A,,59.2893986,17.9984975
+N/A,parking,Parkering,N/A,,59.2892913,17.9986643
+N/A,parking,Parkering,N/A,,59.289115,17.99886
+N/A,parking,Parkering,N/A,,59.2886755,17.9986272
+N/A,parking,Parkering,N/A,,59.2893554,17.9972888
+N/A,parking,Parkering,N/A,,59.3010736,18.011193
+N/A,parking,Parkering,N/A,,59.3046359,18.0293991
+Aspuddens skola,school,Skola,Blommensbergsvägen,166,59.3093087,17.9978738
+N/A,parking,Parkering,N/A,,59.3097501,18.0294635
+N/A,parking,Parkering,N/A,,59.309716,18.0237907
