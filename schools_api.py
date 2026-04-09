@@ -44,15 +44,6 @@ async def fetch_service_units(service_type_id: int):
     return filtered if filtered else {"error": "No units found in the specified city."}
 
 
-def make_endpoint(service_type_id: int):
-    async def endpoint():
-        try:
-            return await fetch_service_units(service_type_id)
-        except Exception as e:
-            return {"error": str(e)}
-    return endpoint
-
-
 @app.get("/")
 async def read_root():
     return {"Hello": "World"}
