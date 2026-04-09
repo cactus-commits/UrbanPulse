@@ -71,13 +71,6 @@ async def get_all():
         return {"error": str(e)}
 
 
-# Registrera dynamiskt en endpoint per verksamhetstyp
-for name, type_id in SERVICE_TYPES.items():
-    app.add_api_route(
-        f"/{name}",
-        make_endpoint(type_id),
-        methods=["GET"]
-    )
 
 
 
