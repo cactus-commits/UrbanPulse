@@ -1,0 +1,135 @@
+id,kategori,namn,gatuadress,postnummer,stad,koordinat_east,koordinat_north
+15106,grundskolor,"Apolloniosskolan, F–9",Stora Mans väg 11B,12559,Älvsjö,148591,6573949
+13499,grundskolor,"Aspuddens skola, F–9",Blommensbergsvägen 166,12655,Hägersten,149899,6577119
+15258,grundskolor,"Fruängens skola, F–9",Fruängsgatan 57–61,12953,Hägersten,147876,6574395
+15196,grundskolor,"Grundskolan Metapontum, F–9",Stora Mans väg 11C,12559,Älvsjö,148607,6573925
+13877,grundskolor,"Herrängens skola, F–6",Konvaljestigen 15,12555,Älvsjö,148419,6573321
+13917,grundskolor,"Hägerstenshamnens skola, F–6",Selmedalsringen 5,12936,Hägersten,148770,6576910
+13929,grundskolor,"Hägerstensåsens skola, F–6",Sedelvägen 30,12932,Hägersten,148973,6575672
+15011,grundskolor,"Innovitaskolan Joriel, F–9",Bergtallsvägen 12,12560,Älvsjö,148265,6574068
+15219,grundskolor,"Internationella engelska skolan Liljeholmen, F–9",Herbariegränd 3,12632,Hägersten,150998,6576422
+15231,grundskolor,"Internationella engelska skolan Älvsjö, 4–9",Armborstvägen 1,12544,Älvsjö,150324,6573955
+13997,grundskolor,"Johan Skytteskolan, F–9",Västerängsvägen 21,12558,Älvsjö,149008,6573610
+15076,grundskolor,"Kunskapsskolan Fruängen, 6–9",Ellen Keys gata 2,12952,Hägersten,148020,6574773
+15073,grundskolor,"Kunskapsskolans resursskola Hägersten, 7–9",Riksdalervägen 5,12932,Hägersten,149081,6575825
+14146,grundskolor,"Kämpetorpsskolan, F–9",Kedjevägen 57B,12641,Hägersten,149745,6574271
+14186,grundskolor,"Långbrodalsskolan, F–6",Sländvägen 3,12558,Älvsjö,149355,6573522
+15063,grundskolor,"Magelungens grundskola Långbropark, 1–6",Solberga hagväg 4,12544,Älvsjö,150555,6573847
+15054,grundskolor,"Magelungens grundskola Älvsjö, 7–9",Solberga Hagväg 1,12544,Älvsjö,150541,6573839
+14260,grundskolor,"Midsommarkransens skola, F–9",Bäckvägen 1,12647,Hägersten,150339,6576437
+15235,grundskolor,Montessori Mondial Mälarhöjden,Traktörgränd 10,12940,Hägersten,147000,6576240
+14273,grundskolor,"Mälarhöjdens skola, F–9",Lugntorpsvägen 2,12944,Hägersten,147580,6575761
+15029,grundskolor,"Pilgrimsskolan, F–3",Pilgrimsvägen 1,12648,Hägersten,150358,6576667
+14476,grundskolor,"Sjöängsskolan, F–9",Gripsholmsvägen 29,12535,Älvsjö,151581,6573948
+14999,grundskolor,"Snitz grundskola, 7–9",Snickerigatan 4,12626,Hägersten,149474,6576045
+14599,grundskolor,"Solbergaskolan, F–6",Lerkrogsvägen 28,12679,Hägersten,150327,6575007
+14990,grundskolor,"Stockholm International Academy Hägersten, F–9",Sulvägen 52,12640,Hägersten,150428,6574346
+15358,grundskolor,"Tellusborgsskolan, 6–9",Tellusborgsvägen 36,12649,Hägersten,150542,6576589
+14911,grundskolor,"Vittra Telefonplan, F–9",Snickerigatan 3–4,12626,Hägersten,149474,6576044
+14906,grundskolor,"Västbergaskolan, F–9",Klensmedsvägen 2,12638,Hägersten,149930,6575513
+14800,grundskolor,"Västertorpsskolan, F–6",Störtloppsvägen 2–6,12946,Hägersten,148326,6575046
+14872,grundskolor,"Örbyskolan, F–9",Gamla Huddingevägen 425,12542,Älvsjö,151594,6573267
+14884,grundskolor,"Östbergaskolan, F–6",Östbergabackarna 51–57,12573,Älvsjö,151936,6574869
+15594,anpassade_grundskolor,"Aspuddens skola, anpassad grundskola 1–9",Blommensbergsvägen 166,12655,Hägersten,149899,6577119
+15414,anpassade_grundskolor,"Fruängens skola, anpassad grundskola 1–9",Fruängsgatan 57–61,12953,Hägersten,147877,6574396
+15438,anpassade_grundskolor,"Innovitaskolan Joriel grundskola och anpassad grundskola, F–9",Bergtallsvägen 12,12560,Älvsjö,148266,6574069
+27661,anpassade_grundskolor,"Midsommarkransens skola, anpassad grundskola 1–7",Bäckvägen 1,12647,Hägersten,150339,6576438
+15529,anpassade_grundskolor,"Solbergaskolan, anpassad grundskola, Broskolan, 1–6",Lerkrogsvägen 28,12679,Hägersten,150328,6575007
+15536,anpassade_grundskolor,"Solbergaskolan, anpassad grundskola, Mockasinen, 1–9",Lerkrogsvägen 28,12679,Hägersten,150328,6575007
+15567,anpassade_grundskolor,"Västbergaskolan, anpassad grundskola, 1–9",Klensmedsvägen 2,12638,Hägersten,150015,6575642
+34879,anpassade_grundskolor,"Västertorpsskolan, anpassad grundskola 1–6",Störtloppsvägen 2,12946,Hägersten,148326,6575046
+12293,öppen_förskola,Öppna förskolan Fruängen,Hanna Rydhs gata 5,12950,Hägersten,148542,6574595
+12421,öppen_förskola,Öppna förskolan Hägerstensåsen,Inteckningsvägen 17 E,12931,Hägersten,149189,6575145
+30112,öppen_förskola,Öppna förskolan Pippi för barn med funktionsnedsättning,Hanna Rydhs gata 5,12950,Hägersten,148542,6574595
+12169,öppen_förskola,Öppna förskolan Älvsjö,Solberga ängsväg 4,12544,Älvsjö,150774,6574003
+12192,öppen_förskola,"Öppna förskolan Östberga, Östberga kulturhus",Östbergatorget 14,12573,Älvsjö,151904,6574859
+9011,förskola,Bellmanskällans Montessoriförskola,Brådstupsvägen 5–9,12939,Hägersten,147643,6576556
+7700,förskola,Bullerbyn Johan Skyttes väg 325–327,Johan Skyttes väg 325-327,12558,Älvsjö,148824,6573907
+31055,förskola,Citrusgården,Folkparksvägen 161,12677,Hägersten,150699,6574427
+7705,förskola,Ekbacken Svartlösavägen 128,Svartlösavägen 128,12558,Älvsjö,148884,6573554
+6645,förskola,Eken Sulvägen 52 A,Sulvägen 52 A,12640,Hägersten,150447,6574297
+8716,förskola,Ellen Fries,Ellen Fries gata 10,12950,Hägersten,148284,6574699
+8722,förskola,Ellen Key,Ellen Keys Gata 83,12953,Hägersten,148118,6574292
+7709,förskola,Fantasia,Vantörsvägen 225,12955,Hägersten,147870,6574074
+10381,förskola,Fiberpennan,Fastlagsvägen 68,12647,Hägersten,149501,6576413
+8674,förskola,Flyttfågeln,Stenkilsgatan 7,12652,Hägersten,149327,6576967
+10132,förskola,Förskolan Bild & Tanke,Hägerstensvägen 301,12941,Hägersten,147954,6576135
+7756,förskola,Förskolan Grindslanten,Förskottsvägen 20,12932,Hägersten,149177,6575888
+28556,förskola,Förskolan Höjden,Kinnaredsgränd 69,12572,Älvsjö,151861,6574883
+10547,förskola,Förskolan Metapontum,Stora Mans Väg 11D,12559,Älvsjö,148655,6573898
+9169,förskola,Förskolan Råbyvägen,Råbyvägen 34,12543,Älvsjö,151397,6573563
+7663,förskola,Förskolan Stormfågeln AB,Ivar Vidfamnes Gata 20,12652,Hägersten,149221,6576981
+9166,förskola,Förskolan Vingåkersvägen,Vingåkersvägen 22–26,12540,Älvsjö,151714,6573324
+10401,förskola,Förskolan Änglan AB,Våxtorpsgränd 18,12573,Älvsjö,151868,6574764
+10564,förskola,Förskolan Örnbacken,Örnbacken 34,12651,Hägersten,149317,6577121
+10284,förskola,Föräldrakooperativet Trumslagaren,Trumslagargatan 10,12534,Älvsjö,149886,6573491
+8423,förskola,Föräldrakooperativet Vildkatten,Tegelbruksvägen 31,12634,Hägersten,150735,6579164
+7197,förskola,Gläntan Lotterivägen 17,Lotterivägen 17,12932,Hägersten,148864,6575750
+9477,förskola,Gläntan Östbergabackarna 50,Östbergabackarna 50,12572,Älvsjö,151760,6574730
+10050,förskola,Grodan,Störtloppsvägen 36,12945,Hägersten,148091,6575470
+6773,förskola,Grågåsen,Erik Segersälls väg 24–30,12650,Hägersten,149951,6576951
+10614,förskola,Hasselbacken,Personnevägen 78,12935,Hägersten,148593,6575898
+8612,förskola,Hattis,Hattmakarbacken 11,12942,Hägersten,147286,6575742
+7713,förskola,I Ur och Skur Vindleken,Långsjövägen 12,12530,Älvsjö,149862,6573262
+10728,förskola,I Ur och Skur Vinterelvan,Örnbacken 4,12651,Hägersten,149461,6577153
+8664,förskola,Instrumentet,Instrumentvägen 32,12653,Hägersten,149106,6576914
+8631,förskola,Jungfru Lona,Kinmanssonsvägen 47,12938,Hägersten,148419,6576477
+8703,förskola,Kastanjen Majstångsvägen 6,Majstångsvägen 6,12633,Hägersten,150515,6576459
+8725,förskola,Kata Dalström,Kata Dalströms gata 23,12954,Hägersten,147619,6574504
+30310,förskola,Kobran,Mobilgatan 3B,12626,Hägersten,149378,6575858
+6748,förskola,Korpen,Schlytersvägen 55,12650,Hägersten,150137,6576793
+10462,förskola,Kristallen,Isgränd 6,12946,Hägersten,148145,6575076
+8959,förskola,Kroppås,Sankt Mickelsgatan 122,12941,Hägersten,147697,6575891
+6695,förskola,Lillskogen,Karlslundsvägen 10,12552,Älvsjö,149189,6572618
+7081,förskola,LM-gården,Trettondagsvägen 7–9,12636,Hägersten,149850,6576069
+8684,förskola,Luren,Kransbindarvägen 120,12636,Hägersten,149769,6576283
+10718,förskola,Långbropark förskola,Stora mans väg 11B,12559,Älvsjö,148589,6574006
+8700,förskola,Långsjö,Gårdstigen 19,12552,Älvsjö,148508,6572342
+8955,förskola,Majamyra,Torsslowsbacken 2,12937,Hägersten,148613,6576794
+6734,förskola,Matrisen,Långsjövägen 14,12530,Älvsjö,149819,6573229
+10526,förskola,Metronomen,Radiusbacken 31,12629,Hägersten,150233,6575909
+9884,förskola,Mineralen,Skodonsvägen 9,12677,Hägersten,150362,6574878
+8759,förskola,Montessoriförskolan Regnbågen,Krattvägen 20,12532,Älvsjö,149269,6574403
+8769,förskola,Muminstugan,Vantörsvägen 150,12557,Älvsjö,148843,6573521
+10303,förskola,Norlandia förskolor Måsen,Blommensbergsvägen 163 och 180,12652,Hägersten,149621,6576741
+6844,förskola,Orkestern,Responsgatan 1,12629,Hägersten,150161,6575810
+6847,förskola,Paletten Huvudfabriksgatan 18–20,Huvudfabriksgatan 18–20,12626,Hägersten,149472,6576076
+8802,förskola,Prästängen,Prästgårdsgränd 16,12544,Älvsjö,150609,6574001
+10263,förskola,Pysslingen Förskolor Isälven,Kamrerarvägen 19,12930,Hägersten,149201,6575449
+9621,förskola,Pysslingen Mälarhöjdsparken,Emilia Fogelklous gata 10,12957,Hägersten,147266,6574438
+9614,förskola,Pysslingen Sagoträdet,Långbrovägen 55,12533,Älvsjö,149476,6573972
+9319,förskola,Pysslingen Smältrullen,Borrvägen 5,12638,Hägersten,149880,6575438
+9304,förskola,Pysslingen Typografen,Gösta Ekmans Väg 7,12935,Hägersten,148917,6576492
+9618,förskola,Pysslingen Örtagården,Örtagårdsvägen 1–2,12534,Älvsjö,149720,6573866
+9893,förskola,Regnbågen Slättgårdsvägen 72,Slättgårdsvägen 72,12942,Hägersten,147220,6575171
+7423,förskola,Rödkulla,Långängsvägen 56,12556,Älvsjö,148295,6573215
+7051,förskola,Rönneberga,Vattenledningsvägen 24 A och B,12633,Hägersten,150612,6576477
+8681,förskola,Sjöberget,Torsten Alms gata 86,12651,Hägersten,149195,6577107
+6969,förskola,Sjöstjärnan Rävsnäsvägen 77–79,Rävsnäsvägen 77–79,12570,Älvsjö,151632,6573879
+10611,förskola,Skatboet,Valutavägen 90,12934,Hägersten,148804,6575636
+10300,förskola,Skattkistan Sandalettgatan 9,Sandalettgatan 9,12547,Älvsjö,150423,6574081
+6798,förskola,Smeden,Klensmedsvägen 10,12638,Hägersten,149810,6575583
+10684,förskola,Snabelskon,Sulvägen 62,12640,Hägersten,150574,6574353
+8798,förskola,Snöbollen,Snöbollsgränd 3,12945,Hägersten,147807,6575133
+8765,förskola,Snöripan,Snöripsvägen 34,12556,Älvsjö,148792,6573074
+10293,förskola,Solkatten,Midsommarvägen 20,12635,Hägersten,150594,6576195
+6815,förskola,Solkatten Medaljonggatan 10–14,Medaljonggatan 10–14,12641,Hägersten,149853,6574196
+6763,förskola,Solstrålen Hägerstensvägen 179,Hägerstensvägen 179,12653,Hägersten,149426,6576627
+8805,förskola,Solängen,Solberga Ängsväg 4–6,12544,Älvsjö,150773,6574002
+7054,förskola,Svandammsgården,Cedergrensvägen 5–7,12636,Hägersten,150157,6576435
+8541,förskola,Svanens förskola vid Telefonplan,Flygelgatan 1,12628,Hägersten,150096,6575869
+7112,förskola,Sylvester,Sylvestergatan 2–6,12571,Älvsjö,151709,6574450
+10210,förskola,Tellusbarn Pusslet,Mockasinvägen 24,12639,Hägersten,150893,6574254
+8616,förskola,Toppen,Persmässgränd 16,12944,Hägersten,147534,6575597
+9483,förskola,"Treklövern, Stamgatan 2 A",Stamgatan 2 A,12574,Älvsjö,152359,6574305
+6661,förskola,Trollsländan,Sulvägen 22,12640,Hägersten,150271,6574576
+8772,förskola,Vasan,Vasaloppsvägen 110,12945,Hägersten,147806,6575220
+8457,förskola,"Vi som växer, Förskolan Vansö",Vansövägen 4,12540,Älvsjö,151944,6573103
+8688,förskola,Viveln,Vivelvägen 40,12533,Älvsjö,149457,6573599
+8695,förskola,Vågavilja,Gårdstigen 1,12552,Älvsjö,148662,6572317
+8628,förskola,Åsen,Sedelvägen 2B,12932,Hägersten,149162,6575777
+10557,förskola,Älvens Förskola,Älvsjö gårdsväg 3–9,12542,Älvsjö,150554,6573532
+9639,förskola,Älvsjö förskola,Långbrodalsvägen 1,12532,Älvsjö,150109,6573809
+7834,förskola,Älvsjöbarnen,Murgrönsvägen 17,12555,Älvsjö,148168,6573488
+6792,förskola,Älvskogen,Långsjövägen 33,12530,Älvsjö,149677,6573107
+7121,förskola,Äppelängen,Täckhammarsvägen 21,12571,Älvsjö,152014,6574069
