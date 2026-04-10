@@ -2,7 +2,7 @@ import csv
 import asyncio
 import httpx
 
-CITY = ["Älvsjö", "Hägersten-Älvsjö", "Hägersten"]
+CITY = ["Älvsjö", "Hägersten-Älvsjö", "Hägersten", "Bromma"]
 
 SERVICE_TYPES = {
     "grundskolor": 13,
