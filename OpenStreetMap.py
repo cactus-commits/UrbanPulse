@@ -1,7 +1,6 @@
 import requests
 import pandas as pd
-
-
+from geopy.geocoders import Nominatim
 # Python-dict that translates to swedish
 
 TYP_SVENSKA = {
@@ -74,7 +73,7 @@ def get_data():
 
         for element in elements:
             tags = element.get('tags', {})
-            # Prioritera healthcare > amenity > shop
+            # Priorotize healthcare > amenity > shop
             raw_typ = tags.get('healthcare') or tags.get(
                 'amenity') or tags.get('shop')
             results.append({
@@ -91,7 +90,7 @@ def get_data():
 
         print(f"Klart! Hittade {len(df)} platser.")
         print(df.head())
-        df.to_csv("alvsjo_data.csv", index=False, encoding='utf-8-sig')
+        df.to_csv("alvsjo_data_V2.csv", index=False, encoding='utf-8-sig')
         print("Sparad till alvsjo_data.csv")
 
     except requests.exceptions.HTTPError as err:
