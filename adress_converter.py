@@ -3,7 +3,7 @@ from geopy.geocoders import Nominatim
 import time
 
 
-df = pd.read_csv('data_files/alvsjo_data.csv')
+# df = pd.read_csv('data_files/alvsjo_data.csv')
 
 geolocator = Nominatim(user_agent="my_geopy_app")
 
@@ -36,7 +36,7 @@ def get_address(lat, lon, retries=3):
 
 # Function to apply the adress to the existing rows - also adding a new column for 'Stadsdel' to be able to get more locational
 # informamtion from the lat and lon
-def apply_address():
+def apply_address(df):
     # loop through the rows
     for index, row in df.iterrows():
         # If 'Gata' or 'Nr' is null or empty then get the adress from lon and lat
@@ -54,10 +54,10 @@ def apply_address():
             time.sleep(1.1)
 
     # Write it to a new csv - file
-    df.to_csv('data_files/alvsjo_data_with_adress.csv',
+    df.to_csv('data_files/bromma_data_with_adress.csv',
               index=False, encoding='utf-8-sig')
     print("Klart!")
 
 
 if __name__ == "__main__":
-    apply_address()
+    apply_address(pd.read_csv('data_files/bromma_data.csv'))
