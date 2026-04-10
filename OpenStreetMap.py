@@ -1,8 +1,12 @@
 import requests
 import pandas as pd
 from geopy.geocoders import Nominatim
-# Python-dict that translates to swedish
 
+# variables to be able to run them seperatly in the functions
+bromma = 5689303 + 3600000000
+alvsjo = 8844985 + 3600000000
+
+# Python-dict that translates to swedish
 TYP_SVENSKA = {
     # Health care
     'centre':           'Hälsocenter',
@@ -38,11 +42,11 @@ TYP_SVENSKA = {
 # out center - returns centered coordinate pair for ways/relations
 
 
-def get_data():
-    url = "https://overpass-api.de/api/interpreter?data="
+def get_data(area_id):
+    url = "https://overpass.kumi.systems/api/interpreter?data="
 
-    query = """[out:json][timeout:300];
-    area(3605691404)->.a;
+    query = f"""[out:json][timeout:300];
+    area({area_id})->.a;
     (
         nwr["shop"~"supermarket|alcohol"](area.a);
         nwr["amenity"~"pharmacy|restaurant|fast_food|cafe|doctors|hospital|dentist|driving_school|library|fuel|cinema"](area.a);
@@ -57,7 +61,7 @@ def get_data():
     #   nwr["amenity"="university"](area.a);
     #   nwr["amenity"="language_school"](area.a);
     #   nwr["amenity"="music_school"](area.a);
-    print("Anropar Overpass API för Hägersten-Älvsjö...")
+    print("Anropar Overpass API för {area_id}...")
 
     try:
         response = requests.get(
@@ -92,8 +96,9 @@ def get_data():
 
         print(f"Klart! Hittade {len(df)} platser.")
         print(df.head())
-        df.to_csv("alvsjo_data.csv", index=False, encoding='utf-8-sig')
-        print("Sparad till alvsjo_data.csv")
+        df.to_csv(f"data_files/bromma_data.csv",
+                  index=False, encoding='utf-8-sig')
+        print("Sparad till csv")
 
     except requests.exceptions.HTTPError as err:
         print(f"HTTP-fel: {err}")
@@ -102,4 +107,4 @@ def get_data():
 
 
 if __name__ == "__main__":
-    get_data()
+    get_data(bromma)
