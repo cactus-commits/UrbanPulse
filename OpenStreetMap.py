@@ -1,8 +1,12 @@
 import requests
 import pandas as pd
 from geopy.geocoders import Nominatim
-# Python-dict that translates to swedish
 
+# variables to be able to run them seperatly in the functions
+bromma = 5689303 + 3600000000
+alvsjo = 8844985 + 3600000000
+
+# Python-dict that translates to swedish
 TYP_SVENSKA = {
     # Health care
     'centre':           'Hälsocenter',
@@ -15,17 +19,19 @@ TYP_SVENSKA = {
     'pharmacy':         'Apotek',
     # Food and beverage
     'supermarket':      'Matbutik',
-    'restaurant':       'Restaurang',
-    'fast_food':        'Snabbmat',
+    'restaurant':       'Restaurang & Snabbmat',
+    'fast_food':        'Restaurang & Snabbmat',
     'cafe':             'Kafé',
     # Education
-    'school':           'Skola',
-    'kindergarten':     'Skola',
-    'college':          'Skola',
-    'university':       'Skola',
     'driving_school':   'Trafikskola',
     # Other
-    'parking':          'Parkering',
+    'library':          'Bibliotek',
+    'fuel':             'Bensinmack',
+    'cinema':           'Biograf',
+    'alcohol':          'Systembolag',
+    'fitness_centre':   'Gym/Utomhusgym',
+    'fitness_station':  'Gym/Utomhusgym',
+    'playground':       'Lekplats'
 }
 
 # Function to get the data url and query parameters
@@ -36,31 +42,26 @@ TYP_SVENSKA = {
 # out center - returns centered coordinate pair for ways/relations
 
 
-def get_data():
-    url = "https://overpass-api.de/api/interpreter?data="
+def get_data(area_id):
+    url = "https://overpass.kumi.systems/api/interpreter?data="
 
-    query = """
-    [out:json][timeout:180];
-    area(3605691404)->.a;
+    query = f"""[out:json][timeout:300];
+    area({area_id})->.a;
     (
-      nwr["shop"="supermarket"](area.a);
-      nwr["amenity"="pharmacy"](area.a);
-      nwr["amenity"~"restaurant|fast_food|cafe"](area.a);
-      nwr["amenity"~"doctors|hospital|dentist"](area.a);
-      nwr["healthcare"~"centre|doctor|physiotherapist|psychotherapist"](area.a);
-      nwr["amenity"="school"](area.a);
-      nwr["amenity"="kindergarten"](area.a);
-      nwr["amenity"="college"](area.a);
-      nwr["amenity"="university"](area.a);
-      nwr["amenity"="language_school"](area.a);
-      nwr["amenity"="music_school"](area.a);
-      nwr["amenity"="driving_school"](area.a);
-      nwr["amenity"="parking"](area.a);
-    );
-    out center;
-    """
+        nwr["shop"~"supermarket|alcohol"](area.a);
+        nwr["amenity"~"pharmacy|restaurant|fast_food|cafe|doctors|hospital|dentist|driving_school|library|fuel|cinema"](area.a);
+        nwr["healthcare"~"centre|doctor|physiotherapist|psychotherapist"](area.a);
+        nwr["leisure"~"playground|fitness_centre|fitness_station"](area.a);
+        );
+    out center;"""
 
-    print("Anropar Overpass API för Hägersten-Älvsjö...")
+    #   nwr["amenity" = "school"](area.a);
+    #   nwr["amenity"="kindergarten"](area.a);
+    #   nwr["amenity"="college"](area.a);
+    #   nwr["amenity"="university"](area.a);
+    #   nwr["amenity"="language_school"](area.a);
+    #   nwr["amenity"="music_school"](area.a);
+    print("Anropar Overpass API för {area_id}...")
 
     try:
         response = requests.get(
@@ -73,13 +74,18 @@ def get_data():
 
         for element in elements:
             tags = element.get('tags', {})
-            # Priorotize healthcare > amenity > shop
+            # healthcare > amenity > shop > leisure
             raw_typ = tags.get('healthcare') or tags.get(
-                'amenity') or tags.get('shop')
+                'amenity') or tags.get('shop') or tags.get('leisure')
+
+            namn = tags.get('name')
+            if not namn:
+                namn = TYP_SVENSKA.get(raw_typ)
+
             results.append({
-                'Namn':     tags.get('name', 'N/A'),
+                'Namn':     namn,
                 'Typ':      raw_typ,
-                'Kategori': TYP_SVENSKA.get(raw_typ, raw_typ),
+                'Kategori': TYP_SVENSKA.get(raw_typ),
                 'Gata':     tags.get('addr:street', 'N/A'),
                 'Nr':       tags.get('addr:housenumber', ''),
                 'Lat':      element.get('lat') or element.get('center', {}).get('lat'),
@@ -90,8 +96,9 @@ def get_data():
 
         print(f"Klart! Hittade {len(df)} platser.")
         print(df.head())
-        df.to_csv("alvsjo_data_V2.csv", index=False, encoding='utf-8-sig')
-        print("Sparad till alvsjo_data.csv")
+        df.to_csv(f"data_files/bromma_data.csv",
+                  index=False, encoding='utf-8-sig')
+        print("Sparad till csv")
 
     except requests.exceptions.HTTPError as err:
         print(f"HTTP-fel: {err}")
@@ -100,4 +107,4 @@ def get_data():
 
 
 if __name__ == "__main__":
-    get_data()
+    get_data(bromma)
