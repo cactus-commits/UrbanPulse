@@ -2,19 +2,20 @@ import csv
 import asyncio
 import httpx
 
-PARKING_DISTRICTS = ["Älvsjö", "Hägersten-Älvsjö", "Hägersten"]
+PARKING_DISTRICTS = ["Älvsjö", "Hägersten-Älvsjö", "Hägersten", "Bromma norra"]
 
-API_KEY = ""
+API_KEY = "66c6730d-1af7-4889-a250-d93d443d1e26"
 API_URL = "https://openparking.stockholm.se/LTF-Tolken/v1/ptillaten/all"
 
 async def fetch_parking_data():
     params = {
-        "maxFeatures": 5000,
+        "maxFeatures": 50000,
         "outputFormat": "json",
         "apiKey": API_KEY
     }
     
-    async with httpx.AsyncClient() as client:
+    timeout = httpx.Timeout(10)
+    async with httpx.AsyncClient(timeout=timeout) as client:
         response = await client.get(API_URL, params=params)
         data = response.json()
     
