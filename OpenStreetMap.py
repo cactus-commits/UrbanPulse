@@ -15,17 +15,13 @@ TYP_SVENSKA = {
     'pharmacy':         'Apotek',
     # Food and beverage
     'supermarket':      'Matbutik',
-    'restaurant':       'Restaurang',
-    'fast_food':        'Snabbmat',
+    'restaurant':       'Restaurang & Snabbmat',
+    'fast_food':        'Restaurang & Snabbmat',
     'cafe':             'Kafé',
     # Education
-    'school':           'Skola',
-    'kindergarten':     'Skola',
-    'college':          'Skola',
-    'university':       'Skola',
     'driving_school':   'Trafikskola',
     # Other
-    'libary':           'Bibliotek',
+    'library':          'Bibliotek',
     'fuel':             'Bensinmack',
     'cinema':           'Biograf',
     'alcohol':          'Systembolag',
@@ -45,27 +41,15 @@ TYP_SVENSKA = {
 def get_data():
     url = "https://overpass-api.de/api/interpreter?data="
 
-    query = """
-    [out:json][timeout:180];
+    query = """[out:json][timeout:300];
     area(3605691404)->.a;
     (
-      nwr["shop"="supermarket"](area.a);
-      nwr["amenity"="pharmacy"](area.a);
-      nwr["amenity"~"restaurant|fast_food|cafe"](area.a);
-      nwr["amenity"~"doctors|hospital|dentist"](area.a);
-      nwr["healthcare"~"centre|doctor|physiotherapist|psychotherapist"](area.a);
-      nwr["amenity"="driving_school"](area.a);
-      nwr["amenity=library"](area.a); 
-      nwr["amenity=fuel"](area.a); 
-      nwr["amenity=cinema"](area.a);
-      nwr["shop=alcohol"](area.a); 
-      nwr["leisure=playground"](area.a); 
-      nwr["leisure"~"fitness_centre|fitness_station"](area.a); 
-
-
-    );
-    out center;
-    """
+        nwr["shop"~"supermarket|alcohol"](area.a);
+        nwr["amenity"~"pharmacy|restaurant|fast_food|cafe|doctors|hospital|dentist|driving_school|library|fuel|cinema"](area.a);
+        nwr["healthcare"~"centre|doctor|physiotherapist|psychotherapist"](area.a);
+        nwr["leisure"~"playground|fitness_centre|fitness_station"](area.a);
+        );
+    out center;"""
 
     #   nwr["amenity" = "school"](area.a);
     #   nwr["amenity"="kindergarten"](area.a);
@@ -86,13 +70,18 @@ def get_data():
 
         for element in elements:
             tags = element.get('tags', {})
-            # Priorotize healthcare > amenity > shop
+            # healthcare > amenity > shop > leisure
             raw_typ = tags.get('healthcare') or tags.get(
-                'amenity') or tags.get('shop')
+                'amenity') or tags.get('shop') or tags.get('leisure')
+
+            namn = tags.get('name')
+            if not namn:
+                namn = TYP_SVENSKA.get(raw_typ)
+
             results.append({
-                'Namn':     tags.get('name', 'N/A'),
+                'Namn':     namn,
                 'Typ':      raw_typ,
-                'Kategori': TYP_SVENSKA.get(raw_typ, raw_typ),
+                'Kategori': TYP_SVENSKA.get(raw_typ),
                 'Gata':     tags.get('addr:street', 'N/A'),
                 'Nr':       tags.get('addr:housenumber', ''),
                 'Lat':      element.get('lat') or element.get('center', {}).get('lat'),
@@ -103,7 +92,7 @@ def get_data():
 
         print(f"Klart! Hittade {len(df)} platser.")
         print(df.head())
-        df.to_csv("alvsjo_data_V2.csv", index=False, encoding='utf-8-sig')
+        df.to_csv("alvsjo_data.csv", index=False, encoding='utf-8-sig')
         print("Sparad till alvsjo_data.csv")
 
     except requests.exceptions.HTTPError as err:
