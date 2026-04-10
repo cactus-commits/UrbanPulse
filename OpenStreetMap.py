@@ -25,7 +25,13 @@ TYP_SVENSKA = {
     'university':       'Skola',
     'driving_school':   'Trafikskola',
     # Other
-    'parking':          'Parkering',
+    'libary':           'Bibliotek',
+    'fuel':             'Bensinmack',
+    'cinema':           'Biograf',
+    'alcohol':          'Systembolag',
+    'fitness_centre':   'Gym/Utomhusgym',
+    'fitness_station':  'Gym/Utomhusgym',
+    'playground':       'Lekplats'
 }
 
 # Function to get the data url and query parameters
@@ -48,18 +54,25 @@ def get_data():
       nwr["amenity"~"restaurant|fast_food|cafe"](area.a);
       nwr["amenity"~"doctors|hospital|dentist"](area.a);
       nwr["healthcare"~"centre|doctor|physiotherapist|psychotherapist"](area.a);
-      nwr["amenity"="school"](area.a);
-      nwr["amenity"="kindergarten"](area.a);
-      nwr["amenity"="college"](area.a);
-      nwr["amenity"="university"](area.a);
-      nwr["amenity"="language_school"](area.a);
-      nwr["amenity"="music_school"](area.a);
       nwr["amenity"="driving_school"](area.a);
-      nwr["amenity"="parking"](area.a);
+      nwr["amenity=library"](area.a); 
+      nwr["amenity=fuel"](area.a); 
+      nwr["amenity=cinema"](area.a);
+      nwr["shop=alcohol"](area.a); 
+      nwr["leisure=playground"](area.a); 
+      nwr["leisure"~"fitness_centre|fitness_station"](area.a); 
+
+
     );
     out center;
     """
 
+    #   nwr["amenity" = "school"](area.a);
+    #   nwr["amenity"="kindergarten"](area.a);
+    #   nwr["amenity"="college"](area.a);
+    #   nwr["amenity"="university"](area.a);
+    #   nwr["amenity"="language_school"](area.a);
+    #   nwr["amenity"="music_school"](area.a);
     print("Anropar Overpass API för Hägersten-Älvsjö...")
 
     try:
