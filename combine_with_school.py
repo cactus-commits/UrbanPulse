@@ -14,6 +14,7 @@ skolor_clean = pd.DataFrame({
     'lat':       skolor['koordinat_north'],
     'lon':       skolor['koordinat_east'],
     'stadsdel':  skolor['Stadsdel']
+
 })
 
 # parkeringar_clean = pd.DataFrame({
