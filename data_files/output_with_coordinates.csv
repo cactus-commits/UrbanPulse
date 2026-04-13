@@ -1,0 +1,255 @@
+﻿id,kategori,namn,gatuadress,postnummer,stad,koordinat_east,koordinat_north
+13450,grundskolor,"Abrahamsbergsskolan, F–9",Gustav III:s väg 2–10,16830,Bromma,17.9505675,59.3346293
+15250,grundskolor,"Adolfsbergsskolan, F–6",Gårdsfogdevägen 18B,16866,Bromma,17.9536076,59.3577739
+13478,grundskolor,"Alviksskolan, F–9",Tranebergsvägen 79,16745,Bromma,17.9759899,59.3351703
+15106,grundskolor,"Apolloniosskolan, F–9",Stora Mans väg 11B,12559,Älvsjö,17.9731195,59.2824177
+13499,grundskolor,"Aspuddens skola, F–9",Blommensbergsvägen 166,12655,Hägersten,17.9980291,59.3093396
+13547,grundskolor,"Beckombergaskolan, F–6",Styresman Sanders väg 14,16860,Bromma,17.9041467,59.3596442
+13595,grundskolor,"Blackebergsskolan, F–6",Björnsonsgatan 132,16844,Bromma,17.8800464,59.3478194
+15109,grundskolor,"Bromma Enskilda skola, F–6",Mossvägen 7,16756,Bromma,17.9643291,59.3298378
+13626,grundskolor,"Bromma kyrkskola, F–2",Terserusvägen 1,16859,Bromma,17.9201351,59.355318
+15258,grundskolor,"Fruängens skola, F–9",Fruängsgatan 57–61,12953,Hägersten,17.9661492,59.2849719
+15196,grundskolor,"Grundskolan Metapontum, F–9",Stora Mans väg 11C,12559,Älvsjö,17.9731195,59.2824177
+13877,grundskolor,"Herrängens skola, F–6",Konvaljestigen 15,12555,Älvsjö,17.9730779,59.2751171
+13917,grundskolor,"Hägerstenshamnens skola, F–6",Selmedalsringen 5,12936,Hägersten,17.9812918,59.3064939
+13929,grundskolor,"Hägerstensåsens skola, F–6",Sedelvägen 30,12932,Hägersten,17.9819113,59.2962582
+13973,grundskolor,"Höglandsskolan, F–9",Skaldevägen 4,16771,Bromma,17.9385602,59.326544
+15011,grundskolor,"Innovitaskolan Joriel, F–9",Bergtallsvägen 12,12560,Älvsjö,17.9695367,59.2817936
+15202,grundskolor,"Internationella engelska skolan Bromma, 4–9",Riksbyvägen 40–48,16874,Bromma,17.9437126,59.3422073
+15219,grundskolor,"Internationella engelska skolan Liljeholmen, F–9",Herbariegränd 3,12632,Hägersten,18.0170452,59.3043742
+15231,grundskolor,"Internationella engelska skolan Älvsjö, 4–9",Armborstvägen 1,12544,Älvsjö,18.0057558,59.2808421
+13997,grundskolor,"Johan Skytteskolan, F–9",Västerängsvägen 21,12558,Älvsjö,17.9829224,59.277314
+15085,grundskolor,"Kristofferskolan, F–9",Marklandsbacken 11,16836,Bromma,17.9387975,59.3359775
+15076,grundskolor,"Kunskapsskolan Fruängen, 6–9",Ellen Keys gata 2,12952,Hägersten,17.9654466,59.2882679
+15073,grundskolor,"Kunskapsskolans resursskola Hägersten, 7–9",Riksdalervägen 5,12932,Hägersten,17.9842989,59.2973388
+14146,grundskolor,"Kämpetorpsskolan, F–9",Kedjevägen 57B,12641,Hägersten,17.9923609,59.2869044
+15311,grundskolor,"Lunaskolan Bromma, 4–9",Johannesfredsvägen 43,16868,Bromma,17.9731332,59.3469559
+14186,grundskolor,"Långbrodalsskolan, F–6",Sländvägen 3,12558,Älvsjö,17.9813112,59.2814279
+15063,grundskolor,"Magelungens grundskola Långbropark, 1–6",Solberga hagväg 4,12544,Älvsjö,18.0090102,59.2803534
+15054,grundskolor,"Magelungens grundskola Älvsjö, 7–9",Solberga Hagväg 1,12544,Älvsjö,18.0093465,59.2798171
+14234,grundskolor,"Mariehällsskolan, F–6",Tappvägen 23,16871,Bromma,17.9495845,59.3632135
+14260,grundskolor,"Midsommarkransens skola, F–9",Bäckvägen 1,12647,Hägersten,17.9948889,59.3023898
+15235,grundskolor,Montessori Mondial Mälarhöjden,Traktörgränd 10,12940,Hägersten,17.9472779,59.3014955
+14273,grundskolor,"Mälarhöjdens skola, F–9",Lugntorpsvägen 2,12944,Hägersten,17.9566888,59.2975268
+14282,grundskolor,"Nockebyhovsskolan, F–3",Tyska Bottens väg 68,16841,Bromma,17.9065161,59.3335125
+14295,grundskolor,"Norra Ängby skola, F–6",Vultejusvägen 20,16856,Bromma,17.9092484,59.3489677
+14306,grundskolor,"Nya Elementar, F–9",Bergslagsvägen 80,16855,Bromma,17.9010568,59.3445421
+14355,grundskolor,"Olovslundsskolan, F–6",Olovslundsvägen 23,16772,Bromma,17.9384342,59.3311661
+15029,grundskolor,"Pilgrimsskolan, F–3",Pilgrimsvägen 1,12648,Hägersten,18.0063419,59.3052052
+15005,grundskolor,"Raoul Wallenbergskolan, F–9",Beckombergavägen 316,16861,Bromma,17.9027052,59.356212
+14476,grundskolor,"Sjöängsskolan, F–9",Gripsholmsvägen 29,12535,Älvsjö,18.0287637,59.2815743
+14564,grundskolor,"Smedslättsskolan, F–6",Drömstigen 32,16761,Bromma,17.967136,59.323855
+14999,grundskolor,"Snitz grundskola, 7–9",Snickerigatan 4,12626,Hägersten,17.9914611,59.2995333
+14599,grundskolor,"Solbergaskolan, F–6",Lerkrogsvägen 28,12679,Hägersten,18.0060931,59.2902259
+14993,grundskolor,"Stefanskolan, F–9",Tegnebyvägen 30,16856,Bromma,17.9084713,59.3433235
+14990,grundskolor,"Stockholm International Academy Hägersten, F–9",Sulvägen 52,12640,Hägersten,18.00775,59.2842816
+14703,grundskolor,"Södra Ängby skola, F–9",Blackebergsvägen 100,16851,Bromma,17.8974141,59.3373376
+15358,grundskolor,"Tellusborgsskolan, 6–9",Tellusborgsvägen 36,12649,Hägersten,18.0055479,59.3020595
+14949,grundskolor,"Thea privata grundskola – Bromma, 6–9",Voltavägen 8,16869,Bromma,17.9696103,59.3456792
+14750,grundskolor,"Ulvsundaskolan, F–3",Johannesfredsvägen 45,16868,Bromma,17.9731332,59.3469559
+14911,grundskolor,"Vittra Telefonplan, F–9",Snickerigatan 3–4,12626,Hägersten,17.9910968,59.2994897
+14906,grundskolor,"Västbergaskolan, F–9",Klensmedsvägen 2,12638,Hägersten,17.9950632,59.2958759
+14800,grundskolor,"Västertorpsskolan, F–6",Störtloppsvägen 2–6,12946,Hägersten,17.9678296,59.2927971
+14812,grundskolor,"Ålstensskolan, F–6",Nyängsvägen 72–80,16764,Bromma,17.955415,59.3256376
+14859,grundskolor,"Äppelviksskolan, 7–9",Alviksvägen 97,16753,Bromma,17.9746664,59.3239043
+14872,grundskolor,"Örbyskolan, F–9",Gamla Huddingevägen 425,12542,Älvsjö,18.0265722,59.2748688
+14884,grundskolor,"Östbergaskolan, F–6",Östbergabackarna 51–57,12573,Älvsjö,18.0383425,59.2885634
+15594,anpassade_grundskolor,"Aspuddens skola, anpassad grundskola 1–9",Blommensbergsvägen 166,12655,Hägersten,17.9980291,59.3093396
+34957,anpassade_grundskolor,"Beckombergaskolan, anpassad grundskola F–6",Styresman Sanders väg 14,16860,Bromma,17.9041467,59.3596442
+15414,anpassade_grundskolor,"Fruängens skola, anpassad grundskola 1–9",Fruängsgatan 57–61,12953,Hägersten,17.9661492,59.2849719
+15438,anpassade_grundskolor,"Innovitaskolan Joriel grundskola och anpassad grundskola, F–9",Bergtallsvägen 12,12560,Älvsjö,17.9695367,59.2817936
+15461,anpassade_grundskolor,"Lunaskolan Bromma, anpassad grundskola 4–9",Johannesfredsvägen 43,16868,Bromma,17.9731332,59.3469559
+27661,anpassade_grundskolor,"Midsommarkransens skola, anpassad grundskola 1–7",Bäckvägen 1,12647,Hägersten,17.9948889,59.3023898
+15491,anpassade_grundskolor,"Nya Elementar, anpassad grundskola 1–9",Bergslagsvägen 80,16855,Bromma,17.9010568,59.3445421
+15497,anpassade_grundskolor,"Olovslundsskolan, anpassad grundskola 1–6",Olovslundsvägen 23,16772,Bromma,17.9384342,59.3311661
+15529,anpassade_grundskolor,"Solbergaskolan, anpassad grundskola, Broskolan, 1–6",Lerkrogsvägen 28,12679,Hägersten,18.0060931,59.2902259
+15536,anpassade_grundskolor,"Solbergaskolan, anpassad grundskola, Mockasinen, 1–9",Lerkrogsvägen 28,12679,Hägersten,18.0060931,59.2902259
+15567,anpassade_grundskolor,"Västbergaskolan, anpassad grundskola, 1–9",Klensmedsvägen 2,12638,Hägersten,17.9950632,59.2958759
+34879,anpassade_grundskolor,"Västertorpsskolan, anpassad grundskola 1–6",Störtloppsvägen 2,12946,Hägersten,17.9698323,59.2911596
+12293,öppen_förskola,Öppna förskolan Fruängen,Hanna Rydhs gata 5,12950,Hägersten,17.9738024,59.2859588
+12421,öppen_förskola,Öppna förskolan Hägerstensåsen,Inteckningsvägen 17 E,12931,Hägersten,17.9834525,59.2924289
+12303,öppen_förskola,Öppna förskolan i Blackeberg,Grundtvigsgatan 29 (21) (mittemot Blackebergsparken),16848,Bromma,143549.0,6581110.0
+30112,öppen_förskola,Öppna förskolan Pippi för barn med funktionsnedsättning,Hanna Rydhs gata 5,12950,Hägersten,17.9738024,59.2859588
+28344,öppen_förskola,Öppna förskolan Tunnlandsvägen,Tunnlandsvägen 30 B,16836,Bromma,17.9404689,59.3363663
+12169,öppen_förskola,Öppna förskolan Älvsjö,Solberga ängsväg 4,12544,Älvsjö,18.0136606,59.2812742
+12192,öppen_förskola,"Öppna förskolan Östberga, Östberga kulturhus",Östbergatorget 14,12573,Älvsjö,18.0332425,59.2889218
+10704,förskola,Andante förskolor Utflyktsvägen,Utflyktsvägen 4,16841,Bromma,17.9115719,59.3302726
+7680,förskola,Annedals Montessoriförskola,Pippi Långstrumps gata 35,16870,Bromma,17.9469495,59.3655816
+9011,förskola,Bellmanskällans Montessoriförskola,Brådstupsvägen 5–9,12939,Hägersten,17.9585439,59.3044665
+9533,förskola,Birkamyntet – Ängbybarnens förskolor,Vultejusvägen 59,16855,Bromma,17.9090027,59.3440481
+10184,förskola,Björntjänst,Bäckbornas väg 17,16860,Bromma,17.9011908,59.3626829
+7649,förskola,Blackebergs Montessoriförskola,Holbergsgatan 109,16845,Bromma,17.8848678,59.3446405
+9536,förskola,Blomstermåla – Ängbybarnens förskolor,Frislandsvägen 1–3,16855,Bromma,17.8984523,59.3470737
+7587,förskola,Blå Grodan,Missionsvägen 14,16733,Bromma,17.9764308,59.3408876
+10148,förskola,Bromma enskilda skolas förskola,Mossvägen 7,16756,Bromma,17.9643291,59.3298378
+6447,förskola,Bromma språkförskola,Marklandsbacken 2,16836,Bromma,17.9368963,59.3368174
+10206,förskola,Brommakrokodilens Montessoriförskola,Grönviksvägen 107,16776,Bromma,17.9372579,59.320387
+7700,förskola,Bullerbyn Johan Skyttes väg 325–327,Johan Skyttes väg 325-327,12558,Älvsjö,17.9816226,59.2809421
+31055,förskola,Citrusgården,Folkparksvägen 161,12677,Hägersten,18.012481,59.2851239
+7705,förskola,Ekbacken Svartlösavägen 128,Svartlösavägen 128,12558,Älvsjö,17.9803431,59.2774449
+6645,förskola,Eken Sulvägen 52 A,Sulvägen 52 A,12640,Hägersten,18.0058888,59.2872902
+8716,förskola,Ellen Fries,Ellen Fries gata 10,12950,Hägersten,17.9703718,59.287995
+8722,förskola,Ellen Key,Ellen Keys Gata 83,12953,Hägersten,17.966073,59.2854065
+7709,förskola,Fantasia,Vantörsvägen 225,12955,Hägersten,17.9598385,59.2830064
+10381,förskola,Fiberpennan,Fastlagsvägen 68,12647,Hägersten,17.9968277,59.3035402
+8674,förskola,Flyttfågeln,Stenkilsgatan 7,12652,Hägersten,17.9883258,59.3078217
+10393,förskola,Fyra Elementen Djurkloun,Djurklouvägen 4,16763,Bromma,17.9658487,59.3176179
+10397,förskola,Fyra Elementen Grävlingen,Grävlingsvägen 11,16756,Bromma,17.9712138,59.3315973
+6906,förskola,Förskolan Ankarstocksvägen 12–14,Ankarstocksvägen 12–14,16864,Bromma,17.9294167,59.3668088
+8333,förskola,Förskolan Beckombergavägen 76,Beckombergavägen 76,16854,Bromma,17.9165023,59.3457881
+6361,förskola,Förskolan Bergviksvägen 89A,Bergviksvägen 89A,16763,Bromma,17.9573867,59.3226656
+10132,förskola,Förskolan Bild & Tanke,Hägerstensvägen 301,12941,Hägersten,17.9609613,59.3005085
+6515,förskola,Förskolan Björnsonsgatan 4,Björnsonsgatan 4,16843,Bromma,17.8780185,59.3462115
+28259,förskola,Förskolan Bällstaågatan 62,Bällstaågatan 62,16870,Bromma,17.9545589,59.3638101
+6534,förskola,Förskolan Bävervägen 43,Bävervägen 43,16830,Bromma,17.9536389,59.3340283
+9524,förskola,Förskolan Dartanjangs gata 3,Dartanjangs gata 3,16872,Bromma,17.9449557,59.3620536
+8284,förskola,Förskolan Djupdalsvägen 72–74,Djupdalsvägen 72–74,16772,Bromma,17.9370222,59.3303634
+8293,förskola,Förskolan Drottningholmsvägen 510A,Drottningholmsvägen 510A,16839,Bromma,17.9265852,59.3355424
+8276,förskola,Förskolan Författarvägen 29–31,Författarvägen 29-31,16775,Bromma,17.9339353,59.3255683
+8328,förskola,Förskolan Gliavägen 128,Gliavägen 128,16858,Bromma,17.9290909,59.3523384
+8323,förskola,Förskolan Gliavägen 130,Gliavägen 130 B,16858,Bromma,17.9290909,59.3523384
+7756,förskola,Förskolan Grindslanten,Förskottsvägen 20,12932,Hägersten,17.9855229,59.2982032
+8280,förskola,Förskolan Gubbkärrsvägen 29,Gubbkärrsvägen 29,16840,Bromma,17.9142267,59.3315458
+28134,förskola,Förskolan Guldklimpar Lilla Äppelbo,Runda vägen 24A,16751,Bromma,17.9802691,59.3303711
+9250,förskola,Förskolan Guldklimpar Äppelbo,Runda vägen 50,16751,Bromma,17.9784488,59.3319757
+6558,förskola,Förskolan Gustav III:s väg 36,Gustav III:s väg 36,16830,Bromma,17.9462717,59.3338755
+10543,förskola,Förskolan Hagelstavägen 24,Hagelstavägen 24,16866,Bromma,17.9479909,59.360717
+28556,förskola,Förskolan Höjden,Kinnaredsgränd 69,12572,Älvsjö,18.030944,59.2897487
+6379,förskola,Förskolan Johannesfredsvägen 27,Johannesfredsvägen 27,16868,Bromma,17.9731332,59.3469559
+6566,förskola,Förskolan Karen Blixens gata 15,Karen Blixens gata 15,16844,Bromma,17.8733615,59.3461936
+10459,förskola,Förskolan Kattresan,Zornvägen 43–47,16850,Bromma,17.8929598,59.3421619
+8496,förskola,Förskolan Klintbacken 11,Klintbacken 11,16866,Bromma,17.9542252,59.3599018
+6594,förskola,Förskolan Margretelundsvägen 73,Margretelundsvägen 73,16736,Bromma,17.9772262,59.3397511
+6600,förskola,Förskolan Marklandsbacken 2,Marklandsbacken 2,16836,Bromma,17.9368963,59.3368174
+26051,förskola,Förskolan Masugnsvägen 72–74,Masugnsvägen  72–74,16877,Bromma,17.9622088,59.3571965
+10547,förskola,Förskolan Metapontum,Stora Mans Väg 11D,12559,Älvsjö,17.9731195,59.2824177
+8297,förskola,"Förskolan Nockeby kyrkväg 8, Svanhildsvägen 23","Nockeby kyrkväg 8, Svanhildsvägen 23",16774,Bromma,145792.0,6579397.0
+8289,förskola,Förskolan Nockebyvägen 20,Nockebyvägen 20,16848,Bromma,17.9414025,59.3226627
+6606,förskola,Förskolan Nyängsvägen 21,Nyängsvägen 21,16754,Bromma,17.9687294,59.3247797
+29659,förskola,Förskolan Nyängsvägen 66,Nyängsvägen 66,16764,Bromma,17.9599447,59.3251433
+6630,förskola,Förskolan Olovslundsvägen 19,Olovslundsvägen 19,16772,Bromma,17.9384342,59.3311661
+6412,förskola,Förskolan Osmundsvägen 6,Osmundsvägen 6,16868,Bromma,17.9741872,59.3473643
+6706,förskola,Förskolan Pippi Långstrumps gata 12,Pippi Långstrumps gata 12,16871,Bromma,17.9471455,59.3628488
+6713,förskola,Förskolan Pippi Långstrumps gata 14,Pippi Långstrumps gata 14,16871,Bromma,17.9467454,59.3632791
+10370,förskola,Förskolan Raketen,Björnsonsgatan 313,16847,Bromma,17.8819116,59.3495177
+8314,förskola,Förskolan Ringarstigen 2,Ringarstigen 2,16858,Bromma,17.9241503,59.355328
+9169,förskola,Förskolan Råbyvägen,Råbyvägen 34,12543,Älvsjö,18.0220258,59.2761013
+6778,förskola,Förskolan Smedslättsvägen 71,Smedslättsvägen 71,16761,Bromma,17.961015,59.3230505
+7663,förskola,Förskolan Stormfågeln AB,Ivar Vidfamnes Gata 20,12652,Hägersten,17.9863286,59.3079937
+8310,förskola,Förskolan Styresman Sanders väg 16,Styresman Sanders väg 16,16860,Bromma,17.9041467,59.3596442
+9491,förskola,Förskolan Sunnanstigen 11,Sunnanstigen 11,16731,Bromma,17.955714,59.3372067
+6940,förskola,Förskolan Svartviksslingan 47,Svartviksslingan 47,16738,Bromma,17.9897242,59.3398854
+7949,förskola,Förskolan Svartviksslingan 53,Svartviksslingan 53,16738,Bromma,17.9910381,59.3390094
+9496,förskola,Förskolan Tunnlandsvägen 30,Tunnlandsvägen 30,16836,Bromma,17.9392984,59.3368431
+6854,förskola,Förskolan Tyska Bottens väg 49,Tyska Bottens väg 49,16841,Bromma,17.9056986,59.3325127
+9503,förskola,"Förskolan Ulvsunda Slottsväg 19, 22",Ulvsunda slottsväg 19 och 22,16733,Bromma,148224.0,6580131.0
+7944,förskola,Förskolan Vadmalsvägen 5–7,Vadmalsvägen 5–7,16874,Bromma,17.9437146,59.3396561
+9166,förskola,Förskolan Vingåkersvägen,Vingåkersvägen 22–26,12540,Älvsjö,18.0302443,59.2752339
+8342,förskola,Förskolan Vinjegatan 31–33/Björnsonsgatan 132,Björnsonsgatan 132,16844,Bromma,17.8800464,59.3478194
+9520,förskola,Förskolan Vultejusvägen 15 A,Vultejusvägen 15 A,16856,Bromma,17.9087707,59.3448874
+8304,förskola,Förskolan Vultejusvägen 15 D E,Vultejusvägen 15 D E,16856,Bromma,17.9092484,59.3489677
+6850,förskola,Förskolan Zornvägen 26,Zornvägen 26,16851,Bromma,17.8929598,59.3421619
+10401,förskola,Förskolan Änglan AB,Våxtorpsgränd 18,12573,Älvsjö,18.0328437,59.2881125
+7346,förskola,Förskolan Äppelvikstorget,Nyängsvägen 1,16754,Bromma,17.9729254,59.3264122
+10564,förskola,Förskolan Örnbacken,Örnbacken 34,12651,Hägersten,17.9880423,59.3092546
+9056,förskola,Föräldrakooperativet Minnemalen,Svartviksslingan 13,16738,Bromma,17.9895629,59.3400425
+9585,förskola,Föräldrakooperativet Storken,Sunnanstigen 5,16731,Bromma,17.9548919,59.3375712
+10284,förskola,Föräldrakooperativet Trumslagaren,Trumslagargatan 10,12534,Älvsjö,17.99807,59.2767902
+8423,förskola,Föräldrakooperativet Vildkatten,Tegelbruksvägen 31,12634,Hägersten,18.0100183,59.3019572
+7197,förskola,Gläntan Lotterivägen 17,Lotterivägen 17,12932,Hägersten,17.9808163,59.2978629
+9477,förskola,Gläntan Östbergabackarna 50,Östbergabackarna 50,12572,Älvsjö,18.0310008,59.2875969
+10050,förskola,Grodan,Störtloppsvägen 36,12945,Hägersten,17.9665397,59.2945031
+6773,förskola,Grågåsen,Erik Segersälls väg 24–30,12650,Hägersten,17.9993105,59.3075649
+9539,förskola,Gökboet – Ängbybarnens förskolor,Dybecksvägen 84,16855,Bromma,17.9008879,59.3464247
+10614,förskola,Hasselbacken,Personnevägen 78,12935,Hägersten,17.9751492,59.2983006
+8612,förskola,Hattis,Hattmakarbacken 11,12942,Hägersten,17.9523297,59.296746
+7257,förskola,Hattstugans Waldorfförskola,Stora Mossens backe 4,16756,Bromma,17.9642261,59.3345153
+9952,förskola,Hoppetossa Tolvan,Grönviksvägen 111,16776,Bromma,17.9372579,59.320387
+8521,förskola,I Ur och Skur Havskatten,Missionsvägen 14,16733,Bromma,17.9764308,59.3408876
+7610,förskola,I Ur och Skur Mullelyan,Beckombergavägen 13,16854,Bromma,17.921362,59.3431821
+9652,förskola,I Ur och Skur Trollsländan,Tappvägen 32,16870,Bromma,17.9524702,59.3645169
+7322,förskola,I Ur och Skur Täppan,Grundtvigsgatan 47–49,16848,Bromma,17.8853255,59.3469133
+7713,förskola,I Ur och Skur Vindleken,Långsjövägen 12,12530,Älvsjö,17.9977428,59.2747059
+10728,förskola,I Ur och Skur Vinterelvan,Örnbacken 4,12651,Hägersten,17.9905404,59.3095658
+7668,förskola,I Ur och Skur Västanvind,Anundsvägen 12,16853,Bromma,17.8911026,59.3520842
+8664,förskola,Instrumentet,Instrumentvägen 32,12653,Hägersten,17.9845951,59.3055671
+8631,förskola,Jungfru Lona,Kinmanssonsvägen 47,12938,Hägersten,17.9690178,59.3019509
+9738,förskola,Justineborgs förskola,Adolfsbergsvägen 26,16866,Bromma,17.9556266,59.358668
+8703,förskola,Kastanjen Majstångsvägen 6,Majstångsvägen 6,12633,Hägersten,18.0090156,59.3033057
+8725,förskola,Kata Dalström,Kata Dalströms gata 23,12954,Hägersten,17.9603854,59.2851332
+30310,förskola,Kobran,Mobilgatan 3B,12626,Hägersten,17.9890975,59.2978941
+6748,förskola,Korpen,Schlytersvägen 55,12650,Hägersten,18.006897,59.3064018
+10462,förskola,Kristallen,Isgränd 6,12946,Hägersten,17.9681302,59.2908257
+8959,förskola,Kroppås,Sankt Mickelsgatan 122,12941,Hägersten,17.9593892,59.2983479
+8386,förskola,Lillgårdens waldorfförskola,Broderivägen 13,16838,Bromma,17.9294811,59.3390824
+6695,förskola,Lillskogen,Karlslundsvägen 10,12552,Älvsjö,17.9816651,59.2687269
+7081,förskola,LM-gården,Trettondagsvägen 7–9,12636,Hägersten,17.9980105,59.2999201
+8684,förskola,Luren,Kransbindarvägen 120,12636,Hägersten,17.9982216,59.3023329
+10718,förskola,Långbropark förskola,Stora mans väg 11B,12559,Älvsjö,17.9731195,59.2824177
+8700,förskola,Långsjö,Gårdstigen 19,12552,Älvsjö,17.9744804,59.2661284
+8955,förskola,Majamyra,Torsslowsbacken 2,12937,Hägersten,17.9760782,59.3066089
+7327,förskola,Mariehälls Montessoriförskola,Hagelstavägen 20,16866,Bromma,17.9479265,59.3597655
+6734,förskola,Matrisen,Långsjövägen 14,12530,Älvsjö,17.9968241,59.2742858
+10526,förskola,Metronomen,Radiusbacken 31,12629,Hägersten,18.0041428,59.2981625
+9884,förskola,Mineralen,Skodonsvägen 9,12677,Hägersten,18.0067707,59.2889789
+7672,förskola,Minne Mus Montessoriförskola,Svartviksslingan 88,16739,Bromma,17.987515,59.3399391
+8427,förskola,Montessoriförskolan Bromma Planeten,Söderberga allé 28,16862,Bromma,17.8964789,59.359664
+10175,förskola,Montessoriförskolan Liten och Stor,Stopvägen 37,16835,Bromma,17.9460517,59.3353261
+8759,förskola,Montessoriförskolan Regnbågen,Krattvägen 20,12532,Älvsjö,17.9872618,59.2850042
+8769,förskola,Muminstugan,Vantörsvägen 150,12557,Älvsjö,17.9899538,59.2732489
+9922,förskola,Möjbro – Ängbybarnens förskolor,Möjbrovägen 8,16854,Bromma,17.9248178,59.3445878
+10303,förskola,Norlandia förskolor Måsen,Blommensbergsvägen 163 och 180,12652,Hägersten,149621.0,6576741.0
+10600,förskola,Norlandia förskolor Sagohjälten,Annedalsvägen 39,16865,Bromma,17.9498785,59.3646939
+10529,förskola,Norlandia förskolor Sagoträdet,Tappvägen 8 D,16875,Bromma,17.9505849,59.3631972
+6844,förskola,Orkestern,Responsgatan 1,12629,Hägersten,18.0027904,59.2974806
+6847,förskola,Paletten Huvudfabriksgatan 18–20,Huvudfabriksgatan 18–20,12626,Hägersten,17.9902536,59.2998468
+8802,förskola,Prästängen,Prästgårdsgränd 16,12544,Älvsjö,18.0103612,59.2813446
+10082,förskola,Pysslingen Färjan,Färjestadsvägen 5,16851,Bromma,17.9038639,59.3389752
+10263,förskola,Pysslingen Förskolor Isälven,Kamrerarvägen 19,12930,Hägersten,17.9862666,59.2931554
+10085,förskola,Pysslingen Kastanjelunden,Lummelundagatan 3,16863,Bromma,17.9001156,59.3564118
+9621,förskola,Pysslingen Mälarhöjdsparken,Emilia Fogelklous gata 10,12957,Hägersten,17.9520797,59.2856162
+9614,förskola,Pysslingen Sagoträdet,Långbrovägen 55,12533,Älvsjö,17.9900076,59.2809324
+9319,förskola,Pysslingen Smältrullen,Borrvägen 5,12638,Hägersten,17.9972595,59.2939371
+9304,förskola,Pysslingen Typografen,Gösta Ekmans Väg 7,12935,Hägersten,17.9798047,59.3031586
+9618,förskola,Pysslingen Örtagården,Örtagårdsvägen 1–2,12534,Älvsjö,17.9947307,59.2797772
+10171,förskola,Raoul Wallenbergförskolan Mariehäll,Bällstavägen 8,16865,Bromma,17.9599411,59.3602189
+9507,förskola,Raoul Wallenbergs Förskola,Beckombergavägen 314,16861,Bromma,17.9038125,59.3564858
+9893,förskola,Regnbågen Slättgårdsvägen 72,Slättgårdsvägen 72,12942,Hägersten,17.95082,59.2918329
+7423,förskola,Rödkulla,Långängsvägen 56,12556,Älvsjö,17.9701129,59.2743741
+7051,förskola,Rönneberga,Vattenledningsvägen 24 A och B,12633,Hägersten,150612.0,6576477.0
+10501,förskola,Sagoberget,Kilsbergsvägen 9,16736,Bromma,17.9784143,59.3387127
+8681,förskola,Sjöberget,Torsten Alms gata 86,12651,Hägersten,17.9858859,59.3091416
+6969,förskola,Sjöstjärnan Rävsnäsvägen 77–79,Rävsnäsvägen 77–79,12570,Älvsjö,18.0280004,59.2797296
+10611,förskola,Skatboet,Valutavägen 90,12934,Hägersten,17.9789564,59.2982158
+10300,förskola,Skattkistan Sandalettgatan 9,Sandalettgatan 9,12547,Älvsjö,18.0074888,59.2818584
+6798,förskola,Smeden,Klensmedsvägen 10,12638,Hägersten,17.9966457,59.295562
+10684,förskola,Snabelskon,Sulvägen 62,12640,Hägersten,18.0098802,59.2843302
+8798,förskola,Snöbollen,Snöbollsgränd 3,12945,Hägersten,17.9615966,59.291182
+8765,förskola,Snöripan,Snöripsvägen 34,12556,Älvsjö,17.9775492,59.2729324
+10062,förskola,Solgårdens Waldorfförskola,Marklandsbacken 11,16836,Bromma,17.9387975,59.3359775
+10293,förskola,Solkatten,Midsommarvägen 20,12635,Hägersten,18.008139,59.3001162
+6815,förskola,Solkatten Medaljonggatan 10–14,Medaljonggatan 10–14,12641,Hägersten,17.9980649,59.2832262
+6763,förskola,Solstrålen Hägerstensvägen 179,Hägerstensvägen 179,12653,Hägersten,17.9899728,59.3048255
+8805,förskola,Solängen,Solberga Ängsväg 4–6,12544,Älvsjö,18.0130976,59.2814997
+9896,förskola,SPIRA Förskolor Bromma,Tunnlandsvägen 91 A,16836,Bromma,17.9393558,59.3366239
+7054,förskola,Svandammsgården,Cedergrensvägen 5–7,12636,Hägersten,18.000362,59.3018124
+8541,förskola,Svanens förskola vid Telefonplan,Flygelgatan 1,12628,Hägersten,18.0008673,59.2983557
+7112,förskola,Sylvester,Sylvestergatan 2–6,12571,Älvsjö,18.0306373,59.2852172
+10210,förskola,Tellusbarn Pusslet,Mockasinvägen 24,12639,Hägersten,18.0156527,59.2836864
+8616,förskola,Toppen,Persmässgränd 16,12944,Hägersten,17.956764,59.2956123
+9344,förskola,Torngårdens Waldorfförskola,Drachmannsgatan 3,16849,Bromma,17.8883724,59.345625
+9483,förskola,"Treklövern, Stamgatan 2 A",Stamgatan 2 A,12574,Älvsjö,18.0413923,59.2840519
+6661,förskola,Trollsländan,Sulvägen 22,12640,Hägersten,18.004748,59.2864905
+10288,förskola,Tryggis,Doktor Abrahams väg 29,16859,Bromma,17.912345,59.3602436
+8772,förskola,Vasan,Vasaloppsvägen 110,12945,Hägersten,17.9611069,59.2922218
+8457,förskola,"Vi som växer, Förskolan Vansö",Vansövägen 4,12540,Älvsjö,18.034312,59.2732527
+8688,förskola,Viveln,Vivelvägen 40,12533,Älvsjö,17.9906706,59.2777684
+8695,förskola,Vågavilja,Gårdstigen 1,12552,Älvsjö,17.974448,59.2661402
+9240,förskola,Ålstens Montessoriförskola,Bågvägen 42,16765,Bromma,17.9519888,59.3188933
+8628,förskola,Åsen,Sedelvägen 2B,12932,Hägersten,17.985313,59.297199
+10557,förskola,Älvens Förskola,Älvsjö gårdsväg 3–9,12542,Älvsjö,18.0113096,59.2769127
+9639,förskola,Älvsjö förskola,Långbrodalsvägen 1,12532,Älvsjö,18.0021474,59.2795055
+7834,förskola,Älvsjöbarnen,Murgrönsvägen 17,12555,Älvsjö,17.9679808,59.2767256
+6792,förskola,Älvskogen,Långsjövägen 33,12530,Älvsjö,17.9974537,59.2742031
+9546,förskola,Ängbygården – Ängbybarnens förskolor,Vultejusvägen 63–67,16866,Bromma,17.9088371,59.3437417
+7121,förskola,Äppelängen,Täckhammarsvägen 21,12571,Älvsjö,18.0355227,59.2816742
