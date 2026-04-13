@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load all three files
-skolor = pd.read_csv('data_files/skolor.csv')
+skolor = pd.read_csv('data_files/skolor_with_stadsdel.csv')
 # parkeringar = pd.read_csv('data_files/parkering.csv')
 services = pd.read_csv(
     'data_files/combined_bromma_alvsjo_data_with_adresses.csv')
@@ -13,7 +13,7 @@ skolor_clean = pd.DataFrame({
     'gata':      skolor['gatuadress'],
     'lat':       skolor['koordinat_north'],
     'lon':       skolor['koordinat_east'],
-    'stadsdel':  skolor['stad']
+    'stadsdel':  skolor['Stadsdel']
 })
 
 # parkeringar_clean = pd.DataFrame({
@@ -37,6 +37,6 @@ services_clean = pd.DataFrame({
 # Combine all into one table
 combined = pd.concat([skolor_clean,
                      services_clean], ignore_index=True)
-combined.to_csv('data_files/combined_school_parking.csv',
+combined.to_csv('data_files/combined_school.csv',
                 index=False, encoding='utf-8-sig')
 print("Klart!")
