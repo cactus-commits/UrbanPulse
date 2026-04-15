@@ -1,7 +1,6 @@
 ﻿id;kategori;namn;gatuadress;postnummer;stad;koordinat_east;koordinat_north;Stadsdel;stadsdelsomrade;Genomsnittligt meritvärde (17 ämnen);Elever, årskurs 1-9
 13450;grundskolor;Abrahamsbergsskolan, F–9;Gustav III:s väg 2–10;16830;Bromma;17.9505675;59.3346293;Abrahamsberg;Bromma;264,4;588
-15250;grundskolor;Adolfsbergsskolan, F–6;Gårdsfogdevägen 18B;16866;Bromma;17.9536076;59.3577739;Mariehäll;Bromma;229,7;490
-15250;grundskolor;Adolfsbergsskolan, F–6;Gårdsfogdevägen 18B;16866;Bromma;17.9536076;59.3577739;Mariehäll;Bromma;229,7;330
+15250;grundskolor;Adolfsbergsskolan, F–6;Gårdsfogdevägen 18B;16866;Bromma;17.9536076;59.3577739;Mariehäll;Bromma;;330
 13478;grundskolor;Alviksskolan, F–9;Tranebergsvägen 79;16745;Bromma;17.9759899;59.3351703;Traneberg;Bromma;221,3;815
 15106;grundskolor;Apolloniosskolan, F–9;Stora Mans väg 11B;12559;Älvsjö;17.9731195;59.2824177;Älvsjö;Hägersten-Älvsjö;238,8;101
 13499;grundskolor;Aspuddens skola, F–9;Blommensbergsvägen 166;12655;Hägersten;17.9980291;59.3093396;Aspudden;Hägersten-Älvsjö;215,9;699
@@ -38,18 +37,11 @@
 14355;grundskolor;Olovslundsskolan, F–6;Olovslundsvägen 23;16772;Bromma;17.9384342;59.3311661;Olovslund;Bromma;;397
 15029;grundskolor;Pilgrimsskolan, F–3;Pilgrimsvägen 1;12648;Hägersten;18.0063419;59.3052052;Aspudden;Hägersten-Älvsjö;;67
 15005;grundskolor;Raoul Wallenbergskolan, F–9;Beckombergavägen 316;16861;Bromma;17.9027052;59.356212;Eneby;Bromma;;
-14476;grundskolor;Sjöängsskolan, F–9;Gripsholmsvägen 29;12535;Älvsjö;18.0287637;59.2815743;Örby slott;Hägersten-Älvsjö;203,2;354
-14476;grundskolor;Sjöängsskolan, F–9;Gripsholmsvägen 29;12535;Älvsjö;18.0287637;59.2815743;Örby slott;Hägersten-Älvsjö;203,2;278
-14476;grundskolor;Sjöängsskolan, F–9;Gripsholmsvägen 29;12535;Älvsjö;18.0287637;59.2815743;Örby slott;Hägersten-Älvsjö;203,2;704
-14476;grundskolor;Sjöängsskolan, F–9;Gripsholmsvägen 29;12535;Älvsjö;18.0287637;59.2815743;Örby slott;Hägersten-Älvsjö;233,6;354
-14476;grundskolor;Sjöängsskolan, F–9;Gripsholmsvägen 29;12535;Älvsjö;18.0287637;59.2815743;Örby slott;Hägersten-Älvsjö;233,6;278
 14476;grundskolor;Sjöängsskolan, F–9;Gripsholmsvägen 29;12535;Älvsjö;18.0287637;59.2815743;Örby slott;Hägersten-Älvsjö;233,6;704
 14564;grundskolor;Smedslättsskolan, F–6;Drömstigen 32;16761;Bromma;17.967136;59.323855;Smedslätten;Bromma;;339
 14999;grundskolor;Snitz grundskola, 7–9;Snickerigatan 4;12626;Hägersten;17.9914611;59.2995333;Midsommarkransen;Hägersten-Älvsjö;177,1;99
-14599;grundskolor;Solbergaskolan, F–6;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;223;619
-14599;grundskolor;Solbergaskolan, F–6;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;223;155
-14599;grundskolor;Solbergaskolan, F–6;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;223;236
-14993;grundskolor;Stefanskolan, F–9;Tegnebyvägen 30;16856;Bromma;17.9084713;59.3433235;Norra Ängby;Bromma;..;88
+14599;grundskolor;Solbergaskolan, F–6;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;;236
+14993;grundskolor;Stefanskolan, F–9;Tegnebyvägen 30;16856;Bromma;17.9084713;59.3433235;Norra Ängby;Bromma;;88
 14990;grundskolor;Stockholm International Academy Hägersten, F–9;Sulvägen 52;12640;Hägersten;18.00775;59.2842816;Solberga;Hägersten-Älvsjö;235,7;187
 14703;grundskolor;Södra Ängby skola, F–9;Blackebergsvägen 100;16851;Bromma;17.8974141;59.3373376;Södra Ängby;Bromma;260,8;742
 15358;grundskolor;Tellusborgsskolan, 6–9;Tellusborgsvägen 36;12649;Hägersten;18.0055479;59.3020595;Midsommarkransen;Hägersten-Älvsjö;251,9;758
@@ -70,12 +62,8 @@
 27661;anpassade_grundskolor;Midsommarkransens skola, anpassad grundskola 1–7;Bäckvägen 1;12647;Hägersten;17.9948889;59.3023898;Midsommarkransen;Hägersten-Älvsjö;;818
 15491;anpassade_grundskolor;Nya Elementar, anpassad grundskola 1–9;Bergslagsvägen 80;16855;Bromma;17.9010568;59.3445421;Södra Ängby;Bromma;269,1;994
 15497;anpassade_grundskolor;Olovslundsskolan, anpassad grundskola 1–6;Olovslundsvägen 23;16772;Bromma;17.9384342;59.3311661;Olovslund;Bromma;;397
-15529;anpassade_grundskolor;Solbergaskolan, anpassad grundskola, Broskolan, 1–6;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;223;619
-15529;anpassade_grundskolor;Solbergaskolan, anpassad grundskola, Broskolan, 1–6;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;223;155
-15529;anpassade_grundskolor;Solbergaskolan, anpassad grundskola, Broskolan, 1–6;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;223;236
-15536;anpassade_grundskolor;Solbergaskolan, anpassad grundskola, Mockasinen, 1–9;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;223;619
-15536;anpassade_grundskolor;Solbergaskolan, anpassad grundskola, Mockasinen, 1–9;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;223;155
-15536;anpassade_grundskolor;Solbergaskolan, anpassad grundskola, Mockasinen, 1–9;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;223;236
+15529;anpassade_grundskolor;Solbergaskolan, anpassad grundskola, Broskolan, 1–6;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;;236
+15536;anpassade_grundskolor;Solbergaskolan, anpassad grundskola, Mockasinen, 1–9;Lerkrogsvägen 28;12679;Hägersten;18.0060931;59.2902259;Västberga;Hägersten-Älvsjö;;236
 15567;anpassade_grundskolor;Västbergaskolan, anpassad grundskola, 1–9;Klensmedsvägen 2;12638;Hägersten;17.9950632;59.2958759;Västberga;Hägersten-Älvsjö;257;676
 34879;anpassade_grundskolor;Västertorpsskolan, anpassad grundskola 1–6;Störtloppsvägen 2;12946;Hägersten;17.9698323;59.2911596;Västertorp;Hägersten-Älvsjö;;371
 12293;öppen_förskola;Öppna förskolan Fruängen;Hanna Rydhs gata 5;12950;Hägersten;17.9738024;59.2859588;Fruängen;Hägersten-Älvsjö;;
