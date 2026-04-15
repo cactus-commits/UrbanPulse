@@ -25,8 +25,8 @@ def map_omrade(stadsdel):
         return 'N/A'
 
 
-df = pd.read_csv('data_files/stockholm_boende_regso_2024.csv')
-df['stadsdelsomrade'] = df['Statistikområde'].apply(map_omrade)
-df.to_csv('data_files/stockholm_boende_regso_2024.csv',
+df = pd.read_csv('data_files/parker.csv')
+df['Stadsdel'] = df['Stadsdelsområde'].apply(map_omrade)
+df.to_csv('data_files/parker.csv',
           index=False, encoding='utf-8-sig')
 print("Klart!")

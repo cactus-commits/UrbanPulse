@@ -53,7 +53,7 @@ Montessori Mondial Mälarhöjden,grundskolor,Traktörgränd 10,59.3014955,17.947
 "Ålstensskolan, F–6",grundskolor,Nyängsvägen 72–80,59.3256376,17.955415,Ålsten,Bromma
 "Äppelviksskolan, 7–9",grundskolor,Alviksvägen 97,59.3239043,17.9746664,Äppelviken,Bromma
 "Örbyskolan, F–9",grundskolor,Gamla Huddingevägen 425,59.2748688,18.0265722,Älvsjö,Hägersten-Älvsjö
-"Östbergaskolan, F–6",grundskolor,Östbergabackarna 51–57,59.2885634,18.0383425,Östberga,N/A
+"Östbergaskolan, F–6",grundskolor,Östbergabackarna 51–57,59.2885634,18.0383425,Östberga,
 "Aspuddens skola, anpassad grundskola 1–9",anpassade_grundskolor,Blommensbergsvägen 166,59.3093396,17.9980291,Aspudden,Hägersten-Älvsjö
 "Beckombergaskolan, anpassad grundskola F–6",anpassade_grundskolor,Styresman Sanders väg 14,59.3596442,17.9041467,Eneby,Bromma
 "Fruängens skola, anpassad grundskola 1–9",anpassade_grundskolor,Fruängsgatan 57–61,59.2849719,17.9661492,Fruängen,Hägersten-Älvsjö
@@ -68,11 +68,11 @@ Montessori Mondial Mälarhöjden,grundskolor,Traktörgränd 10,59.3014955,17.947
 "Västertorpsskolan, anpassad grundskola 1–6",anpassade_grundskolor,Störtloppsvägen 2,59.2911596,17.9698323,Västertorp,Hägersten-Älvsjö
 Öppna förskolan Fruängen,öppen_förskola,Hanna Rydhs gata 5,59.2859588,17.9738024,Fruängen,Hägersten-Älvsjö
 Öppna förskolan Hägerstensåsen,öppen_förskola,Inteckningsvägen 17 E,59.2924289,17.9834525,Hägerstensåsen,Hägersten-Älvsjö
-Öppna förskolan i Blackeberg,öppen_förskola,Grundtvigsgatan 29 (21) (mittemot Blackebergsparken),6581110.0,143549.0,,N/A
+Öppna förskolan i Blackeberg,öppen_förskola,Grundtvigsgatan 29 (21) (mittemot Blackebergsparken),6581110.0,143549.0,,
 Öppna förskolan Pippi för barn med funktionsnedsättning,öppen_förskola,Hanna Rydhs gata 5,59.2859588,17.9738024,Fruängen,Hägersten-Älvsjö
 Öppna förskolan Tunnlandsvägen,öppen_förskola,Tunnlandsvägen 30 B,59.3363663,17.9404689,Bromma,Bromma
 Öppna förskolan Älvsjö,öppen_förskola,Solberga ängsväg 4,59.2812742,18.0136606,Älvsjö,Hägersten-Älvsjö
-"Öppna förskolan Östberga, Östberga kulturhus",öppen_förskola,Östbergatorget 14,59.2889218,18.0332425,Östberga,N/A
+"Öppna förskolan Östberga, Östberga kulturhus",öppen_förskola,Östbergatorget 14,59.2889218,18.0332425,Östberga,
 Andante förskolor Utflyktsvägen,förskola,Utflyktsvägen 4,59.3302726,17.9115719,Nockebyhov,Bromma
 Annedals Montessoriförskola,förskola,Pippi Långstrumps gata 35,59.3655816,17.9469495,Mariehäll,Bromma
 Bellmanskällans Montessoriförskola,förskola,Brådstupsvägen 5–9,59.3044665,17.9585439,Hägersten,Hägersten-Älvsjö
@@ -114,7 +114,7 @@ Förskolan Guldklimpar Lilla Äppelbo,förskola,Runda vägen 24A,59.3303711,17.9
 Förskolan Guldklimpar Äppelbo,förskola,Runda vägen 50,59.3319757,17.9784488,Alvik,Bromma
 Förskolan Gustav III:s väg 36,förskola,Gustav III:s väg 36,59.3338755,17.9462717,Abrahamsberg,Bromma
 Förskolan Hagelstavägen 24,förskola,Hagelstavägen 24,59.360717,17.9479909,Mariehäll,Bromma
-Förskolan Höjden,förskola,Kinnaredsgränd 69,59.2897487,18.030944,Östberga,N/A
+Förskolan Höjden,förskola,Kinnaredsgränd 69,59.2897487,18.030944,Östberga,
 Förskolan Johannesfredsvägen 27,förskola,Johannesfredsvägen 27,59.3469559,17.9731332,Ulvsunda industriområde,Bromma
 Förskolan Karen Blixens gata 15,förskola,Karen Blixens gata 15,59.3461936,17.8733615,Blackeberg,Bromma
 Förskolan Kattresan,förskola,Zornvägen 43–47,59.3421619,17.8929598,Södra Ängby,Bromma
@@ -123,7 +123,7 @@ Förskolan Margretelundsvägen 73,förskola,Margretelundsvägen 73,59.3397511,17
 Förskolan Marklandsbacken 2,förskola,Marklandsbacken 2,59.3368174,17.9368963,Åkeslund,Bromma
 Förskolan Masugnsvägen 72–74,förskola,Masugnsvägen  72–74,59.3571965,17.9622088,Ulvsunda industriområde,Bromma
 Förskolan Metapontum,förskola,Stora Mans Väg 11D,59.2824177,17.9731195,Älvsjö,Hägersten-Älvsjö
-"Förskolan Nockeby kyrkväg 8, Svanhildsvägen 23",förskola,"Nockeby kyrkväg 8, Svanhildsvägen 23",6579397.0,145792.0,,N/A
+"Förskolan Nockeby kyrkväg 8, Svanhildsvägen 23",förskola,"Nockeby kyrkväg 8, Svanhildsvägen 23",6579397.0,145792.0,,
 Förskolan Nockebyvägen 20,förskola,Nockebyvägen 20,59.3226627,17.9414025,Höglandet,Bromma
 Förskolan Nyängsvägen 21,förskola,Nyängsvägen 21,59.3247797,17.9687294,Äppelviken,Bromma
 Förskolan Nyängsvägen 66,förskola,Nyängsvägen 66,59.3251433,17.9599447,Ålsten,Bromma
@@ -142,14 +142,14 @@ Förskolan Svartviksslingan 47,förskola,Svartviksslingan 47,59.3398854,17.98972
 Förskolan Svartviksslingan 53,förskola,Svartviksslingan 53,59.3390094,17.9910381,Traneberg,Bromma
 Förskolan Tunnlandsvägen 30,förskola,Tunnlandsvägen 30,59.3368431,17.9392984,Bromma,Bromma
 Förskolan Tyska Bottens väg 49,förskola,Tyska Bottens väg 49,59.3325127,17.9056986,Nockebyhov,Bromma
-"Förskolan Ulvsunda Slottsväg 19, 22",förskola,Ulvsunda slottsväg 19 och 22,6580131.0,148224.0,,N/A
+"Förskolan Ulvsunda Slottsväg 19, 22",förskola,Ulvsunda slottsväg 19 och 22,6580131.0,148224.0,,
 Förskolan Vadmalsvägen 5–7,förskola,Vadmalsvägen 5–7,59.3396561,17.9437146,Bromma,Bromma
 Förskolan Vingåkersvägen,förskola,Vingåkersvägen 22–26,59.2752339,18.0302443,Älvsjö,Hägersten-Älvsjö
 Förskolan Vinjegatan 31–33/Björnsonsgatan 132,förskola,Björnsonsgatan 132,59.3478194,17.8800464,Blackeberg,Bromma
 Förskolan Vultejusvägen 15 A,förskola,Vultejusvägen 15 A,59.3448874,17.9087707,Norra Ängby,Bromma
 Förskolan Vultejusvägen 15 D E,förskola,Vultejusvägen 15 D E,59.3489677,17.9092484,Norra Ängby,Bromma
 Förskolan Zornvägen 26,förskola,Zornvägen 26,59.3421619,17.8929598,Södra Ängby,Bromma
-Förskolan Änglan AB,förskola,Våxtorpsgränd 18,59.2881125,18.0328437,Östberga,N/A
+Förskolan Änglan AB,förskola,Våxtorpsgränd 18,59.2881125,18.0328437,Östberga,
 Förskolan Äppelvikstorget,förskola,Nyängsvägen 1,59.3264122,17.9729254,Äppelviken,Bromma
 Förskolan Örnbacken,förskola,Örnbacken 34,59.3092546,17.9880423,Aspudden,Hägersten-Älvsjö
 Föräldrakooperativet Minnemalen,förskola,Svartviksslingan 13,59.3400425,17.9895629,Traneberg,Bromma
@@ -157,7 +157,7 @@ Föräldrakooperativet Storken,förskola,Sunnanstigen 5,59.3375712,17.9548919,Ul
 Föräldrakooperativet Trumslagaren,förskola,Trumslagargatan 10,59.2767902,17.99807,Långsjö,Hägersten-Älvsjö
 Föräldrakooperativet Vildkatten,förskola,Tegelbruksvägen 31,59.3019572,18.0100183,Midsommarkransen,Hägersten-Älvsjö
 Gläntan Lotterivägen 17,förskola,Lotterivägen 17,59.2978629,17.9808163,Hägerstensåsen,Hägersten-Älvsjö
-Gläntan Östbergabackarna 50,förskola,Östbergabackarna 50,59.2875969,18.0310008,Östberga,N/A
+Gläntan Östbergabackarna 50,förskola,Östbergabackarna 50,59.2875969,18.0310008,Östberga,
 Grodan,förskola,Störtloppsvägen 36,59.2945031,17.9665397,Västertorp,Hägersten-Älvsjö
 Grågåsen,förskola,Erik Segersälls väg 24–30,59.3075649,17.9993105,Aspudden,Hägersten-Älvsjö
 Gökboet – Ängbybarnens förskolor,förskola,Dybecksvägen 84,59.3464247,17.9008879,Norra Ängby,Bromma
@@ -198,7 +198,7 @@ Montessoriförskolan Liten och Stor,förskola,Stopvägen 37,59.3353261,17.946051
 Montessoriförskolan Regnbågen,förskola,Krattvägen 20,59.2850042,17.9872618,Älvsjö,Hägersten-Älvsjö
 Muminstugan,förskola,Vantörsvägen 150,59.2732489,17.9899538,Älvsjö,Hägersten-Älvsjö
 Möjbro – Ängbybarnens förskolor,förskola,Möjbrovägen 8,59.3445878,17.9248178,Bromma,Bromma
-Norlandia förskolor Måsen,förskola,Blommensbergsvägen 163 och 180,6576741.0,149621.0,,N/A
+Norlandia förskolor Måsen,förskola,Blommensbergsvägen 163 och 180,6576741.0,149621.0,,
 Norlandia förskolor Sagohjälten,förskola,Annedalsvägen 39,59.3646939,17.9498785,Mariehäll,Bromma
 Norlandia förskolor Sagoträdet,förskola,Tappvägen 8 D,59.3631972,17.9505849,Mariehäll,Bromma
 Orkestern,förskola,Responsgatan 1,59.2974806,18.0027904,Västberga,Hägersten-Älvsjö
@@ -216,7 +216,7 @@ Raoul Wallenbergförskolan Mariehäll,förskola,Bällstavägen 8,59.3602189,17.9
 Raoul Wallenbergs Förskola,förskola,Beckombergavägen 314,59.3564858,17.9038125,Eneby,Bromma
 Regnbågen Slättgårdsvägen 72,förskola,Slättgårdsvägen 72,59.2918329,17.95082,Mälarhöjden,Hägersten-Älvsjö
 Rödkulla,förskola,Långängsvägen 56,59.2743741,17.9701129,Älvsjö,Hägersten-Älvsjö
-Rönneberga,förskola,Vattenledningsvägen 24 A och B,6576477.0,150612.0,,N/A
+Rönneberga,förskola,Vattenledningsvägen 24 A och B,6576477.0,150612.0,,
 Sagoberget,förskola,Kilsbergsvägen 9,59.3387127,17.9784143,Traneberg,Bromma
 Sjöberget,förskola,Torsten Alms gata 86,59.3091416,17.9858859,Aspudden,Hägersten-Älvsjö
 Sjöstjärnan Rävsnäsvägen 77–79,förskola,Rävsnäsvägen 77–79,59.2797296,18.0280004,Örby slott,Hägersten-Älvsjö
@@ -238,7 +238,7 @@ Sylvester,förskola,Sylvestergatan 2–6,59.2852172,18.0306373,Älvsjö,Hägerst
 Tellusbarn Pusslet,förskola,Mockasinvägen 24,59.2836864,18.0156527,Solberga,Hägersten-Älvsjö
 Toppen,förskola,Persmässgränd 16,59.2956123,17.956764,Mälarhöjden,Hägersten-Älvsjö
 Torngårdens Waldorfförskola,förskola,Drachmannsgatan 3,59.345625,17.8883724,Blackeberg,Bromma
-"Treklövern, Stamgatan 2 A",förskola,Stamgatan 2 A,59.2840519,18.0413923,Östberga,N/A
+"Treklövern, Stamgatan 2 A",förskola,Stamgatan 2 A,59.2840519,18.0413923,Östberga,
 Trollsländan,förskola,Sulvägen 22,59.2864905,18.004748,Solberga,Hägersten-Älvsjö
 Tryggis,förskola,Doktor Abrahams väg 29,59.3602436,17.912345,Eneby,Bromma
 Vasan,förskola,Vasaloppsvägen 110,59.2922218,17.9611069,Västertorp,Hägersten-Älvsjö
@@ -252,7 +252,7 @@ Vågavilja,förskola,Gårdstigen 1,59.2661402,17.974448,Långsjö,Hägersten-Äl
 Älvsjöbarnen,förskola,Murgrönsvägen 17,59.2767256,17.9679808,Älvsjö,Hägersten-Älvsjö
 Älvskogen,förskola,Långsjövägen 33,59.2742031,17.9974537,Långsjö,Hägersten-Älvsjö
 Ängbygården – Ängbybarnens förskolor,förskola,Vultejusvägen 63–67,59.3437417,17.9088371,Norra Ängby,Bromma
-Äppelängen,förskola,Täckhammarsvägen 21,59.2816742,18.0355227,Östberga,N/A
+Äppelängen,förskola,Täckhammarsvägen 21,59.2816742,18.0355227,Östberga,
 "Preem - Stockholm,Islandstorget",Bensinmack,Bergslagsvägen,59.3463943,17.8938708,Södra Ängby,Bromma
 Nockeby Pizzeria,Restaurang & Snabbmat,Skaldevägen,59.3294442,17.928936,Nockeby,Bromma
 al Caminetto,Restaurang & Snabbmat,Gustavslundsvägen,59.3328927,17.9774152,Alvik,Bromma
@@ -1132,3 +1132,131 @@ Lekplats,Lekplats,Telefonvägen,59.2994264,18.001098,Midsommarkransen,Hägersten
 Lekplats,Lekplats,Personnevägen,59.2914217,17.9808894,Hägerstensåsen,Hägersten-Älvsjö
 Lekplats,Lekplats,Hultgränd,59.2824295,17.9751216,Älvsjö,Hägersten-Älvsjö
 Lekplats,Lekplats,Årstadalsinfarten,59.3076001,18.0259084,Liljeholmen,Hägersten-Älvsjö
+Park,Park,DrottningholmsvägenRM,59.3334605,17.9268893,Nockeby,Bromma
+Park,Park,Kvarnbacksvägen,59.3427661,17.9559892,Ulvsunda industriområde,Bromma
+Park,Park,,59.3407042,17.9249706,Åkeshov,Bromma
+Ängbybadet,Park,Blackebergsvägen,59.336897,17.8972893,Södra Ängby,Bromma
+Park,Park,Ålstens Skogsväg,59.3164493,17.9623054,Smedslätten,Bromma
+Park,Park,Gliavägen,59.3538062,17.9187436,Bromma kyrka,Bromma
+Äppelvikstorget,Park,Äppelvikstorget,59.3269777,17.9729318,Äppelviken,Bromma
+Park,Park,Gustavslundsvägen,59.3323798,17.9842168,Alvik,Bromma
+Park,Park,Gustavslundsvägen,59.3330821,17.97897,Alvik,Bromma
+Park,Park,Kvarnbacksvägen,59.3425869,17.9516641,Ulvsunda industriområde,Bromma
+Park,Park,Judarskogen Reflexbana MTB,59.3345638,17.9114535,Nockebyhov,Bromma
+Lillsjöparken,Park,Lillsjövägen,59.3390981,17.9553982,Ulvsunda,Bromma
+Park,Park,Sedumbacken,59.3454129,17.9318411,Åkeshov,Bromma
+Park,Park,Båtparken stig,59.339488,17.8968379,Södra Ängby,Bromma
+Park,Park,Penselgränd,59.3402533,17.8927133,Södra Ängby,Bromma
+Park,Park,Peringskiöldsvägen,59.3526739,17.9046918,Norra Ängby,Bromma
+Park,Park,Krusbärsvägen,59.3599222,17.9072731,Eneby,Bromma
+Park,Park,Carl Larssons Väg,59.3417149,17.8952327,Södra Ängby,Bromma
+Park,Park,Runstensvägen,59.3503573,17.9007807,Norra Ängby,Bromma
+Park,Park,Beckomberga Skogsväg,59.3553774,17.8950805,Beckomberga,Bromma
+Park,Park,Bällstavägen,59.3518143,17.9000089,Norra Ängby,Bromma
+Park,Park,Martebogatan,59.3537565,17.9032817,Eneby,Bromma
+Annedalsparken,Park,Ronja Rövardotters Stig,59.3635539,17.947826,Mariehäll,Bromma
+Park,Park,Beckombergavägen,59.3470696,17.908157,Norra Ängby,Bromma
+Park,Park,"Åkeshovs eljusspår 1,5 km",59.3448054,17.9259921,Åkeshov,Bromma
+Lönnebergaparken,Park,Dartanjangs Gata,59.362151,17.9444496,Mariehäll,Bromma
+Grottparken,Park,Lövåsvägen,59.3379523,17.9614517,Ulvsunda,Bromma
+Minnebergsparken,Park,Svartviksslingan,59.339463,17.990468,Traneberg,Bromma
+Park,Park,Egilsvägen,59.3447461,17.9151972,Bromma,Bromma
+Björklundshage,Park,Bällstavägen,59.349993,17.89839,Södra Ängby,Bromma
+Ängbylunden,Park,Dybecksvägen,59.3451469,17.9016872,Norra Ängby,Bromma
+Murlindan,Park,Spångavägen,59.35478,17.9156524,Bromma kyrka,Bromma
+Park,Park,Enebyvägen,59.3592271,17.911103,Eneby,Bromma
+Park,Park,Komministervägen,59.3583667,17.9118661,Eneby,Bromma
+Västerledstorget,Park,Västerledstorget,59.3290712,17.9686651,Stora mossen,Bromma
+Park,Park,Enebyvägen,59.3581027,17.9091962,Eneby,Bromma
+Park,Park,Gamla Bromstensvägen,59.3657942,17.9315888,Bällsta,Bromma
+Tranebergsparken,Park,Tranebergsvägen,59.3335481,17.9843235,Traneberg,Bromma
+Lekparken,Park,Kinnekullevägen,59.3365791,17.9803498,Traneberg,Bromma
+Einar Forseths park,Park,Virvelvindsvägen,59.3236095,17.9428736,Ålsten,Bromma
+Smedslättstorget,Park,Smedslättstorget,59.320409,17.9640632,Smedslätten,Bromma
+Flyttblockshöjden,Park,Flyttblocksvägen,59.3593494,17.950673,Mariehäll,Bromma
+Snäckparken,Park,Snäckparken,59.3266117,17.9785442,Äppelviken,Bromma
+Park,Park,Lindstigen,59.3424076,17.9620016,Ulvsunda industriområde,Bromma
+Park,Park,Marklandsbacken,59.3356222,17.9399345,Åkeslund,Bromma
+Kämpakumlet,Park,Aladdinsvägen,59.3218513,17.9687858,Smedslätten,Bromma
+Halvmåneparken,Park,Follingbogatan,59.3577071,17.9022504,Beckomberga,Bromma
+Park,Park,Höglandstorget,59.3233286,17.9400665,Höglandet,Bromma
+Klockhusparken,Park,Styresman Sanders väg,59.3588395,17.9025004,Eneby,Bromma
+Park,Park,Lindstigen,59.3429759,17.9642544,Ulvsunda industriområde,Bromma
+Park,Park,Åkeshovsvägen,59.3386488,17.9268241,Åkeshov,Bromma
+Björnparken,Park,Bällstavägen,59.3558071,17.9070582,Eneby,Bromma
+Lillsjöplan,Park,Ulvsundavägen,59.3402689,17.9619556,Ulvsunda,Bromma
+Grönviksskälet,Park,Nockebyvägen,59.3211299,17.9432112,Ålsten,Bromma
+Pinden,Park,Grönviksvägen,59.3208146,17.9418852,Höglandet,Bromma
+Mossdungstäppan,Park,Orrspelsvägen,59.3236109,17.9468782,Ålsten,Bromma
+Park,Park,Örnbogatan,59.3239681,17.9501952,Ålsten,Bromma
+Virvelbacken,Park,Virvelvindsvägen,59.3249715,17.9426252,Ålsten,Bromma
+Park,Park,Örnbogatan,59.3255208,17.9509457,Ålsten,Bromma
+Park,Park,Björkrisvägen,59.3230703,17.9498167,Ålsten,Bromma
+Park,Park,Tjädervägen,59.3227169,17.9509424,Ålsten,Bromma
+Myrmarksplan,Park,Myrmarksplan,59.3264455,17.9630549,Äppelviken,Bromma
+Park,Park,Rånövägen,59.3350687,17.9233509,Bromma,Bromma
+Park,Park,Ryssmurvägen,59.3356961,17.9232046,Åkeshov,Bromma
+Park,Park,Grimstahamnsvägen,59.3323274,17.9217077,Bromma,Bromma
+Ryssmurskogen,Park,Grimstahamnsvägen,59.3330765,17.9206928,Nockeby,Bromma
+Brålunden,Park,Brålunden,59.3313026,17.9302492,Nockeby,Bromma
+Park,Park,Rättviksvägen,59.3264209,17.9250329,Nockeby,Bromma
+Thalialunden,Park,Thaliavägen,59.3245302,17.937914,Bromma,Bromma
+Park,Park,Snorrevägen,59.3468962,17.9166929,Bromma,Bromma
+Park,Park,Tranebergsvägen,59.3354692,17.9725899,Traneberg,Bromma
+Park,Park,Spångavägen,59.3501327,17.9190416,Bromma kyrka,Bromma
+Park,Park,Möjbrovägen,59.3464015,17.9214806,Bromma,Bromma
+Park,Park,Beckombergavägen,59.3430292,17.9227112,Åkeshov,Bromma
+Park,Park,Spångavägen,59.3444233,17.9300279,Bromma,Bromma
+Park,Park,"Åkeshovs eljusspår 1,5 km",59.342865,17.9318415,Åkeshov,Bromma
+Park,Park,Sedumbacken,59.3457407,17.9307303,Åkeshov,Bromma
+Park,Park,Ottarsvägen,59.3450447,17.9082413,Norra Ängby,Bromma
+Park,Park,Judarskogen Reflexbana MTB,59.3392493,17.9148798,Nockebyhov,Bromma
+Park,Park,Knypplerskevägen,59.3385006,17.9313531,Åkeslund,Bromma
+Park,Park,Nockebyvägen,59.3241574,17.9327178,Höglandet,Bromma
+Park,Park,Kvarnbacksvägen,59.3409615,17.9480802,Bromma,Bromma
+Park,Park,Galonvägen,59.3400139,17.9458649,Riksby,Bromma
+Park,Park,Beckomberga Ängsväg,59.3556888,17.8997318,Beckomberga,Bromma
+Park,Park,Ranhammarsvägen,59.3497157,17.9612499,Ulvsunda industriområde,Bromma
+Park,Park,Klas Klättermus Gata,59.3638505,17.9523754,Mariehäll,Bromma
+Park,Park,Blackebergsvägen,59.3367464,17.8964246,Södra Ängby,Bromma
+Runstensplan,Park,Långskeppsgatan,59.3516276,17.9005259,Norra Ängby,Bromma
+Park,Park,Blackebergsvägen,59.3368406,17.8988942,Södra Ängby,Bromma
+Ängby Kyrkpark,Park,Holbergsgatan,59.3460482,17.892047,Blackeberg,Bromma
+Sol och Måne,Park,Bällstavägen,59.360617,17.957544,Mariehäll,Bromma
+Alléparken,Park,Äppelviksvägen,59.3296127,17.9753725,Äppelviken,Bromma
+Fjärilskroken,Park,Alviksvägen,59.3276096,17.9744994,Äppelviken,Bromma
+Park,Park,Judarskogen Reflexbana MTB,59.3401815,17.9094578,Nockebyhov,Bromma
+Ålstensskogen,Park,Per Albins väg,59.3169307,17.9543087,Ålsten,Bromma
+Park,Park,Olovslundsvägen,59.3297657,17.9401544,Olovslund,Bromma
+Karsvikshage,Park,Tacitusvägen,59.3447673,17.9106586,Norra Ängby,Bromma
+Tranebergsängen,Park,Tranebergsvägen,59.3349547,17.988587,Traneberg,Bromma
+Mamma Muparken,Park,Ronja Rövardotters Stig,59.36629,17.9494326,Mariehäll,Bromma
+Ryssmurängen,Park,Åkeshovs allé,59.3376983,17.9227457,Åkeshov,Bromma
+Bergtorpskärret,Park,Långbrodalsvägen,59.2717146,17.9851412,Långsjö,Hägersten-Älvsjö
+Vivelparken,Park,Vallvägen,59.278208,17.9899785,Älvsjö,Hägersten-Älvsjö
+Årstafältet,Park,Gamla Göta landsväg,59.2914832,18.0459653,Östberga,Hägersten-Älvsjö
+Stamparken,Park,Stamgatan,59.2843789,18.04011,Östberga,Hägersten-Älvsjö
+Park,Park,Gimmerstavägen,59.2818615,18.0364913,Östberga,Hägersten-Älvsjö
+Örby slottspark,Park,Reuterholmsvägen,59.2813592,18.0299881,Örby slott,Hägersten-Älvsjö
+Aspöparken,Park,Västermovägen,59.2759329,18.0362143,Älvsjö,Hägersten-Älvsjö
+Turingeparken,Park,Gamla Magelungsvägen,59.2679418,18.0224985,Älvsjö,Hägersten-Älvsjö
+Ringdanskroken,Park,Staffan Stallares väg,59.2840304,18.0247324,Älvsjö,Hägersten-Älvsjö
+Park,Park,Vibyholmsvägen,59.280304,18.0323359,Örby slott,Hägersten-Älvsjö
+Örby Slottsplan,Park,Gripsholmsvägen,59.2823547,18.0311456,Örby slott,Hägersten-Älvsjö
+Park,Park,Örby Slottsväg,59.281843,18.0319655,Örby slott,Hägersten-Älvsjö
+Långbrogårdsparken,Park,Långbrovägen,59.279962,17.9911334,Älvsjö,Hägersten-Älvsjö
+Blåklockan,Park,Gamla Huddingevägen,59.2739233,18.0240543,Älvsjö,Hägersten-Älvsjö
+Viktoriaparken,Park,Viktoriavägen,59.2798577,17.9978112,Långsjö,Hägersten-Älvsjö
+Viktoriaparken,Park,Viktoriavägen,59.2790581,17.9951597,Långsjö,Hägersten-Älvsjö
+Pälsängen,Park,Krattvägen,59.2855596,17.987381,Älvsjö,Hägersten-Älvsjö
+Park,Park,Karossvägen,59.2862325,17.9812798,Älvsjö,Hägersten-Älvsjö
+Lerkrogsparken,Park,Spikskogatan,59.2797047,18.0074551,Älvsjö,Hägersten-Älvsjö
+Standarkullen,Park,Standarvägen,59.2766379,18.0038433,Liseberg,Hägersten-Älvsjö
+Park,Park,Stambanevägen,59.2620931,17.9831865,Snättringe,Hägersten-Älvsjö
+Park,Park,Konvaljestigen,59.275497,17.9710674,Älvsjö,Hägersten-Älvsjö
+Park,Park,Eldsbergagränd,59.287686,18.0348478,Östberga,Hägersten-Älvsjö
+Park,Park,Östbergabackarna,59.289962,18.0283924,Östberga,Hägersten-Älvsjö
+Park,Park,Spannarpsgränd,59.2895277,18.0278001,Östberga,Hägersten-Älvsjö
+Kabelverksparken,Park,Luftkabelgatan,59.2818035,17.9998876,Liseberg,Hägersten-Älvsjö
+Medaljongparken,Park,Kabelverksgatan,59.2832397,18.0011766,Älvsjö,Hägersten-Älvsjö
+Långbroparken,Park,Stora Kvinns Väg,59.2809249,17.9732464,Älvsjö,Hägersten-Älvsjö
