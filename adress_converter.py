@@ -37,7 +37,7 @@ def get_address(lat, lon, retries=3):
 
         except Exception as e:
             print(f"  Försök {attempt+1} misslyckades: {e}")
-            time.sleep(3)
+            time.sleep(1.1)
 
     return None
 
@@ -66,10 +66,33 @@ def apply_address(df):
             time.sleep(1.1)
 
     # Write it to a new csv - file
-    df.to_csv('data_files/alvsjo_data_with_adress.csv',
+    df.to_csv('data_files/parker.csv',
+              index=False, encoding='utf-8-sig')
+    print("Klart!")
+
+
+# Function to apply address specifically for school data with different column names
+def apply_address_skolor(df):
+    if 'Stadsdel' not in df.columns:
+        df['Stadsdel'] = 'N/A'
+
+    for index, row in df.iterrows():
+        # Schools only need Stadsdel - Gata already exists in gatuadress column
+        if pd.isna(row['Stadsdel']) or row['Stadsdel'] == 'N/A':
+            location_data = get_address(
+                row['koordinat_north'], row['koordinat_east'])
+
+            if location_data:
+                df.at[index, 'Stadsdel'] = location_data['suburb']
+
+            print(f"Rad {index}: {location_data}")
+            time.sleep(3)
+
+    df.to_csv('data_files/skolor_with_stadsdel.csv',
               index=False, encoding='utf-8-sig')
     print("Klart!")
 
 
 if __name__ == "__main__":
-    apply_address(pd.read_csv('data_files/alvsjo_data.csv'))
+    apply_address(pd.read_csv('data_files/parker.csv',
+                  dtype={'Gata': str, 'Nr': str}))
