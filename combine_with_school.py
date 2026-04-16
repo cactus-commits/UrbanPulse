@@ -17,14 +17,6 @@ skolor_clean = pd.DataFrame({
 
 })
 
-# parkeringar_clean = pd.DataFrame({
-#     'namn':      parkeringar['adress'],
-#     'kategori':  parkeringar['platstyp'],
-#     'gata':      parkeringar['gata'],
-#     'lat':       parkeringar['latitud'],
-#     'lon':       parkeringar['longitud'],
-#     'stadsdel':  parkeringar['stadsdel']
-# })
 
 services_clean = pd.DataFrame({
     'namn':      services['Namn'],
