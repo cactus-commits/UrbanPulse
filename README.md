@@ -45,6 +45,20 @@ Dashboarden innehåller:
 
 ---
 
+## Streamlit
+
+Tillgång till streamlit:
+
+
+Dashboarden innehåller:
+
+- interaktiva grafer och diagram  
+- jämförelser över tid och mellan variabler  
+- filtrering och drill-down-funktionalitet  
+- visuella sammanfattningar av komplex data  
+
+---
+
 ## Syfte
 
 Bokoll är utvecklat för att:
