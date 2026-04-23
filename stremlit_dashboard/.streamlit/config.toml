@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#FEFEFE"
+backgroundColor = "#F7F6F4"
+secondaryBackgroundColor = "#003F47"
+textColor = "#262730"
+font = "IBM Plex Sans:https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
