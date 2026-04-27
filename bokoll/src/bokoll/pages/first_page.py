@@ -9,17 +9,20 @@ def page_layout():
     st.header("Filtrera på kategori och stadsdel")
 
 
-def columns_layout():
-    col1, col2 = st.columns(2, gap="medium", vertical_alignment="center")
+# def columns_layout():
+#     col1, col2 = st.columns(2, gap="medium", vertical_alignment="center")
 
-    with col1:
+#     with col1:
 
-        filter_map = filter_layout()
+#         filter_map = filter_layout()
 
-    with col2:
-        show_map(filter_map)
+#     with col2:
+#         show_map(filter_map)
+
 
 
 if __name__ == "__main__":
     page_layout()
-    columns_layout()
+    filter_map = filter_layout()
+    show_map(filter_map)
+    
