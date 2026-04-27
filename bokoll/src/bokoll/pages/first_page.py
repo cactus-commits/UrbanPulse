@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 from bokoll.components.map import show_map
 from bokoll.components.filter import filter_layout
+from bokoll.components.donut import show_age_donut
+from bokoll.components.bar_chart import bar_chart
 
 
 def page_layout():
@@ -25,4 +27,6 @@ if __name__ == "__main__":
     page_layout()
     filter_map = filter_layout()
     show_map(filter_map)
-    
+    show_age_donut(filter_map)
+    bar_chart()
+
