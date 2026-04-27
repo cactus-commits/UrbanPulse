@@ -1,0 +1,23 @@
+/* Navbar text färg */
+[data-testid="stSidebarNav"] a span,
+[data-testid="stSidebarNavItems"] span {
+    color: white !important;
+}
+
+/* Navbar hover */
+[data-testid="stSidebarNav"] a:hover span {
+    color: white !important;
+}
+
+/* Main content text (övrig text) */
+.main .block-container {
+    color: #262730 !important;
+}
+
+/* Headers i main content */
+.main h1,
+.main h2,
+.main h3 {
+    color: #1F1F1F !important;
+}
+
