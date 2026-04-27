@@ -5,7 +5,6 @@ import streamlit as st
 import pandas as pd
 from folium.plugins import Geocoder
 from bokoll.utils.constants import DATA_PATH
-from bokoll.components.filter import filter_layout
 
 df = pd.read_csv(DATA_PATH / "combined_services_for_map_cleaned.csv")
 
@@ -33,4 +32,4 @@ def show_map(data=None):
         ).add_to(m)
 
     # shows the map
-    st_folium(m, width=700, height=500)
+    st_folium(m, width=700, height=430)

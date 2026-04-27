@@ -4,9 +4,6 @@ from bokoll.components.clean_map_data import df
 
 
 def filter_layout():
-    st.title("Översikt")
-
-    st.header("Filtrera på kategori och stadsdel")
 
     df['kategori'] = df['kategori'].str.replace('_', ' ').str.title()
 
