@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd
 from bokoll.components.clean_map_data import df
 
+def reset_filters():
+    st.session_state.vald_kategori = 'Alla'
+    st.session_state.vald_stadsdel = 'Alla'
+    st.session_state.vald_stadsdelsomrade = 'Alla'
+
 
 def filter_layout():
 
@@ -11,29 +16,44 @@ def filter_layout():
     stadsdel_lista = ['Alla'] + sorted(df["stadsdel"].dropna().unique())
     stadsdelsomrade_lista = ['Alla'] + \
         sorted(df["stadsdelsomrade"].dropna().unique())
+    
 
-    col1, col2, col3 = st.columns(3)
+    if 'vald_kategori' not in st.session_state:
+        st.session_state.vald_kategori = 'Alla'
+    if 'vald_stadsdel' not in st.session_state:
+        st.session_state.vald_stadsdel = 'Alla'
+    if 'vald_stadsdelsomrade' not in st.session_state:
+        st.session_state.vald_stadsdelsomrade = 'Alla'
+
+    col1, col2, col3, col4 = st.columns(4)
+
+
 
     with col1:
         vald_kategori = st.selectbox(
             "Välj kategori:",
             options=kategorilista,
-            index=0
+            key="vald_kategori"
         )
 
     with col2:
         vald_stadsdel = st.selectbox(
             "Välj stadsdel:",
             options=stadsdel_lista,
-            index=0
+            key="vald_stadsdel"
         )
 
     with col3:
         vald_stadsdelsomrade = st.selectbox(
             "Välj område:",
             options=stadsdelsomrade_lista,
-            index=0
+            key="vald_stadsdelsomrade"
         )
+
+    with col4:
+        st.markdown("")
+        st.markdown("")
+        st.button("Återställ filter", on_click=reset_filters)
 
     filtered_df = df.copy()
 
