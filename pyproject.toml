@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "duckdb>=1.5.1",
     "fastapi>=0.135.3",
+    "folium>=0.20.0",
     "geopy>=2.4.1",
     "httpx>=0.28.1",
     "ipykernel>=7.2.0",
@@ -16,6 +17,7 @@ dependencies = [
     "pandas>=3.0.2",
     "requests>=2.33.1",
     "streamlit>=1.56.0",
+    "streamlit-folium>=0.27.1",
     "xlrd>=2.0.2",
 ]
 
