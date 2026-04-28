@@ -4,6 +4,7 @@ from bokoll.utils.helpers import load_map_data
 
 df = load_map_data()
 
+
 def reset_filters():
     st.session_state.vald_kategori = 'Alla'
     st.session_state.vald_stadsdel = 'Alla'
@@ -16,7 +17,7 @@ def filter_layout():
     stadsdel_lista = ['Alla'] + sorted(df["stadsdel"].dropna().unique())
     stadsdelsomrade_lista = ['Alla'] + \
         sorted(df["stadsdelsomrade"].dropna().unique())
-    
+
     # if 'vald_kategori' not in st.session_state:
     #     st.session_state.vald_kategori = 'Alla'
     # if 'vald_stadsdel' not in st.session_state:
@@ -25,8 +26,6 @@ def filter_layout():
     #     st.session_state.vald_stadsdelsomrade = 'Alla'
 
     col1, col2, col3, col4 = st.columns(4)
-
-
 
     with col1:
         vald_kategori = st.selectbox(
@@ -64,8 +63,5 @@ def filter_layout():
                                   == vald_stadsdelsomrade]
     if vald_stadsdel != 'Alla':
         filtered_df = filtered_df[filtered_df['stadsdel'] == vald_stadsdel]
-
-    st.dataframe(
-        filtered_df[['namn', 'kategori', 'stadsdel', 'stadsdelsomrade']])
 
     return filtered_df
