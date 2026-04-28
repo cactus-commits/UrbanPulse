@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
-from bokoll.components.clean_map_data import df
+from bokoll.utils.helpers import load_map_data
+
+df = load_map_data()
 
 def reset_filters():
     st.session_state.vald_kategori = 'Alla'

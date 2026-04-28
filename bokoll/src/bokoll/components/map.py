@@ -5,9 +5,9 @@ import streamlit as st
 import pandas as pd
 from folium.plugins import Geocoder
 from bokoll.utils.constants import DATA_PATH
+from bokoll.utils.helpers import load_map_data
 
-df = pd.read_csv(DATA_PATH / "combined_services_for_map_cleaned.csv")
-
+df = load_map_data()
 
 def show_map(data=None):
 

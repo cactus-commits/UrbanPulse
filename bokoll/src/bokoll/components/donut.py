@@ -2,16 +2,9 @@ from pathlib import Path
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-
+from bokoll.utils.helpers import load_folkmangd
 from bokoll.utils.constants import DATA_PATH
 
-
-@st.cache_data
-def load_folkmangd() -> pd.DataFrame:
-    df = pd.read_excel(DATA_PATH / "folkmangd_regso.xlsx")
-    df = df.dropna(subset=["Region", "Ålderskategori", "value"])
-    df = df[~df["Alder"].isin(["Total", "No filters applied"])]
-    return df
 
 
 def show_age_donut(filtered_df: pd.DataFrame):
