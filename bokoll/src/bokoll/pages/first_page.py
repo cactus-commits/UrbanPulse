@@ -4,6 +4,7 @@ from bokoll.components.map import show_map
 from bokoll.components.filter import filter_layout
 from bokoll.components.donut import show_age_donut
 from bokoll.components.bar_chart import bar_chart
+from bokoll.components.kpis import total_boende_kpi
 
 
 def page_layout():
@@ -25,8 +26,9 @@ def page_layout():
 
 if __name__ == "__main__":
     page_layout()
-    filter_map = filter_layout()
-    show_map(filter_map)
-    show_age_donut(filter_map)
-    bar_chart()
+    filter_df = filter_layout()
+    total_boende_kpi(vald_stadsdel=st.session_state.vald_stadsdel, vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
+    show_map(filter_df)
+    show_age_donut(filter_df)
+    bar_chart(vald_stadsdel=st.session_state.vald_stadsdel, vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
