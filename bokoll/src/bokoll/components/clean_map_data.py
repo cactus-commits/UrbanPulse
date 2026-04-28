@@ -1,9 +1,9 @@
 import pandas as pd
 from bokoll.utils.constants import DATA_PATH
+from bokoll.utils.helpers import load_map_data
 
-df = pd.read_csv(DATA_PATH / "combined_services_for_map.csv",
-                 encoding='utf-8-sig')
 
+df = load_map_data()
 
 valid_coords = (df['lat'].between(55, 62)) & (df['lon'].between(15, 20))
 df = df[valid_coords]
