@@ -35,3 +35,11 @@ def load_folkmangd() -> pd.DataFrame:
     df = df[~df["Alder"].isin(["Total", "No filters applied"])]
     df = df[df['Alder'] != 'Total']
     return df
+
+@st.cache_data
+def load_brott_statistik():
+    df = pd.read_csv(DATA_PATH / "Antal_anmälda_brott.csv")
+    df.columns = df.columns.str.strip().str.rstrip(":")
+    df = df.dropna(how="all")
+    df = df.rename(columns={"Område": "stadsdelsomrade"})
+    return df
