@@ -5,6 +5,7 @@ from bokoll.components.filter import filter_layout
 from bokoll.components.donut import show_age_donut
 from bokoll.components.bar_chart import bar_chart
 from bokoll.components.kpis import total_boende_kpi
+from bokoll.components.line_chart import line_chart_brott
 
 
 def page_layout():
@@ -31,4 +32,4 @@ if __name__ == "__main__":
     show_map(filter_df)
     show_age_donut(filter_df)
     bar_chart(vald_stadsdel=st.session_state.vald_stadsdel, vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
-
+    line_chart_brott(vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
