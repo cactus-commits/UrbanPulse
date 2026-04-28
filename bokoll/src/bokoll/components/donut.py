@@ -8,7 +8,6 @@ from bokoll.utils.constants import DATA_PATH
 
 
 def show_age_donut(filtered_df: pd.DataFrame):
-    st.subheader("Åldersfördelning")
 
     folk = load_folkmangd()
 
@@ -46,7 +45,7 @@ def show_age_donut(filtered_df: pd.DataFrame):
         hole=0.5,
         category_orders={"Ålderskategori": ordning},
         color_discrete_sequence=px.colors.sequential.Blues_r,
-        title=f"Åldersfördelning – {rubrik}",
+        # title=f"Åldersfördelning – {rubrik}",
     )
     fig.update_traces(textposition="outside", textinfo="percent+label")
     fig.update_layout(
