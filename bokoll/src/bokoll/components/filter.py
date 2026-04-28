@@ -12,20 +12,17 @@ def reset_filters():
 
 def filter_layout():
 
-    df['kategori'] = df['kategori'].str.replace('_', ' ').str.title()
-
     kategorilista = ['Alla'] + sorted(df["kategori"].dropna().unique())
     stadsdel_lista = ['Alla'] + sorted(df["stadsdel"].dropna().unique())
     stadsdelsomrade_lista = ['Alla'] + \
         sorted(df["stadsdelsomrade"].dropna().unique())
     
-
-    if 'vald_kategori' not in st.session_state:
-        st.session_state.vald_kategori = 'Alla'
-    if 'vald_stadsdel' not in st.session_state:
-        st.session_state.vald_stadsdel = 'Alla'
-    if 'vald_stadsdelsomrade' not in st.session_state:
-        st.session_state.vald_stadsdelsomrade = 'Alla'
+    # if 'vald_kategori' not in st.session_state:
+    #     st.session_state.vald_kategori = 'Alla'
+    # if 'vald_stadsdel' not in st.session_state:
+    #     st.session_state.vald_stadsdel = 'Alla'
+    # if 'vald_stadsdelsomrade' not in st.session_state:
+    #     st.session_state.vald_stadsdelsomrade = 'Alla'
 
     col1, col2, col3, col4 = st.columns(4)
 

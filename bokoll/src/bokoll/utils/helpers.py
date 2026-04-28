@@ -24,7 +24,8 @@ def load_boende():
 
 @st.cache_data
 def load_map_data():
-    df = pd.read_csv(DATA_PATH / "combined_services_for_map.csv",  encoding='utf-8-sig')
+    df = pd.read_csv(DATA_PATH / "combined_services_for_map_cleaned.csv",  encoding='utf-8-sig')
+    df['kategori'] = df['kategori'].str.replace('_', ' ').str.title()
     return df
 
 @st.cache_data
@@ -32,4 +33,5 @@ def load_folkmangd() -> pd.DataFrame:
     df = pd.read_excel(DATA_PATH / "folkmangd_regso.xlsx")
     df = df.dropna(subset=["Region", "Ålderskategori", "value"])
     df = df[~df["Alder"].isin(["Total", "No filters applied"])]
+    df = df[df['Alder'] != 'Total']
     return df
