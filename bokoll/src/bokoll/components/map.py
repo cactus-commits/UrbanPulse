@@ -9,6 +9,7 @@ from bokoll.utils.helpers import load_map_data
 
 df = load_map_data()
 
+
 def show_map(data=None):
 
     if data is None or data.empty:
@@ -32,4 +33,5 @@ def show_map(data=None):
         ).add_to(m)
 
     # shows the map
-    st_folium(m, width=700, height=430)
+
+    st_folium(m, use_container_width=True, height=430)

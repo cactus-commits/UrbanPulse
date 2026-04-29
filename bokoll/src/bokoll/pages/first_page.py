@@ -9,9 +9,6 @@ from bokoll.components.line_chart import line_chart_brott
 from bokoll.components.table import dataTable
 
 
-
-
-
 def page_layout():
     st.title("Översikt")
     st.subheader("Filtrera på kategori och stadsdel")
@@ -25,7 +22,8 @@ def page_layout():
 
     with col2:
         with st.container(border=True):
-            total_boende_kpi(vald_stadsdel=st.session_state.vald_stadsdel,vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
+            total_boende_kpi(vald_stadsdel=st.session_state.vald_stadsdel,
+                             vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
     st.subheader("Lista över serviceutbud & tjänster för det valda området")
     with st.container(border=True):
@@ -35,18 +33,18 @@ def page_layout():
 
     with col3:
         st.subheader("Befolkningsmängd")
-        with st.container(border=True,height=600, vertical_alignment="center"): 
+        with st.container(border=True, height=500, vertical_alignment="center"):
             show_age_donut(filter_df)
 
     with col4:
         st.subheader("Boendeform")
-        with st.container(border=True, height=600, vertical_alignment="center"):
-            
+        with st.container(border=True, height=500, vertical_alignment="center"):
+
             bar_chart(vald_stadsdel=st.session_state.vald_stadsdel,
                       vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
     st.subheader("Antal anmälda brott")
-    with st.container(border=True):
+    with st.container(border=True, height=300):
         line_chart_brott(
             vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
