@@ -122,7 +122,9 @@ matplotlib-inline==0.2.1
     #   ipykernel
     #   ipython
 narwhals==2.20.0
-    # via altair
+    # via
+    #   altair
+    #   plotly
 nest-asyncio==1.6.0
     # via ipykernel
 numpy==2.4.4
@@ -140,6 +142,7 @@ packaging==26.0
     #   altair
     #   ipykernel
     #   matplotlib
+    #   plotly
     #   streamlit
 pandas==3.0.2
     # via
@@ -155,6 +158,8 @@ pillow==12.2.0
     #   streamlit
 platformdirs==4.9.4
     # via jupyter-core
+plotly==6.7.0
+    # via urbanpulse
 prompt-toolkit==3.0.52
     # via ipython
 protobuf==7.34.1
