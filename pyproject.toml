@@ -26,3 +26,6 @@ dependencies = [
 members = [
     "bokoll",
 ]
+
+[tool.uv]
+package = true
