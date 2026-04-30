@@ -4,6 +4,7 @@ from bokoll.utils.helpers import load_boende
 
 
 def bar_chart(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
+
     df = load_boende()
 
     if vald_stadsdel != 'Alla':
