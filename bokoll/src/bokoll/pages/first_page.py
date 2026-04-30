@@ -4,7 +4,7 @@ from bokoll.components.map import show_map
 from bokoll.components.filter import filter_layout
 from bokoll.components.donut import show_age_donut
 from bokoll.components.bar_chart import bar_chart
-from bokoll.components.kpis import total_boende_kpi
+from bokoll.components.kpis import total_boende_kpi, antal_skolor
 from bokoll.components.line_chart import line_chart_brott
 from bokoll.components.table import dataTable
 from bokoll.components.images import home_image
@@ -24,6 +24,8 @@ def page_layout():
         with st.container(border=True):
             total_boende_kpi(vald_stadsdel=st.session_state.vald_stadsdel,
                              vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
+            antal_skolor(vald_stadsdel=st.session_state.vald_stadsdel,
+                         vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
     col_map, col_list = st.columns(
         2, gap="medium", vertical_alignment="center")
