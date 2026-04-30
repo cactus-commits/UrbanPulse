@@ -2,7 +2,7 @@ from bokoll.components.filter import filter_layout
 import streamlit as st
 from bokoll.components.line_chart import line_chart_hyresutveckling
 from bokoll.components.kpis import demografi_snittålder, demografi_invånare
-
+from bokoll.components.spider import show_age_spider
 
 def page_layout():
     st.title("Demografi")
@@ -25,6 +25,11 @@ def page_layout():
             demografi_invånare(
                 vald_stadsdel=st.session_state.vald_stadsdel,
                 vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
+
+    # Andra raden – spider chart får mer plats
+    with st.container(border=True):
+        st.subheader("Befolkningsmängd")
+        show_age_spider(filter_df)
 
 
 if __name__ == "__main__":
