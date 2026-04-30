@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from bokoll.components.map import show_map
+from bokoll.components.map import show_map, plotly_map
 from bokoll.components.filter import filter_layout
 from bokoll.components.donut import show_age_donut
 from bokoll.components.bar_chart import bar_chart
@@ -14,6 +14,8 @@ def page_layout():
     st.title("Översikt")
     st.subheader("Filtrera på kategori och stadsdel")
     filter_df = filter_layout()
+
+    # plotly_map()
 
     col_img, col_kpi = st.columns(2, gap="medium", vertical_alignment="center")
 

@@ -6,6 +6,8 @@ import pandas as pd
 from folium.plugins import Geocoder
 from bokoll.utils.constants import DATA_PATH
 from bokoll.utils.helpers import load_map_data
+import geopandas as gpd
+import plotly.express as px
 
 df = load_map_data()
 
@@ -35,3 +37,13 @@ def show_map(data=None):
     # shows the map
 
     st_folium(m, use_container_width=True, height=430)
+
+
+# def plotly_map():
+#     geo_df = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.lon, df.lat))
+#     fig = px.scatter_map(geo_df,
+#                         lat=geo_df.geometry.y,
+#                         lon=geo_df.geometry.x,
+#                         hover_name="kategori",
+#                         zoom=1)
+#     fig.show()
