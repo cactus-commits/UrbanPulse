@@ -14,6 +14,8 @@
     color: #262730 !important;
 }
 
+
+
 /* Headers i main content */
 .main h1,
 .main h2,
@@ -21,3 +23,33 @@
     color: #1F1F1F !important;
 }
 
+
+/* Styling for the filtering on Översikt */
+
+.st-key-vald_stadsdelsomrade>div:nth-child(1)>div:nth-child(2)>div:nth-child(1),
+.st-key-vald_stadsdelsomrade>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>svg:nth-child(1){
+    color:white; 
+     
+}
+
+
+.st-key-vald_stadsdel>div:nth-child(1)>div:nth-child(2)>div:nth-child(1),
+.st-key-vald_stadsdel>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>svg:nth-child(1){
+    color:white;
+    
+}
+
+
+
+.st-key-vald_kategori>div:nth-child(1)>div:nth-child(2)>div:nth-child(1), 
+.st-key-vald_kategori>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>svg:nth-child(1){
+    color:white;
+   
+}
+
+.st-emotion-cache-1l4xqi8{
+    color: white;
+    background: #003F47; 
+    margin-top: -4px;
+    
+}

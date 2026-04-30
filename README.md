@@ -34,7 +34,7 @@ Designen strävar efter att balansera analys och presentation, där varje kompon
 
 Tillgång till rapporten:
 
-https://app.powerbi.com/groups/me/apps/48b8b382-0178-4184-829f-062a13f89052/reports/3096523e-c7c8-4a69-9369-ff8d540f8014/b33e1471e930314f6d24
+https://app.powerbi.com/Redirect?action=OpenReport&appId=48b8b382-0178-4184-829f-062a13f89052&reportObjectId=5bcfdffb-59b5-48cd-8de5-eecb97d13bd3&ctid=735058e3-0e46-46ce-a1d5-c0b0a68980db&reportPage=b33e1471e930314f6d24&pbi_source=appShareLink&portalSessionId=4288f2d4-dc98-4072-ab41-4d6166165948
 
 Dashboarden innehåller:
 

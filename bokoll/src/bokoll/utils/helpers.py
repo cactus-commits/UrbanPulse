@@ -43,3 +43,10 @@ def load_brott_statistik():
     df = df.dropna(how="all")
     df = df.rename(columns={"Område": "stadsdelsomrade"})
     return df
+
+@st.cache_data
+def load_hyresutveckling():
+    df = pd.read_csv(DATA_PATH / "Hyresutveckling.csv")
+    df = df.dropna(how="all")
+    return df
+
