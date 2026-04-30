@@ -1,6 +1,6 @@
 import streamlit as st
 import duckdb
-from bokoll.utils.helpers import load_folkmangd
+from bokoll.utils.helpers import load_folkmangd, load_map_data
 import pandas as pd
 
 
@@ -57,3 +57,16 @@ def demografi_invånare(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
 
     total = int(df['value'].sum())
     st.metric(label="Antal invånare", value=f"{total:,}".replace(",", " "))
+
+def antal_skolor(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
+    df = load_map_data()
+    skolor = df[df['kategori'].isin(['Grundskolor', 'Öppen Förskola', 'Förskola', 'Anpassade Grundskolor'])]
+
+    if vald_stadsdel != 'Alla':
+        skolor = skolor[skolor['Stadsdel'] == vald_stadsdel]
+    if vald_stadsdelsomrade != 'Alla':
+        skolor = skolor[skolor['stadsdelsomrade'] == vald_stadsdelsomrade]
+
+    total = len(skolor)
+    st.metric(label="Antal skolor", value=f"{total:,}".replace(",", " "))
+
