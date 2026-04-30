@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-from bokoll.utils.constants import DATA_PATH
+from bokoll.utils.constants import DATA_PATH, IMAGE_PATH
+from PIL import Image
 
 
 def read_textfile(path):
@@ -19,14 +20,18 @@ def read_css(path):
 def load_boende():
     df = pd.read_csv(DATA_PATH / "boende_regso.csv", sep=";", decimal=",")
     df = df.dropna(subset=["value"])
-    df = df[df["Upplåtelseform_Stor"].isin(["Bostadsrätt", "Hyresrätt", "Äganderätt"])]
+    df = df[df["Upplåtelseform_Stor"].isin(
+        ["Bostadsrätt", "Hyresrätt", "Äganderätt"])]
     return df
+
 
 @st.cache_data
 def load_map_data():
-    df = pd.read_csv(DATA_PATH / "combined_services_for_map_cleaned.csv",  encoding='utf-8-sig')
+    df = pd.read_csv(
+        DATA_PATH / "combined_services_for_map_cleaned.csv",  encoding='utf-8-sig')
     df['kategori'] = df['kategori'].str.replace('_', ' ').str.title()
     return df
+
 
 @st.cache_data
 def load_folkmangd() -> pd.DataFrame:
@@ -36,6 +41,7 @@ def load_folkmangd() -> pd.DataFrame:
     df = df[df['Alder'] != 'Total']
     return df
 
+
 @st.cache_data
 def load_brott_statistik():
     df = pd.read_csv(DATA_PATH / "Antal_anmälda_brott.csv")
@@ -44,9 +50,16 @@ def load_brott_statistik():
     df = df.rename(columns={"Område": "stadsdelsomrade"})
     return df
 
+
 @st.cache_data
 def load_hyresutveckling():
     df = pd.read_csv(DATA_PATH / "Hyresutveckling.csv")
     df = df.dropna(how="all")
     return df
 
+
+@st.cache_data
+def load_images(vald_img):
+    img = Image.open(IMAGE_PATH/f'{vald_img}.png')
+
+    st.image(img)
