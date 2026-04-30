@@ -7,7 +7,6 @@ from bokoll.components.bar_chart import bar_chart
 from bokoll.components.kpis import total_boende_kpi
 from bokoll.components.line_chart import line_chart_brott
 from bokoll.components.table import dataTable
-from bokoll.components.images import home_image
 
 
 def page_layout():
@@ -15,44 +14,36 @@ def page_layout():
     st.subheader("Filtrera på kategori och stadsdel")
     filter_df = filter_layout()
 
-    col_img, col_kpi = st.columns(2, gap="medium", vertical_alignment="center")
+    col1, col2 = st.columns(2, gap="medium", vertical_alignment="center")
 
-    with col_img:
-        home_image(vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
+    with col1:
+        with st.container(border=True):
+            show_map(filter_df)
 
-    with col_kpi:
+    with col2:
         with st.container(border=True):
             total_boende_kpi(vald_stadsdel=st.session_state.vald_stadsdel,
                              vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
-    col_map, col_list = st.columns(
-        2, gap="medium", vertical_alignment="center")
+    with st.container(border=True):
+        st.subheader(
+            "Lista över serviceutbud & tjänster för det valda området")
+        dataTable(filter_df)
 
-    with col_map:
-        with st.container(border=True):
-            show_map(filter_df)
+    col3, col4 = st.columns(2, gap="small", vertical_alignment="center")
 
-    with col_list:
-        with st.container(border=True):
-            st.subheader(
-                "Lista över serviceutbud & tjänster för det valda området")
-            dataTable(filter_df)
-
-    col_donut, col_barchart = st.columns(
-        2, gap="small", vertical_alignment="center")
-
-    with col_donut:
+    with col3:
         with st.container(border=True, height=500, vertical_alignment="center"):
             st.subheader("Befolkningsmängd")
             show_age_donut(filter_df)
 
-    with col_barchart:
+    with col4:
         with st.container(border=True, height=500, vertical_alignment="center"):
             st.subheader("Boendeform")
             bar_chart(vald_stadsdel=st.session_state.vald_stadsdel,
                       vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
-    with st.container(border=True):
+    with st.container(border=True, height=300):
         st.subheader("Antal anmälda brott")
 
         line_chart_brott(
