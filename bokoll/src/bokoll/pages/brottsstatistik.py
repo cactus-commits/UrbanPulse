@@ -35,8 +35,7 @@ def page_layout():
     with col_2:
         with styled_container():
             st.markdown('###### Antal anmälda brott vs Stockholm')
-            bar_chart_brott_2025(
-                vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
+            bar_chart_brott_2025(st.session_state.get('vald_stadsdelsomrade', 'Alla'))
 
 
 if __name__ == "__main__":
