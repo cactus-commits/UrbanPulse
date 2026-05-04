@@ -6,9 +6,10 @@ df = load_map_data()
 
 
 def reset_filters():
-    st.session_state.vald_kategori = 'Alla'
-    st.session_state.vald_stadsdel = 'Alla'
-    st.session_state.vald_stadsdelsomrade = 'Alla'
+    for key in ['vald_kategori', 'vald_stadsdel', 'vald_stadsdelsomrade',
+                'brott_vald_stadsdel', 'brott_vald_stadsdelsomrade']:
+        if key in st.session_state:
+            st.session_state[key] = 'Alla'
 
 
 def filter_layout():
@@ -60,6 +61,46 @@ def filter_layout():
     if vald_stadsdelsomrade != 'Alla':
         filtered_df = filtered_df[filtered_df['stadsdelsomrade']
                                   == vald_stadsdelsomrade]
+    if vald_stadsdel != 'Alla':
+        filtered_df = filtered_df[filtered_df['stadsdel'] == vald_stadsdel]
+
+    return filtered_df
+
+
+
+def filter_brott():
+    stadsdel_lista = ['Alla'] + sorted(df["stadsdel"].dropna().unique())
+    stadsdelsomrade_lista = ['Alla'] + sorted(df["stadsdelsomrade"].dropna().unique())
+
+    # Sync from main filter if already set
+    default_stadsdel = st.session_state.get('vald_stadsdel', 'Alla')
+    default_omrade = st.session_state.get('vald_stadsdelsomrade', 'Alla')
+
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        vald_stadsdel = st.selectbox(
+            "Välj stadsdel:",
+            options=stadsdel_lista,
+            index=stadsdel_lista.index(default_stadsdel) if default_stadsdel in stadsdel_lista else 0,
+            key="brott_vald_stadsdel"  # unique key
+        )
+
+    with col2:
+        vald_stadsdelsomrade = st.selectbox(
+            "Välj område:",
+            options=stadsdelsomrade_lista,
+            index=stadsdelsomrade_lista.index(default_omrade) if default_omrade in stadsdelsomrade_lista else 0,
+            key="brott_vald_stadsdelsomrade"  # unique key
+        )
+
+    with col3:
+        st.button("Återställ filter", on_click=reset_filters, key="brott_reset")
+
+    filtered_df = df.copy()
+
+    if vald_stadsdelsomrade != 'Alla':
+        filtered_df = filtered_df[filtered_df['stadsdelsomrade'] == vald_stadsdelsomrade]
     if vald_stadsdel != 'Alla':
         filtered_df = filtered_df[filtered_df['stadsdel'] == vald_stadsdel]
 

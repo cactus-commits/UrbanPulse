@@ -32,6 +32,7 @@ def bar_chart_brott_2025(vald_stadsdelsomrade='Alla'):
     df = load_brott_2025()
     df_total = df[df['Brottstyp'] == 'Totalt antal brott'].copy()
 
+
     fig = alt.Chart(df_total).mark_bar().encode(
         x=alt.X('År:Q', title='Antal brott'),
         y=alt.Y('Stadsdelsområde:N'),
