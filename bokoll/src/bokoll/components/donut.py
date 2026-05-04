@@ -46,6 +46,7 @@ def show_age_donut(filtered_df: pd.DataFrame):
         category_orders={"Ålderskategori": ordning},
         color_discrete_sequence=px.colors.sequential.Blues_r,
         title=f"Åldersfördelning – {rubrik}",
+        height=350
     )
     fig.update_traces(textposition="outside", textinfo="percent+label")
     fig.update_layout(

@@ -30,6 +30,7 @@ def bar_chart(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
         x_label="",
         y_label="Andel (%)",
         color="#6B7B8C",
+        height=350
     )
 
 
@@ -53,9 +54,11 @@ def bar_chart_brott_2025(vald_stadsdelsomrade='Alla'):
         y=alt.Y('Stadsdelsområde:N'),
         color=alt.condition(
             alt.datum.Stadsdelsområde == vald_stadsdelsomrade,
-            alt.value('cyan'),
-            alt.value('lightblue')
+            alt.value('#E39D4D'),
+            alt.value('#A2C1C6')
         )
-    ).properties(width=600)
+    ).properties(width=600).configure_axis(
+        grid=False  # Ta bort grid lines
+    )
 
     st.altair_chart(fig, use_container_width=True)
