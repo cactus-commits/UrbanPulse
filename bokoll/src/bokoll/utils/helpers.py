@@ -39,7 +39,7 @@ def load_folkmangd() -> pd.DataFrame:
     df = df.dropna(subset=["Region", "Ålderskategori", "value"])
     df = df[~df["Alder"].isin(["Total", "No filters applied"])]
     df = df[df['Alder'] != 'Total']
-    return df
+    return df.copy() #så att den inte chachar något konstigt 
 
 
 @st.cache_data
