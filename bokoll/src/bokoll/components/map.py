@@ -7,43 +7,90 @@ from folium.plugins import Geocoder
 from bokoll.utils.constants import DATA_PATH
 from bokoll.utils.helpers import load_map_data
 import geopandas as gpd
-import plotly.express as px
+
 
 df = load_map_data()
 
 
 def show_map(data=None):
-
     if data is None or data.empty:
-        # data = df
         st.warning("Ingen data finns för den valda platsen")
         return
 
+    # Räkna ut centrumpunkt för kartan baserat på koordinaterna
     map_center = [data['lat'].mean(), data['lon'].mean()]
-    m = folium.Map(location=map_center, zoom_start=9, height=300)
 
-    # Add searchbar to the map
-    Geocoder().add_to(m)
+    # Skapa kartobjektet - vi använder en något högre zoom för att se cirklarna bättre
+    m = folium.Map(location=map_center, zoom_start=10,
+                   tiles="CartoDB positron")
 
-   # adds marker for the location
+    # Visar sökfält med collaps
+    Geocoder(collapsed=True).add_to(m)
+
+    # Loopa igenom data och lägg till cirklar
     for idx, row in data.iterrows():
-        folium.Marker(
+        # Bestäm färg baserat på kategori (Hex-koder ger snyggare färger)
+        if row['kategori'] == 'Grundskolor':
+            color_hex = "#003F47"
+        elif row['kategori'] == 'Anpassade Grundskolor':
+            color_hex = "#003F47"  # DodgerBlue
+        elif row['kategori'] == 'Förskola':
+            color_hex = "#003F47"  # DodgerBlue
+        elif row['kategori'] == 'Öppen Förskola':
+            color_hex = "#003F47"  # DodgerBlue
+        elif row['kategori'] == 'Park':
+            color_hex = "#738168"  # SeaGreen
+        elif row['kategori'] == 'Lekplats':
+            color_hex = "#738168"  # SeaGreen
+        elif row["kategori"] == "Restaurang & Snabbmat":
+            color_hex = "#A2C1C6"
+        elif row["kategori"] == "Kafé":
+            color_hex = "#A2C1C6"
+        elif row["kategori"] == "Gym/Utomhusgym":
+            color_hex = "#D8BD86"
+        elif row["kategori"] == "Matbutik":
+            color_hex = "#E39D4D"
+        elif row["kategori"] == "Systembolag":
+            color_hex = "#E39D4D"
+        elif row["kategori"] == "Bibliotek":
+            color_hex = "#E39D4D"
+        elif row["kategori"] == "Apotek":
+            color_hex = "#E39D4D"
+        elif row["kategori"] == "Vårdcentral":
+            color_hex = "#8F4D16"
+        elif row["kategori"] == "Sjukhus":
+            color_hex = "#8F4D16"
+        elif row["kategori"] == "Tandläkare":
+            color_hex = "#8F4D16"
+        elif row["kategori"] == "Fysioterapeut":
+            color_hex = "#8F4D16"
+        elif row["kategori"] == "Biograf":
+            color_hex = "#B59775"
+        elif row["kategori"] == "Trafikskola":
+            color_hex = "#B59775"
+        elif row["kategori"] == "Bensinmack":
+            color_hex = "#B59775"
+        else:
+            color_hex = "white"  # DarkOrange
+
+        folium.CircleMarker(
             location=[row['lat'], row['lon']],
-            popup=f"<b>{row['namn']}</b><br>{row['kategori']}<br>{row['gata']}",
-            tooltip=row['namn'],
-            icon=folium.Icon(color='beige', icon='info-sign')
+            # Storlek på cirkeln (minska för att göra mindre)
+            radius=6,
+            color="#FEFEFE",       # Kantfärg
+            weight=1,                # Tjocklek på kantlinjen
+            fill=True,
+            fill_color=color_hex,    # Fyllnadsfärg
+            fill_opacity=0.8,        # Genomskinlighet
+            tooltip=row['namn'],     # Visa namn vid hovring
+            popup=folium.Popup(
+                f"<b>{row['namn']}</b><br>{row['kategori']}<br>{row['gata']}", max_width=200)
         ).add_to(m)
 
-    # shows the map
-
-    st_folium(m, use_container_width=True, height=213)
-
-
-# def plotly_map():
-#     geo_df = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.lon, df.lat))
-#     fig = px.scatter_map(geo_df,
-#                         lat=geo_df.geometry.y,
-#                         lon=geo_df.geometry.x,
-#                         hover_name="kategori",
-#                         zoom=1)
-#     fig.show()
+    # Visa kartan i Streamlit
+    st_folium(
+        m,
+        use_container_width=True,
+        height=213,
+        returned_objects=[]
+    )

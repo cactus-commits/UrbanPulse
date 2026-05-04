@@ -61,7 +61,7 @@ def page_layout():
             dataTable(filter_df)
 
     col_donut, col_barchart = st.columns(
-        [6, 4], gap="small", vertical_alignment="top")
+        [5, 5], gap="small", vertical_alignment="top")
 
     with col_donut:
         with styled_container():

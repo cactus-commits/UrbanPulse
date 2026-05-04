@@ -2,6 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 import altair as alt
+import altair as alt
 
 from bokoll.utils.helpers import load_boende, load_brott_2025
 from bokoll.assets.style.style_bar import FARGER, styla_bar
@@ -36,6 +37,7 @@ def bar_chart(vald_stadsdel="Alla", vald_stadsdelsomrade="Alla"):
         y="value",
         color="Upplåtelseform_Stor",
         color_discrete_map=FARGER,
+        height=350
     )
 
     # Lägg på all styling från style_bar
