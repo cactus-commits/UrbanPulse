@@ -10,7 +10,7 @@ def line_chart_brott(vald_stadsdelsomrade):
         df = df[df["stadsdelsomrade"] == vald_stadsdelsomrade.strip()]
 
     fig = px.line(df, x="År", y="Diagramvärde",
-                  color="stadsdelsomrade")
+                  color="stadsdelsomrade", height=300)
     fig.update_yaxes(range=[1500, df["Diagramvärde"].max() * 1.05])
     fig.update_xaxes(dtick=1)
 

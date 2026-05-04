@@ -6,16 +6,17 @@ from bokoll.components.bar_chart import bar_chart_brott_2025
 
 
 def page_layout():
-    st.title("Brottsstatistik")
+    st.subheader("Brottsstatistik")
     col_filter = st.columns(1, gap="medium", vertical_alignment="center")
     with col_filter[0]:
-        st.subheader("Filtrera på kategori och stadsdel")
+        st.markdown("###### Filtrera på område")
         filter_df = filter_layout()
 
     col_kpi, col_2 = st.columns(
         [4, 6], gap="medium", vertical_alignment="top")
     with col_kpi:
         with styled_container():
+
             st.markdown(
                 "###### Brottsutveckling \n Totala antal brott 2025 \n samt ökning eller minskning jämfört med 2024")
             col1, col2 = st.columns(
@@ -35,7 +36,8 @@ def page_layout():
     with col_2:
         with styled_container():
             st.markdown('###### Antal anmälda brott vs Stockholm')
-            bar_chart_brott_2025(st.session_state.get('vald_stadsdelsomrade', 'Alla'))
+            bar_chart_brott_2025(st.session_state.get(
+                'vald_stadsdelsomrade', 'Alla'))
 
 
 if __name__ == "__main__":

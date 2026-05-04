@@ -20,7 +20,7 @@ def show_map(data=None):
         return
 
     map_center = [data['lat'].mean(), data['lon'].mean()]
-    m = folium.Map(location=map_center, zoom_start=12)
+    m = folium.Map(location=map_center, zoom_start=9, height=300)
 
     # Add searchbar to the map
     Geocoder().add_to(m)
@@ -36,7 +36,7 @@ def show_map(data=None):
 
     # shows the map
 
-    st_folium(m, use_container_width=True, height=430)
+    st_folium(m, use_container_width=True, height=213)
 
 
 # def plotly_map():
