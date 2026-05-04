@@ -1,6 +1,6 @@
 import streamlit as st
 
-def styled_container(bg_color: str = "#FEFEFE", radius: str = "16px", padding: str = "10px", border: bool = True, height=None):
+def styled_container(bg_color: str = "#FEFEFE", radius: str = "16px", padding: str = "10px", border: bool = False, height=None):
     
     st.markdown(
         f"""

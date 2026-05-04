@@ -63,3 +63,8 @@ def load_images(vald_img):
     img = Image.open(IMAGE_PATH/f'{vald_img}.png')
 
     st.image(img)
+
+@st.cache_data
+def load_brott_per_capita():
+    df = pd.read_csv(DATA_PATH / "brottsstatistik_per_capita_cleaned.csv")
+    return df
