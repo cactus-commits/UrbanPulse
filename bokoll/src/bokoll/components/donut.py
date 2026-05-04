@@ -54,6 +54,7 @@ def show_age_donut(filtered_df):
         color="Ålderskategori",
         color_discrete_map=FARGER,
         title=f"Åldersfördelning – {rubrik}",
+        height=350
     )
 
     # Lägg på all styling från style_donut

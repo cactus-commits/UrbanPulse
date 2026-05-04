@@ -83,3 +83,11 @@ def load_skattesatser():
 def load_brott_per_capita():
     df = pd.read_csv(DATA_PATH / "brottsstatistik_per_capita_cleaned.csv")
     return df
+
+
+@st.cache_data
+def load_brott_2025():
+    df = pd.read_csv(DATA_PATH / "bra_alla_kommuner_2025_NY.csv")
+    df["Stadsdelsområde"] = df["Stadsdelsområde"].replace(
+        {"Hägersten - Älvsjö": "Hägersten-Älvsjö"})
+    return df
