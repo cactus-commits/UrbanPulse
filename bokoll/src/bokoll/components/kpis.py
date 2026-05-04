@@ -5,7 +5,7 @@ import pandas as pd
 
 
 def total_boende_kpi(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
-    df = load_folkmangd()
+    df = load_folkmangd().copy()  # Skapa en kopia av DataFrame för att undvika cache-problem
 
     # Filtrera bort summa-rader och rader utan stadsdelsområde
     df = df[~df['Alder'].isin(['Total', 'No filters applied'])]
@@ -15,13 +15,8 @@ def total_boende_kpi(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
         df = df[df['Stadsdel'] == vald_stadsdel]
     if vald_stadsdelsomrade != 'Alla':
         df = df[df['stadsdelsomrade'] == vald_stadsdelsomrade]
-
-    result = duckdb.sql("""--sql
-        SELECT SUM(value)::INT AS total_boende
-        FROM df
-    """).df()
-
-    total = int(result["total_boende"].iloc[0])
+        
+    total = int(df['value'].sum())
     st.metric(label="Totalt antal boende", value=f"{total:,}".replace(",", " "))
 
 def demografi_snittålder(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
