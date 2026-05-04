@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-from bokoll.utils.helpers import load_boende
+from bokoll.utils.helpers import load_boende, load_brott_2025
+import plotly.express as px
 
 
 def bar_chart(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
@@ -29,3 +30,15 @@ def bar_chart(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
         y_label="Andel (%)",
         color="#6B7B8C",
     )
+
+
+def bar_chart_brott_2025(vald_stadsdelsomrade='Alla'):
+    df = load_brott_2025()
+
+    if vald_stadsdelsomrade != 'Alla':
+        df = df[df['Stadsdelsområde'] == vald_stadsdelsomrade]
+    fig = px.bar(df, x="År", y="Stadsdelsområde")
+
+    fig.update_layout(xaxis_title="Antal brott")
+
+    st.plotly_chart(fig, use_container_width=True)
