@@ -3,6 +3,7 @@ import pandas as pd
 from bokoll.utils.helpers import load_boende, load_brott_2025
 import plotly.express as px
 import altair as alt
+import altair as alt
 
 
 def bar_chart(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
@@ -23,15 +24,18 @@ def bar_chart(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     total = aggregerat["value"].sum()
     aggregerat["andel"] = (aggregerat["value"] / total) * 100
 
-    st.bar_chart(
-        aggregerat,
-        x="Upplåtelseform_Stor",
-        y="andel",
-        x_label="",
-        y_label="Andel (%)",
-        color="#6B7B8C",
-        height=350
+    chart = (
+        alt.Chart(aggregerat)
+        .mark_bar(size=25)  # HÄR styr du bredden i pixlar!
+        .encode(
+            x=alt.X("andel:Q", title="Andel (%)"),
+            y=alt.Y("Upplåtelseform_Stor:N", title="", sort="-x"),
+            color=alt.value("#6B7B8C")
+        )
+        .properties(height=350)
     )
+
+    st.altair_chart(chart, use_container_width=True)
 
 
 # def bar_chart_brott_2025(vald_stadsdelsomrade='Alla'):
