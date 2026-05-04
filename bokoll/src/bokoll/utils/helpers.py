@@ -39,7 +39,7 @@ def load_folkmangd() -> pd.DataFrame:
     df = df.dropna(subset=["Region", "Ålderskategori", "value"])
     df = df[~df["Alder"].isin(["Total", "No filters applied"])]
     df = df[df['Alder'] != 'Total']
-    return df.copy() #så att den inte chachar något konstigt 
+    return df.copy()  # så att den inte chachar något konstigt
 
 
 @st.cache_data
@@ -58,11 +58,9 @@ def load_hyresutveckling():
     return df
 
 
-
 @st.cache_data
 def load_images(vald_img):
     img = Image.open(IMAGE_PATH/f'{vald_img}.png')
-
     st.image(img)
 
 
@@ -77,4 +75,11 @@ def load_inkomst():
 @st.cache_data
 def load_skattesatser():
     df = pd.read_csv(DATA_PATH / "sverige_skattesatser_2026.csv")
+    return df
+
+
+# Brottsstatistik per capita
+@st.cache_data
+def load_brott_per_capita():
+    df = pd.read_csv(DATA_PATH / "brottsstatistik_per_capita_cleaned.csv")
     return df

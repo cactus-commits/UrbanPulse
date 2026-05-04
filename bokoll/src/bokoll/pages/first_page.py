@@ -8,6 +8,7 @@ from bokoll.components.kpis import total_boende_kpi, antal_skolor, total_service
 from bokoll.components.line_chart import line_chart_brott
 from bokoll.components.table import dataTable
 from bokoll.components.images import home_image
+from bokoll.assets.style.styling_page import styled_container
 
 
 def page_layout():
@@ -26,7 +27,7 @@ def page_layout():
         home_image(vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
     with col_kpi:
-        with st.container(border=False):
+        with styled_container():
             col1, col2 = st.columns(
                 2, gap="medium", vertical_alignment="center")
             with col1:
@@ -34,21 +35,25 @@ def page_layout():
                                  vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
                 antal_skolor(vald_stadsdel=st.session_state.vald_stadsdel,
                              vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
+                total_service_kpi('Gym/Utomhusgym', "Gym", vald_stadsdel=st.session_state.vald_stadsdel,
+                                  vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)                
             with col2:
-                total_service_kpi('Matbutik', "Antal Mataffärer", vald_stadsdel=st.session_state.vald_stadsdel,
+                total_service_kpi('Matbutik', "Mataffärer", vald_stadsdel=st.session_state.vald_stadsdel,
                                   vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
-                total_service_kpi('Apotek', "Antal Apotek", vald_stadsdel=st.session_state.vald_stadsdel,
+                total_service_kpi('Apotek', "Apotek", vald_stadsdel=st.session_state.vald_stadsdel,
+                                  vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
+                total_service_kpi('Vårdcentral', "Vårdcentraler", vald_stadsdel=st.session_state.vald_stadsdel,
                                   vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
     col_map, col_list = st.columns(
         [3.5, 6.5], gap="medium", vertical_alignment="center")
 
     with col_map:
-        with st.container(border=False):
+        with styled_container():
             show_map(filter_df)
 
     with col_list:
-        with st.container(border=False):
+        with styled_container():
             st.subheader(
                 "Lista över serviceutbud & tjänster för det valda området")
             dataTable(filter_df)
@@ -57,17 +62,17 @@ def page_layout():
         [6, 4], gap="small", vertical_alignment="center")
 
     with col_donut:
-        with st.container(border=False, height=600, vertical_alignment="center"):
+        with styled_container():
             st.subheader("Befolkningsmängd")
             show_age_donut(filter_df)
 
     with col_barchart:
-        with st.container(border=False, height=500, vertical_alignment="center"):
+        with styled_container():
             st.subheader("Boendeform")
             bar_chart(vald_stadsdel=st.session_state.vald_stadsdel,
                       vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
-    with st.container(border=False):
+    with styled_container():
         st.subheader("Antal anmälda brott")
 
         line_chart_brott(
