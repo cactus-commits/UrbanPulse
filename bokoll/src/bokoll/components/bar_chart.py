@@ -37,6 +37,7 @@ def bar_chart(vald_stadsdel="Alla", vald_stadsdelsomrade="Alla"):
         y="value",
         color="Upplåtelseform_Stor",
         color_discrete_map=FARGER,
+        height=350
     )
 
     # Lägg på all styling från style_bar
