@@ -1,12 +1,16 @@
 import streamlit as st
 import duckdb
-from bokoll.utils.helpers import load_folkmangd
-from bokoll.utils.helpers import load_inkomst, load_skattesatser
+from bokoll.utils.helpers import (
+    load_folkmangd,
+    load_map_data,
+    load_inkomst,
+    load_skattesatser,
+)
 import pandas as pd
 
 
 def total_boende_kpi(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
-    df = load_folkmangd()
+    df = load_folkmangd().copy()  # Skapa en kopia av DataFrame för att undvika cache-problem
 
     # Filtrera bort summa-rader och rader utan stadsdelsområde
     df = df[~df['Alder'].isin(['Total', 'No filters applied'])]
@@ -17,13 +21,9 @@ def total_boende_kpi(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     if vald_stadsdelsomrade != 'Alla':
         df = df[df['stadsdelsomrade'] == vald_stadsdelsomrade]
 
-    result = duckdb.sql("""--sql
-        SELECT SUM(value)::INT AS total_boende
-        FROM df
-    """).df()
-
-    total = int(result["total_boende"].iloc[0])
+    total = int(df['value'].sum())
     st.metric(label="Totalt antal boende", value=f"{total:,}".replace(",", " "))
+
 
 def demografi_snittålder(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     df = load_folkmangd()
@@ -45,7 +45,8 @@ def demografi_snittålder(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     df['mp'] = df['Alder'].map(mittpunkt)
     total = round((df['mp'] * df['value']).sum() / df['value'].sum(), 1)
 
-    st.metric(label="Snittålder", value=f"{total:.1f}") 
+    st.metric(label="Snittålder", value=f"{total:.1f}")
+
 
 def demografi_invånare(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     df = load_folkmangd()
@@ -98,3 +99,37 @@ def demografi_skattesats(vald_stadsdel="Alla", vald_stadsdelsomrade="Alla"):
         label="Inkomstskatt",
         value=f"{skatt:.1f} %",
     )
+
+
+def antal_skolor(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
+    df = load_map_data()
+    skolor = df[df['kategori'].isin(
+        ['Grundskolor', 'Öppen Förskola', 'Förskola', 'Anpassade Grundskolor'])]
+
+    if vald_stadsdel != 'Alla':
+        skolor = skolor[skolor['stadsdel'] == vald_stadsdel]
+    if vald_stadsdelsomrade != 'Alla':
+        skolor = skolor[skolor['stadsdelsomrade'] == vald_stadsdelsomrade]
+
+    total = len(skolor)
+    st.metric(label="Antal skolor", value=f"{total:,}".replace(",", " "))
+
+
+def total_service_kpi(kategori, label, vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
+    df = load_map_data()
+
+    # Filtrera på kategori
+    df = df[df['kategori'] == kategori]
+
+    if vald_stadsdel != 'Alla':
+        df = df[df['stadsdel'] == vald_stadsdel]
+    if vald_stadsdelsomrade != 'Alla':
+        df = df[df['stadsdelsomrade'] == vald_stadsdelsomrade]
+
+    result = duckdb.sql("""--sql
+        SELECT COUNT(*)::INT AS total
+        FROM df
+    """).df()
+
+    total = int(result["total"].iloc[0])
+    st.metric(label=label, value=f"{total:,}".replace(",", " "))

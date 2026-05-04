@@ -49,6 +49,7 @@ Dashboarden innehåller:
 
 Tillgång till streamlit:
 
+https://bokoll.streamlit.app/
 
 Dashboarden innehåller:
 
