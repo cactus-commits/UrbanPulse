@@ -53,3 +53,13 @@
     margin-top: -4px;
     
 }
+
+[data-testid="stVerticalBlock"]>div>div {
+    background-color: #FEFEFE;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div.stMainBlockContainer.block-container.st-emotion-cache-zy6yx3.eqt0gmo4>div>div:nth-child(3)>div>div>div>div.st-emotion-cache-18kf3ut.e1rw0b1u4>div>div:nth-child(4)>div{
+    padding-top: 30px;
+}

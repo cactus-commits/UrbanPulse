@@ -49,8 +49,7 @@ def filter_layout():
         )
 
     with col4:
-        st.markdown("")
-        st.markdown("")
+
         st.button("Återställ filter", on_click=reset_filters)
 
     filtered_df = df.copy()

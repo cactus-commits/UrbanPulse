@@ -39,7 +39,8 @@ def demografi_snittålder(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     df['mp'] = df['Alder'].map(mittpunkt)
     total = round((df['mp'] * df['value']).sum() / df['value'].sum(), 1)
 
-    st.metric(label="Snittålder", value=f"{total:.1f}") 
+    st.metric(label="Snittålder", value=f"{total:.1f}")
+
 
 def demografi_invånare(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     df = load_folkmangd()
@@ -53,15 +54,36 @@ def demografi_invånare(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     total = int(df['value'].sum())
     st.metric(label="Antal invånare", value=f"{total:,}".replace(",", " "))
 
+
 def antal_skolor(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     df = load_map_data()
-    skolor = df[df['kategori'].isin(['Grundskolor', 'Öppen Förskola', 'Förskola', 'Anpassade Grundskolor'])]
+    skolor = df[df['kategori'].isin(
+        ['Grundskolor', 'Öppen Förskola', 'Förskola', 'Anpassade Grundskolor'])]
 
     if vald_stadsdel != 'Alla':
-        skolor = skolor[skolor['Stadsdel'] == vald_stadsdel]
+        skolor = skolor[skolor['stadsdel'] == vald_stadsdel]
     if vald_stadsdelsomrade != 'Alla':
         skolor = skolor[skolor['stadsdelsomrade'] == vald_stadsdelsomrade]
 
     total = len(skolor)
     st.metric(label="Antal skolor", value=f"{total:,}".replace(",", " "))
 
+
+def total_service_kpi(kategori, label, vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
+    df = load_map_data()
+
+    # Filtrera på kategori
+    df = df[df['kategori'] == kategori]
+
+    if vald_stadsdel != 'Alla':
+        df = df[df['stadsdel'] == vald_stadsdel]
+    if vald_stadsdelsomrade != 'Alla':
+        df = df[df['stadsdelsomrade'] == vald_stadsdelsomrade]
+
+    result = duckdb.sql("""--sql
+        SELECT COUNT(*)::INT AS total
+        FROM df
+    """).df()
+
+    total = int(result["total"].iloc[0])
+    st.metric(label=label, value=f"{total:,}".replace(",", " "))
