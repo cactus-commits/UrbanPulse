@@ -1,49 +1,49 @@
-import streamlit as st
 import pandas as pd
-from bokoll.utils.helpers import load_boende, load_brott_2025
 import plotly.express as px
+import streamlit as st
 import altair as alt
 
+from bokoll.utils.helpers import load_boende, load_brott_2025
+from bokoll.assets.style.style_bar import FARGER, styla_bar
 
-def bar_chart(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
 
+def bar_chart(vald_stadsdel="Alla", vald_stadsdelsomrade="Alla"):
+    # Hämta boendedata
     df = load_boende()
 
-    if vald_stadsdel != 'Alla':
-        df = df[df['Stadsdel'] == vald_stadsdel]
-    if vald_stadsdelsomrade != 'Alla':
-        df = df[df['stadsdelsomrade'] == vald_stadsdelsomrade]
+    # Filtrera ned till valt område
+    if vald_stadsdel != "Alla":
+        df = df[df["Stadsdel"] == vald_stadsdel]
+    if vald_stadsdelsomrade != "Alla":
+        df = df[df["stadsdelsomrade"] == vald_stadsdelsomrade]
 
+    # Räkna ihop totalsumma per upplåtelseform
     aggregerat = (
         df.groupby("Upplåtelseform_Stor", as_index=False)["value"]
         .sum()
         .sort_values("value", ascending=False)
     )
 
-    total = aggregerat["value"].sum()
-    aggregerat["andel"] = (aggregerat["value"] / total) * 100
+    # Visa meddelande om ingen data hittades
+    if aggregerat.empty:
+        st.info("Ingen boendedata för det valda urvalet.")
+        return
 
-    st.bar_chart(
+    # Skapa stapeldiagrammet
+    fig = px.bar(
         aggregerat,
         x="Upplåtelseform_Stor",
-        y="andel",
-        x_label="",
-        y_label="Andel (%)",
-        color="#6B7B8C",
-        height=350
+        y="value",
+        color="Upplåtelseform_Stor",
+        color_discrete_map=FARGER,
     )
 
+    # Lägg på all styling från style_bar
+    fig = styla_bar(fig)
 
-# def bar_chart_brott_2025(vald_stadsdelsomrade='Alla'):
-#     df = load_brott_2025()
+    # Visa diagrammet i Streamlit
+    st.plotly_chart(fig, use_container_width=True)
 
-#     if vald_stadsdelsomrade != 'Alla':
-#         df = df[df['Stadsdelsområde'] == vald_stadsdelsomrade]
-#     fig = px.bar(df, x="År", y="Stadsdelsområde")
-
-#     fig.update_layout(xaxis_title="Antal brott")
-
-#     st.plotly_chart(fig, use_container_width=True)
 
 def bar_chart_brott_2025(vald_stadsdelsomrade='Alla'):
     df = load_brott_2025()
