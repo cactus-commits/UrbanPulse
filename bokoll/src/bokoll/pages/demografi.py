@@ -21,17 +21,17 @@ def page_layout():
     rad1_col1, rad1_col2 = st.columns(2, gap="medium")
 
     with rad1_col1:
-        with st.container(border=True, height=420):
+        with st.container(border=True):
             st.subheader("Hyresutveckling")
             line_chart_hyresutveckling(
                 vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
             st.caption("Källa: SCB")
 
     with rad1_col2:
-        with st.container(border=True, height=420):
+        with st.container(border=True):
             st.subheader("Demografi i korthet")
 
-            # Vi gör en 2x2-grid med fyra KPI:er
+            # 2x2-grid med fyra KPI:er
             kpi_col1, kpi_col2 = st.columns(2, gap="small")
             with kpi_col1:
                 demografi_snittålder(
