@@ -50,3 +50,15 @@ def load_hyresutveckling():
     df = df.dropna(how="all")
     return df
 
+# Inkomstdata för Sverige (Stockholm finns med här)
+@st.cache_data
+def load_inkomst():
+    df = pd.read_csv(DATA_PATH / "sverige_snittinkomst_2024.csv")
+    return df
+
+
+# Skattesatser för Sveriges kommuner
+@st.cache_data
+def load_skattesatser():
+    df = pd.read_csv(DATA_PATH / "sverige_skattesatser_2026.csv")
+    return df

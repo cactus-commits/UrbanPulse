@@ -1,6 +1,7 @@
 import streamlit as st
 import duckdb
 from bokoll.utils.helpers import load_folkmangd
+from bokoll.utils.helpers import load_inkomst, load_skattesatser
 import pandas as pd
 
 
@@ -57,3 +58,43 @@ def demografi_invånare(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
 
     total = int(df['value'].sum())
     st.metric(label="Antal invånare", value=f"{total:,}".replace(",", " "))
+
+
+# Visar median årsinkomst för Stockholm kommun
+def demografi_inkomst(vald_stadsdel="Alla", vald_stadsdelsomrade="Alla"):
+    df = load_inkomst()
+
+    # Vi använder bara Stockholm kommun eftersom data inte finns på stadsdelsnivå
+    rad = df[df["Kommun"] == "Stockholm"]
+
+    if rad.empty:
+        st.metric("Median årsinkomst", "Saknas")
+        return
+
+    # Datan kommer i tkr (tusen kronor) så vi multiplicerar med 1000
+    medianinkomst = rad["Medianinkomst, tkr"].iloc[0] * 1000
+
+    # Formatera med mellanslag som tusentalsavgränsare
+    st.metric(
+        label="Median årsinkomst",
+        value=f"{medianinkomst:,.0f} kr".replace(",", " "),
+    )
+
+
+# Visar kommunal inkomstskatt för Stockholm
+def demografi_skattesats(vald_stadsdel="Alla", vald_stadsdelsomrade="Alla"):
+    df = load_skattesatser()
+
+    # Stockholms kommunkod är 0180
+    rad = df[df["Region"] == "0180"]
+
+    if rad.empty:
+        st.metric("Inkomstskatt", "Saknas")
+        return
+
+    skatt = rad["Skattesats till kommun"].iloc[0]
+
+    st.metric(
+        label="Inkomstskatt",
+        value=f"{skatt:.1f} %",
+    )
