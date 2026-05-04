@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from bokoll.utils.helpers import load_boende, load_brott_2025
 import plotly.express as px
+import altair as alt
 
 
 def bar_chart(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
@@ -32,13 +33,29 @@ def bar_chart(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     )
 
 
+# def bar_chart_brott_2025(vald_stadsdelsomrade='Alla'):
+#     df = load_brott_2025()
+
+#     if vald_stadsdelsomrade != 'Alla':
+#         df = df[df['Stadsdelsområde'] == vald_stadsdelsomrade]
+#     fig = px.bar(df, x="År", y="Stadsdelsområde")
+
+#     fig.update_layout(xaxis_title="Antal brott")
+
+#     st.plotly_chart(fig, use_container_width=True)
+
 def bar_chart_brott_2025(vald_stadsdelsomrade='Alla'):
     df = load_brott_2025()
+    df_total = df[df['Brottstyp'] == 'Totalt antal brott'].copy()
 
-    if vald_stadsdelsomrade != 'Alla':
-        df = df[df['Stadsdelsområde'] == vald_stadsdelsomrade]
-    fig = px.bar(df, x="År", y="Stadsdelsområde")
+    fig = alt.Chart(df_total).mark_bar().encode(
+        x=alt.X('År:Q', title='Antal brott'),
+        y=alt.Y('Stadsdelsområde:N'),
+        color=alt.condition(
+            alt.datum.Stadsdelsområde == vald_stadsdelsomrade,
+            alt.value('cyan'),
+            alt.value('lightblue')
+        )
+    ).properties(width=600)
 
-    fig.update_layout(xaxis_title="Antal brott")
-
-    st.plotly_chart(fig, use_container_width=True)
+    st.altair_chart(fig, use_container_width=True)
