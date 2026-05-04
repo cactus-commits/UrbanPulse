@@ -1,6 +1,6 @@
 import streamlit as st
 import duckdb
-from bokoll.utils.helpers import load_folkmangd, load_map_data
+from bokoll.utils.helpers import load_folkmangd, load_map_data, load_brott_per_capita
 import pandas as pd
 
 
@@ -17,7 +17,7 @@ def total_boende_kpi(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
         df = df[df['stadsdelsomrade'] == vald_stadsdelsomrade]
         
     total = int(df['value'].sum())
-    st.metric(label="Totalt antal boende", value=f"{total:,}".replace(",", " "))
+    st.metric(label="Antal boende", value=f"{total:,}".replace(",", " "))
 
 def demografi_snittålder(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     df = load_folkmangd()
@@ -66,7 +66,7 @@ def antal_skolor(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
         skolor = skolor[skolor['stadsdelsomrade'] == vald_stadsdelsomrade]
 
     total = len(skolor)
-    st.metric(label="Antal skolor", value=f"{total:,}".replace(",", " "))
+    st.metric(label="Skolor", value=f"{total:,}".replace(",", " "))
 
 
 def total_service_kpi(kategori, label, vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
@@ -87,3 +87,31 @@ def total_service_kpi(kategori, label, vald_stadsdel='Alla', vald_stadsdelsomrad
 
     total = int(result["total"].iloc[0])
     st.metric(label=label, value=f"{total:,}".replace(",", " "))
+
+def kpi_brott(brottstyp, label, vald_stadsdelsomrade='Alla'):
+    df = load_brott_per_capita()
+    df = df[df['Brottstyp'] == brottstyp]
+
+    if vald_stadsdelsomrade != 'Alla':
+        df = df[df['område'] == vald_stadsdelsomrade]
+
+    result = duckdb.sql("""
+        SELECT 
+            SUM("2025")::INT AS total_2025,
+            SUM("2024")::INT AS total_2024
+        FROM df
+    """).df()
+
+    total_2025 = int(result["total_2025"].iloc[0])
+    total_2024 = int(result["total_2024"].iloc[0])
+
+    diff = total_2025 - total_2024
+    pct = (diff / total_2024 * 100) if total_2024 != 0 else 0
+    delta_str = f"{diff:+,} ({pct:+.1f}%)".replace(",", " ")
+
+    st.metric(
+        label=label,
+        value=f"{total_2025:,}".replace(",", " "),
+        delta=delta_str,
+        delta_color="inverse"  # rött = ökning (fler brott = dåligt), grönt = minskning
+    )
