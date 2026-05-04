@@ -76,9 +76,9 @@ def show_map(data=None):
         folium.CircleMarker(
             location=[row['lat'], row['lon']],
             # Storlek på cirkeln (minska för att göra mindre)
-            radius=6,
+            radius=4,
             color="#FEFEFE",       # Kantfärg
-            weight=1,                # Tjocklek på kantlinjen
+            weight=0.5,                # Tjocklek på kantlinjen
             fill=True,
             fill_color=color_hex,    # Fyllnadsfärg
             fill_opacity=0.8,        # Genomskinlighet
@@ -91,6 +91,6 @@ def show_map(data=None):
     st_folium(
         m,
         use_container_width=True,
-        height=213,
+        height=270,
         returned_objects=[]
     )

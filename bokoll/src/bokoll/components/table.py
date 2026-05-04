@@ -13,6 +13,6 @@ def dataTable(filter_df):
             'stadsdelsomrade': 'Stadsdelsområde'
         }),
         hide_index=True,
-        height=213,
+        height=270,
 
     )
