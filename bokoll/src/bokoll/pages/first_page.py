@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from bokoll.components.map import show_map, plotly_map
+from bokoll.components.map import show_map#, plotly_map
 from bokoll.components.filter import filter_layout
 from bokoll.components.donut import show_age_donut
 from bokoll.components.bar_chart import bar_chart
@@ -46,7 +46,7 @@ def page_layout():
         2, gap="small", vertical_alignment="center")
 
     with col_donut:
-        with st.container(border=True, height=500, vertical_alignment="center"):
+        with st.container(border=True, height=600, vertical_alignment="center"):
             st.subheader("Befolkningsmängd")
             show_age_donut(filter_df)
 
