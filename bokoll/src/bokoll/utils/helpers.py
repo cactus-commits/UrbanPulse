@@ -61,10 +61,24 @@ def load_hyresutveckling():
 @st.cache_data
 def load_images(vald_img):
     img = Image.open(IMAGE_PATH/f'{vald_img}.png')
-
     st.image(img)
 
 
+# Inkomstdata för Sverige (Stockholm finns med här)
+@st.cache_data
+def load_inkomst():
+    df = pd.read_csv(DATA_PATH / "sverige_snittinkomst_2024.csv")
+    return df
+
+
+# Skattesatser för Sveriges kommuner
+@st.cache_data
+def load_skattesatser():
+    df = pd.read_csv(DATA_PATH / "sverige_skattesatser_2026.csv")
+    return df
+
+
+# Brottsstatistik per capita
 @st.cache_data
 def load_brott_per_capita():
     df = pd.read_csv(DATA_PATH / "brottsstatistik_per_capita_cleaned.csv")
@@ -74,5 +88,6 @@ def load_brott_per_capita():
 @st.cache_data
 def load_brott_2025():
     df = pd.read_csv(DATA_PATH / "bra_alla_kommuner_2025_NY.csv")
-    df["Stadsdelsområde"] = df["Stadsdelsområde"].replace({"Hägersten - Älvsjö": "Hägersten-Älvsjö"})
+    df["Stadsdelsområde"] = df["Stadsdelsområde"].replace(
+        {"Hägersten - Älvsjö": "Hägersten-Älvsjö"})
     return df

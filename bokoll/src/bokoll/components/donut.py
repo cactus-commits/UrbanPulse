@@ -1,61 +1,64 @@
-from pathlib import Path
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+
 from bokoll.utils.helpers import load_folkmangd
-from bokoll.utils.constants import DATA_PATH
+from bokoll.assets.style.style_donut import FARGER, ORDNING, styla_donut
 
 
-def show_age_donut(filtered_df: pd.DataFrame):
-
+def show_age_donut(filtered_df):
+    # Hämta all folkmängdsdata
     folk = load_folkmangd()
 
-    # Matcha filtret från filter_layout mot folkmängd-datan
+    # Filtrera ned till valt område
     if filtered_df is not None and not filtered_df.empty:
         stadsdelar = filtered_df["stadsdel"].dropna().unique()
         omraden = filtered_df["stadsdelsomrade"].dropna().unique()
 
-        mask = pd.Series(True, index=folk.index)
-        if len(stadsdelar) < folk["Stadsdel"].nunique():
-            mask &= folk["Stadsdel"].isin(stadsdelar)
-        if len(omraden) < folk["stadsdelsomrade"].nunique():
-            mask &= folk["stadsdelsomrade"].isin(omraden)
+        # Bygg ett filter steg för steg
+        filter_mask = pd.Series(True, index=folk.index)
 
-        data = folk[mask]
-        rubrik = ", ".join(stadsdelar) if len(
-            stadsdelar) <= 3 else "valt urval"
+        if len(stadsdelar) < folk["Stadsdel"].nunique():
+            filter_mask = filter_mask & folk["Stadsdel"].isin(stadsdelar)
+
+        if len(omraden) < folk["stadsdelsomrade"].nunique():
+            filter_mask = filter_mask & folk["stadsdelsomrade"].isin(omraden)
+
+        data = folk[filter_mask]
+
+        # Skapa rubrik baserat på antal valda områden
+        if len(stadsdelar) <= 3:
+            rubrik = ", ".join(stadsdelar)
+        else:
+            rubrik = "valt urval"
     else:
         data = folk
         rubrik = "hela staden"
 
+    # Visa meddelande om ingen data hittades
     if data.empty:
         st.info("Ingen befolkningsdata för det valda urvalet.")
         return
 
-    aggregerat = (
-        data.groupby("Ålderskategori", as_index=False)["value"].sum()
-    )
+    # Räkna ihop antal personer per åldersgrupp
+    aggregerat = data.groupby("Ålderskategori", as_index=False)["value"].sum()
+    total_antal = int(aggregerat["value"].sum())
 
-    ordning = ["Barn (0-19)", "Unga (20-39)", "Vuxna (40-64)", "Äldre (65+)"]
-
+    # Skapa donut-diagrammet
     fig = px.pie(
         aggregerat,
         names="Ålderskategori",
         values="value",
-        hole=0.5,
-        category_orders={"Ålderskategori": ordning},
-        color_discrete_sequence=px.colors.sequential.Blues_r,
+        hole=0.6,
+        category_orders={"Ålderskategori": ORDNING},
+        color="Ålderskategori",
+        color_discrete_map=FARGER,
         title=f"Åldersfördelning – {rubrik}",
         height=350
     )
-    fig.update_traces(textposition="outside", textinfo="percent+label")
-    fig.update_layout(
-        showlegend=True,
 
-        legend=dict(orientation="h", yanchor="bottom",
-                    y=-0.5, xanchor="left", x=0.3),
+    # Lägg på all styling från style_donut
+    fig = styla_donut(fig, total_antal)
 
-        margin=dict(t=50, b=20, l=20, r=20),
-    )
-
+    # Visa diagrammet i Streamlit
     st.plotly_chart(fig, use_container_width=True)
