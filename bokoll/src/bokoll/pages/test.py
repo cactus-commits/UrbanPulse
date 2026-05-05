@@ -11,15 +11,19 @@ from bokoll.components.table import dataTable
 from bokoll.components.images import home_image
 from bokoll.assets.style.styling_page import styled_container
 from bokoll.components.navigation import nav_buttons, section_anchor, back_to_top
+from bokoll.utils.helpers import load_images
 
 
 def page_layout():
+    load_images("Logotyp")
     section_anchor("toppen")
     section_anchor("oversikt")
-    st.markdown("# BoKoll - Få en koll på boende, service och brott i Stockholms stadsdelar")
+    # st.markdown(
+    #     "# BoKoll - Få en koll på boende, service och brott i Stockholms stadsdelar")
+    # Lägg till en horisontell linje för att separera sektionerna
+    # st.markdown("---")
     nav_buttons()
-    st.markdown("---")  # Lägg till en horisontell linje för att separera sektionerna
-    st.markdown("# Översikt")
+    st.markdown("## Översikt")
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
         st.markdown("###### Filtrera på kategori och stadsdel")
@@ -36,7 +40,8 @@ def page_layout():
                 2, gap="medium", vertical_alignment="top")
             with col1:
                 total_boende_kpi(vald_stadsdel=st.session_state.vald_stadsdel,
-                                 vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade) #kanske borde bytas till något annat
+                                 # kanske borde bytas till något annat
+                                 vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
                 antal_skolor(vald_stadsdel=st.session_state.vald_stadsdel,
                              vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
                 total_service_kpi('Gym/Utomhusgym', "Gym", vald_stadsdel=st.session_state.vald_stadsdel,
@@ -49,11 +54,11 @@ def page_layout():
                 total_service_kpi('Vårdcentral', "Vårdcentraler", vald_stadsdel=st.session_state.vald_stadsdel,
                                   vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
-    col_kategori =st.columns(1)
+    col_kategori = st.columns(1)
     with col_kategori[0]:
         st.markdown("###### Filtrera på kategori och stadsdel")
         filter_df = filter_kategori_only()
-    
+
     col_map, col_list = st.columns(
         [4, 6], gap="medium", vertical_alignment="top")
 
@@ -68,12 +73,13 @@ def page_layout():
             st.markdown(
                 "###### Lista över serviceutbud & tjänster för det valda området")
             dataTable(filter_df)
-    
-##############################################################'
+
+# '
     section_anchor("demografi")
     nav_buttons()
-    st.markdown("---")  # Lägg till en horisontell linje för att separera sektionerna
-    st.markdown("# Demografi")
+    # Lägg till en horisontell linje för att separera sektionerna
+    st.markdown("---")
+    st.markdown("## Demografi")
 
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
@@ -129,7 +135,7 @@ def page_layout():
             st.markdown("###### Boendeform")
             bar_chart(demografi_vald_stadsdel=st.session_state.demografi_vald_stadsdel,
                       demografi_vald_stadsdelsomrade=st.session_state.demografi_vald_stadsdelsomrade)
-            
+
     rad2_col1, rad2_col2 = st.columns(2, gap="medium")
 
     with rad2_col1:
@@ -138,12 +144,13 @@ def page_layout():
             bar_chart_befolkning(filter_df)
             st.caption("Källa: SCB")
 
-            
-##############################################################      
+
+##############################################################
     section_anchor("brott")
     nav_buttons()
-    st.markdown("---")  # Lägg till en horisontell linje för att separera sektionerna
-    st.markdown("# Brottsstatistik")
+    # Lägg till en horisontell linje för att separera sektionerna
+    st.markdown("---")
+    st.markdown("## Brottsstatistik")
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
         st.markdown("###### Filtrera på kategori och stadsdel")
@@ -178,13 +185,14 @@ def page_layout():
     col_barchart2, col1 = st.columns(
         [5, 5], gap="small", vertical_alignment="top")
     with col_barchart2:
-            with styled_container():
-                st.markdown('###### Antal anmälda brott vs Stockholm')
-                bar_chart_brott_2025(st.session_state.get(
-                    'brott_vald_stadsdelsomrade', 'Alla'))
+        with styled_container():
+            st.markdown('###### Antal anmälda brott vs Stockholm')
+            bar_chart_brott_2025(st.session_state.get(
+                'brott_vald_stadsdelsomrade', 'Alla'))
 
     st.markdown("---")
     back_to_top()
+
 
 if __name__ == "__main__":
     page_layout()
