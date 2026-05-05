@@ -9,10 +9,12 @@ NAV_STYLE = """
 BUTTON_STYLE = """
     padding: 6px 16px;
     border-radius: 8px;
-    cursor: pointer;
     background: #003F47;
     color: white;
     font-size: 14px;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
 """
 
 def nav_buttons():

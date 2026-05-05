@@ -34,7 +34,7 @@ def page_layout():
 
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
-        st.markdown("###### Filtrera på kategori och stadsdel")
+        #st.markdown("###### Filtrera på stadsdel och område")
         filter_df = filter_layout()
 
     img_col, col_kpi = st.columns(
@@ -64,7 +64,7 @@ def page_layout():
 
     col_kategori = st.columns(1)
     with col_kategori[0]:
-        st.markdown("###### Filtrera på kategori och stadsdel")
+        #st.markdown("###### Filtrera på kategori")
         filter_df = filter_kategori_only()
 
     col_map, col_list = st.columns(
@@ -95,7 +95,7 @@ def page_layout():
 
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
-        st.markdown("###### Filtrera på kategori och stadsdel")
+        #st.markdown("###### Filtrera på stadsdel och område")
         filter_df = filter_demografi()
 
     rad1_col1, rad1_col2 = st.columns(2, gap="medium")
@@ -170,7 +170,7 @@ def page_layout():
 
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
-        st.markdown("###### Filtrera på kategori och stadsdel")
+        #st.markdown("###### Filtrera på område")
         filter_df = filter_brott()
 
     col_kpi_brott, col_linechart = st.columns(
