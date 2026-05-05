@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from bokoll.components.map import show_map
-from bokoll.components.filter import filter_layout, filter_brott, filter_demografi, filter_kategori_only
+from bokoll.components.filter import filter_layout, filter_brott, filter_demografi, filter_kategori_only, filter_radar
 from bokoll.components.donut import show_age_donut
 from bokoll.components.bar_chart import bar_chart, bar_chart_brott_2025, bar_chart_type_of_crime
 from bokoll.components.bar_chart_befolkning import bar_chart_befolkning
@@ -14,7 +14,7 @@ from bokoll.components.navigation import nav_buttons, section_anchor, back_to_to
 from bokoll.utils.helpers import load_images
 from bokoll.components.footer import footer
 from bokoll.components.title import get_title
-from bokoll.components.radar_socio import radar_omrade_val, show_radar_socio
+from bokoll.components.radar_socio import show_radar_socio
 
 
 def page_layout():
@@ -81,7 +81,7 @@ def page_layout():
                 "###### Lista över serviceutbud & tjänster för det valda området")
             dataTable(filter_df)
 
-# '
+
     section_anchor("demografi")
     # Lägg till en horisontell linje för att separera sektionerna
     st.markdown("---")
@@ -143,26 +143,14 @@ def page_layout():
             bar_chart(demografi_vald_stadsdel=st.session_state.demografi_vald_stadsdel,
                       demografi_vald_stadsdelsomrade=st.session_state.demografi_vald_stadsdelsomrade)
 
-# Socioekonomisk radar med inbyggt områdesval till höger om rubriken
-    with st.container(border=True):
-        col_titel, col_slicer = st.columns([3, 1], gap="medium",
-                                           vertical_alignment="center")
-        with col_titel:
-            st.subheader("Socioekonomisk profil")
-        with col_slicer:
-            valt_omrade = radar_omrade_val(
-                demografi_vald_stadsdelsomrade=st.session_state.demografi_vald_stadsdelsomrade)
 
-        st.caption(
-            "Jämförelse mellan valt område och Stockholm-snittet. Andel i procent.")
+    with st.container(border=False):
 
-        show_radar_socio(valt_omrade)
-
-        st.caption(
-            "\* Hushåll vars inkomst är mindre än 60 % av en typisk svensk inkomst.  \n"
-            "\*\* Andel där högsta avslutade utbildning är på grundskolenivå.  \n"
-            "Källa: SCB"
-        )
+        st.markdown("###### Socioekonomisk profil")
+        col_filter, col_2 = st.columns(2, gap="medium", vertical_alignment="top")
+        with col_filter:
+            filter_radar()
+        show_radar_socio(st.session_state.get('radar_vald_stadsdelsomrade', 'Alla'))
 
 
 ##############################################################
