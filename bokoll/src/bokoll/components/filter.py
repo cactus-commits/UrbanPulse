@@ -9,6 +9,7 @@ def sync_main_to_all():
     st.session_state.brott_vald_stadsdelsomrade = st.session_state.vald_stadsdelsomrade
     st.session_state.demografi_vald_stadsdel = st.session_state.vald_stadsdel
     st.session_state.demografi_vald_stadsdelsomrade = st.session_state.vald_stadsdelsomrade
+    st.session_state.radar_vald_stadsdelsomrade = st.session_state.vald_stadsdelsomrade
 
 def sync_brott_to_main():
     st.session_state.vald_stadsdelsomrade = st.session_state.brott_vald_stadsdelsomrade
@@ -18,6 +19,9 @@ def sync_demografi_to_main():
     st.session_state.vald_stadsdel = st.session_state.demografi_vald_stadsdel
     st.session_state.vald_stadsdelsomrade = st.session_state.demografi_vald_stadsdelsomrade
     st.session_state.brott_vald_stadsdelsomrade = st.session_state.demografi_vald_stadsdelsomrade
+
+def sync_radar_to_main():
+    st.session_state.vald_stadsdelsomrade = st.session_state.radar_vald_stadsdelsomrade
 
 def reset_filters():
     for key in ['vald_kategori', 'vald_stadsdel', 'vald_stadsdelsomrade',
@@ -160,5 +164,28 @@ def filter_demografi():
         filtered_df = filtered_df[filtered_df['stadsdelsomrade'] == vald_stadsdelsomrade]
     if vald_stadsdel != 'Alla':
         filtered_df = filtered_df[filtered_df['stadsdel'] == vald_stadsdel]
+
+    return filtered_df
+
+def filter_radar():
+    stadsdelsomrade_lista = ['Alla'] + sorted(df["stadsdelsomrade"].dropna().unique())
+
+    col2, col3 = st.columns(2)
+
+    with col2:
+        vald_stadsdelsomrade = st.selectbox(
+            "Välj område:",
+            options=stadsdelsomrade_lista,
+            key="radar_vald_stadsdelsomrade",
+            on_change=sync_radar_to_main
+        )
+
+    with col3:
+        st.button("Återställ filter", on_click=reset_filters, key="radar_reset")
+
+    filtered_df = df.copy()
+
+    if vald_stadsdelsomrade != 'Alla':
+        filtered_df = filtered_df[filtered_df['stadsdelsomrade'] == vald_stadsdelsomrade]
 
     return filtered_df

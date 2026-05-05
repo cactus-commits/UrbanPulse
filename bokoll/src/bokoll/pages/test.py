@@ -14,6 +14,7 @@ from bokoll.components.navigation import nav_buttons, section_anchor, back_to_to
 from bokoll.utils.helpers import load_images
 from bokoll.components.footer import footer
 from bokoll.components.title import get_title
+from bokoll.components.radar_socio import radar_omrade_val, show_radar_socio
 
 
 def page_layout():
@@ -142,12 +143,26 @@ def page_layout():
             bar_chart(demografi_vald_stadsdel=st.session_state.demografi_vald_stadsdel,
                       demografi_vald_stadsdelsomrade=st.session_state.demografi_vald_stadsdelsomrade)
 
-    rad2_col1, rad2_col2 = st.columns(2, gap="medium")
+# Socioekonomisk radar med inbyggt områdesval till höger om rubriken
+    with st.container(border=True):
+        col_titel, col_slicer = st.columns([3, 1], gap="medium",
+                                           vertical_alignment="center")
+        with col_titel:
+            st.subheader("Socioekonomisk profil")
+        with col_slicer:
+            valt_omrade = radar_omrade_val(
+                demografi_vald_stadsdelsomrade=st.session_state.demografi_vald_stadsdelsomrade)
 
-    with rad2_col1:
-        with st.container(border=False):
-            st.subheader("Befolkningsmängd")
-            bar_chart_befolkning(filter_df)
+        st.caption(
+            "Jämförelse mellan valt område och Stockholm-snittet. Andel i procent.")
+
+        show_radar_socio(valt_omrade)
+
+        st.caption(
+            "\* Hushåll vars inkomst är mindre än 60 % av en typisk svensk inkomst.  \n"
+            "\*\* Andel där högsta avslutade utbildning är på grundskolenivå.  \n"
+            "Källa: SCB"
+        )
 
 
 ##############################################################
