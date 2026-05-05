@@ -98,14 +98,13 @@ def page_layout():
     rad1_col1, rad1_col2 = st.columns(2, gap="medium")
 
     with rad1_col1:
-        with st.container(border=True):
+        with st.container(border=False):
             st.subheader("Hyresutveckling")
             line_chart_hyresutveckling(
                 demografi_vald_stadsdelsomrade=st.session_state.demografi_vald_stadsdelsomrade)
-            st.caption("Källa: SCB")
 
     with rad1_col2:
-        with st.container(border=True):
+        with st.container(border=False):
             st.subheader("Demografi i korthet")
 
             # 2x2-grid med fyra KPI:er
@@ -129,8 +128,6 @@ def page_layout():
                     demografi_vald_stadsdel=st.session_state.demografi_vald_stadsdel,
                     demografi_vald_stadsdelsomrade=st.session_state.demografi_vald_stadsdelsomrade)
 
-            st.caption("Källa: SCB")
-
     col_donut, col_barchart = st.columns(
         [5, 5], gap="small", vertical_alignment="top")
 
@@ -148,10 +145,9 @@ def page_layout():
     rad2_col1, rad2_col2 = st.columns(2, gap="medium")
 
     with rad2_col1:
-        with st.container(border=True):
+        with st.container(border=False):
             st.subheader("Befolkningsmängd")
             bar_chart_befolkning(filter_df)
-            st.caption("Källa: SCB")
 
 
 ##############################################################
@@ -176,7 +172,7 @@ def page_layout():
             st.markdown(
                 "###### Brottsutveckling \n Totala antal brott 2025 \n samt ökning eller minskning jämfört med 2024")
             col1, col2 = st.columns(
-                2, gap="small", vertical_alignment="center")
+                2, gap="small", vertical_alignment="center", border=False)
             with col1:
                 kpi_brott(("Narkotikabrott"), "Narkotikabrott",
                           brott_vald_stadsdelsomrade=st.session_state.get('brott_vald_stadsdelsomrade', 'Alla'))
