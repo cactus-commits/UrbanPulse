@@ -10,7 +10,8 @@ from bokoll.components.line_chart import line_chart_brott, line_chart_hyresutvec
 from bokoll.components.table import dataTable
 from bokoll.components.images import home_image
 from bokoll.assets.style.styling_page import styled_container
-from bokoll.components.navigation import nav_buttons, section_anchor, back_to_top
+from bokoll.components.navigation import nav_buttons, section_anchor
+from bokoll.components.footer import footer
 
 
 def page_layout():
@@ -183,8 +184,7 @@ def page_layout():
                 bar_chart_brott_2025(st.session_state.get(
                     'brott_vald_stadsdelsomrade', 'Alla'))
 
-    st.markdown("---")
-    back_to_top()
+    footer()
 
 if __name__ == "__main__":
     page_layout()
