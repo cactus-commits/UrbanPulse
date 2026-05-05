@@ -91,3 +91,8 @@ def load_brott_2025():
     df["Stadsdelsområde"] = df["Stadsdelsområde"].replace(
         {"Hägersten - Älvsjö": "Hägersten-Älvsjö"})
     return df
+
+@st.cache_data
+def load_brott_befolkning():
+    df = pd.read_excel(DATA_PATH / "brott_befolkning_2025.xlsx")
+    return df
