@@ -13,6 +13,7 @@ from bokoll.assets.style.styling_page import styled_container
 from bokoll.components.navigation import nav_buttons, section_anchor, back_to_top
 from bokoll.utils.helpers import load_images
 from bokoll.components.footer import footer
+from bokoll.components.title import get_title
 
 
 def page_layout():
@@ -23,8 +24,9 @@ def page_layout():
     #     "# BoKoll - Få en koll på boende, service och brott i Stockholms stadsdelar")
     # Lägg till en horisontell linje för att separera sektionerna
     # st.markdown("---")
-    nav_buttons()
-    st.markdown("## Översikt")
+    # nav_buttons()
+    st.markdown(get_title("### Översikt", "main"))
+
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
         st.markdown("###### Filtrera på kategori och stadsdel")
@@ -80,7 +82,7 @@ def page_layout():
     nav_buttons()
     # Lägg till en horisontell linje för att separera sektionerna
     st.markdown("---")
-    st.markdown("## Demografi")
+    st.markdown(get_title("### Demografi", "demografi"))
 
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
@@ -151,7 +153,8 @@ def page_layout():
     nav_buttons()
     # Lägg till en horisontell linje för att separera sektionerna
     st.markdown("---")
-    st.markdown("## Brottsstatistik")
+    st.markdown(get_title("### Brottsstatistik", "brott"))
+
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
         st.markdown("###### Filtrera på kategori och stadsdel")
@@ -191,6 +194,8 @@ def page_layout():
             bar_chart_brott_2025(st.session_state.get(
                 'brott_vald_stadsdelsomrade', 'Alla'))
 
+    back_to_top()
+    st.markdown("---")
     footer()
 
 
