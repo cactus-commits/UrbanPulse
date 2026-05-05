@@ -26,19 +26,19 @@ def reset_filters():
 
 
 def filter_layout():
-    kategorilista = ['Alla'] + sorted(df["kategori"].dropna().unique())
+    #kategorilista = ['Alla'] + sorted(df["kategori"].dropna().unique())
     stadsdel_lista = ['Alla'] + sorted(df["stadsdel"].dropna().unique())
     stadsdelsomrade_lista = ['Alla'] + sorted(df["stadsdelsomrade"].dropna().unique())
 
-    col1, col2, col3, col4 = st.columns(4)
+    col2, col3, col4 = st.columns(3)
 
-    with col1:
-        vald_kategori = st.selectbox(
-            "Välj kategori:",
-            options=kategorilista,
-            key="vald_kategori",
-            on_change=sync_main_to_all
-        )
+    # with col1:
+    #     vald_kategori = st.selectbox(
+    #         "Välj kategori:",
+    #         options=kategorilista,
+    #         key="vald_kategori",
+    #         on_change=sync_main_to_all
+    #     )
 
     with col2:
         vald_stadsdel = st.selectbox(
@@ -57,16 +57,48 @@ def filter_layout():
         )
 
     with col4:
-        st.button("Återställ filter", on_click=reset_filters)
+        st.button("Återställ filter", on_click=reset_filters, key="main_reset")
+
+    filtered_df = df.copy()
+
+    # if vald_kategori != 'Alla':
+    #     filtered_df = filtered_df[filtered_df['kategori'] == vald_kategori]
+    if vald_stadsdelsomrade != 'Alla':
+        filtered_df = filtered_df[filtered_df['stadsdelsomrade'] == vald_stadsdelsomrade]
+    if vald_stadsdel != 'Alla':
+        filtered_df = filtered_df[filtered_df['stadsdel'] == vald_stadsdel]
+
+    return filtered_df
+
+def filter_kategori_only():
+    kategorilista = ['Alla'] + sorted(df["kategori"].dropna().unique())
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        vald_kategori = st.selectbox(
+            "Välj kategori:",
+            options=kategorilista,
+            key="vald_kategori",
+            on_change=sync_main_to_all
+        )
+
+    with col2:
+        st.button("Återställ filter", on_click=reset_filters, key="kategori_reset")
 
     filtered_df = df.copy()
 
     if vald_kategori != 'Alla':
         filtered_df = filtered_df[filtered_df['kategori'] == vald_kategori]
-    if vald_stadsdelsomrade != 'Alla':
-        filtered_df = filtered_df[filtered_df['stadsdelsomrade'] == vald_stadsdelsomrade]
+
+    # Synka med main-filtrets stadsdel/område
+    vald_stadsdel = st.session_state.get('vald_stadsdel', 'Alla')
+    vald_stadsdelsomrade = st.session_state.get('vald_stadsdelsomrade', 'Alla')
+
     if vald_stadsdel != 'Alla':
         filtered_df = filtered_df[filtered_df['stadsdel'] == vald_stadsdel]
+    if vald_stadsdelsomrade != 'Alla':
+        filtered_df = filtered_df[filtered_df['stadsdelsomrade'] == vald_stadsdelsomrade]
 
     return filtered_df
 

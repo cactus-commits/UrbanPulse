@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from bokoll.components.map import show_map
-from bokoll.components.filter import filter_layout, filter_brott, filter_demografi
+from bokoll.components.filter import filter_layout, filter_brott, filter_demografi, filter_kategori_only
 from bokoll.components.donut import show_age_donut
 from bokoll.components.bar_chart import bar_chart, bar_chart_brott_2025
 from bokoll.components.bar_chart_befolkning import bar_chart_befolkning
@@ -49,6 +49,11 @@ def page_layout():
                 total_service_kpi('Vårdcentral', "Vårdcentraler", vald_stadsdel=st.session_state.vald_stadsdel,
                                   vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
+    col_kategori =st.columns(1)
+    with col_kategori[0]:
+        st.markdown("###### Filtrera på kategori och stadsdel")
+        filter_df = filter_kategori_only()
+    
     col_map, col_list = st.columns(
         [4, 6], gap="medium", vertical_alignment="top")
 
