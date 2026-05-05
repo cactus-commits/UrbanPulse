@@ -30,7 +30,7 @@ def bar_chart(demografi_vald_stadsdel="Alla", demografi_vald_stadsdelsomrade="Al
     st.altair_chart(chart, use_container_width=True)
 
 
-def bar_chart_brott_2025(vald_stadsdelsomrade='Alla'):
+def bar_chart_brott_2025(brott_vald_stadsdelsomrade='Alla'):
     df = load_brott_2025()
     df_total = df[df['Brottstyp'] == 'Totalt antal brott'].copy()
 
@@ -38,7 +38,7 @@ def bar_chart_brott_2025(vald_stadsdelsomrade='Alla'):
         x=alt.X('År:Q', title='Antal brott'),
         y=alt.Y('Stadsdelsområde:N'),
         color=alt.condition(
-            alt.datum.Stadsdelsområde == vald_stadsdelsomrade,
+            alt.datum.Stadsdelsområde == brott_vald_stadsdelsomrade,
             alt.value('#E39D4D'),
             alt.value('#A2C1C6')
         )
@@ -54,7 +54,6 @@ def bar_chart_type_of_crime(vald_stadsdelsomrade='Alla'):
     df_raw = load_brott_per_capita()
 
     # 1. Omvandla från Wide till Long format direkt
-    # Detta gör att vi får en kolumn 'År' och en kolumn 'Antal'
     df = df_raw.melt(
         id_vars=['Brottstyp', 'område'],
         value_vars=['2023', '2024', '2025'],
@@ -63,7 +62,6 @@ def bar_chart_type_of_crime(vald_stadsdelsomrade='Alla'):
     )
 
     # 2. Filtrera data om specifikt område är valt
-    # Notera: Använder 'område' som matchar din data
     if vald_stadsdelsomrade != 'Alla':
         df = df[df['område'] == vald_stadsdelsomrade]
 

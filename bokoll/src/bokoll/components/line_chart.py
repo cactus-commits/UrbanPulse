@@ -4,10 +4,10 @@ from bokoll.utils.helpers import load_hyresutveckling
 import plotly.express as px
 
 
-def line_chart_brott(vald_stadsdelsomrade):
+def line_chart_brott(brott_vald_stadsdelsomrade):
     df = load_brott_statistik()
-    if vald_stadsdelsomrade and vald_stadsdelsomrade != "Alla":
-        df = df[df["stadsdelsomrade"] == vald_stadsdelsomrade.strip()]
+    if brott_vald_stadsdelsomrade and brott_vald_stadsdelsomrade != "Alla":
+        df = df[df["stadsdelsomrade"] == brott_vald_stadsdelsomrade.strip()]
 
     fig = px.line(df, x="År", y="Diagramvärde",
                   color="stadsdelsomrade", height=300)
