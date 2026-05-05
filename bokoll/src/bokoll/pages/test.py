@@ -3,7 +3,7 @@ import pandas as pd
 from bokoll.components.map import show_map
 from bokoll.components.filter import filter_layout, filter_brott, filter_demografi, filter_kategori_only
 from bokoll.components.donut import show_age_donut
-from bokoll.components.bar_chart import bar_chart, bar_chart_brott_2025
+from bokoll.components.bar_chart import bar_chart, bar_chart_brott_2025, bar_chart_type_of_crime
 from bokoll.components.bar_chart_befolkning import bar_chart_befolkning
 from bokoll.components.kpis import total_boende_kpi, antal_skolor, total_service_kpi, kpi_brott, demografi_snittålder, demografi_invånare, demografi_inkomst, demografi_skattesats
 from bokoll.components.line_chart import line_chart_brott, line_chart_hyresutveckling
@@ -14,7 +14,6 @@ from bokoll.components.navigation import nav_buttons, section_anchor, back_to_to
 from bokoll.utils.helpers import load_images
 from bokoll.components.footer import footer
 from bokoll.components.title import get_title
-
 
 
 def page_layout():
@@ -30,7 +29,6 @@ def page_layout():
     #     "# BoKoll - Få en koll på boende, service och brott i Stockholms stadsdelar")
     # Lägg till en horisontell linje för att separera sektionerna
     # st.markdown("---")
-    
 
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
@@ -91,7 +89,6 @@ def page_layout():
         st.markdown(get_title("### Demografi", "demografi"))
     with col_demografi3:
         nav_buttons()
-    
 
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
@@ -166,7 +163,6 @@ def page_layout():
         st.markdown(get_title("### Brottsstatistik", "brott"))
     with col_brott3:
         nav_buttons()
-    
 
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
@@ -206,7 +202,10 @@ def page_layout():
             st.markdown('###### Antal anmälda brott vs Stockholm')
             bar_chart_brott_2025(st.session_state.get(
                 'brott_vald_stadsdelsomrade', 'Alla'))
-        
+    with col1:
+        with styled_container():
+            st.markdown('###### Typ av anmälda brott')
+            bar_chart_type_of_crime()
 
     back_to_top()
     st.markdown("---")
