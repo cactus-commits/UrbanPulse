@@ -38,6 +38,7 @@ def page_layout():
             st.markdown('###### Antal anmälda brott vs Stockholm')
             bar_chart_brott_2025(st.session_state.get(
                 'vald_stadsdelsomrade', 'Alla'))
+    
 
 
 if __name__ == "__main__":

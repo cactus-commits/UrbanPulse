@@ -26,13 +26,13 @@ def total_boende_kpi(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     st.metric(label="Antal boende", value=f"{total:,}".replace(",", " "))
 
 
-def demografi_snittålder(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
+def demografi_snittålder(demografi_vald_stadsdel='Alla', demografi_vald_stadsdelsomrade='Alla'):
     df = load_folkmangd()
 
-    if vald_stadsdel != 'Alla':
-        df = df[df['Stadsdel'] == vald_stadsdel]
-    if vald_stadsdelsomrade != 'Alla':
-        df = df[df['stadsdelsomrade'] == vald_stadsdelsomrade]
+    if demografi_vald_stadsdel != 'Alla':
+        df = df[df['Stadsdel'] == demografi_vald_stadsdel]
+    if demografi_vald_stadsdelsomrade != 'Alla':
+        df = df[df['stadsdelsomrade'] == demografi_vald_stadsdelsomrade]
 
     mittpunkt = {
         '0-4 år': 2, '5-9 år': 7, '10-14 år': 12, '15-19 år': 17,
@@ -49,21 +49,21 @@ def demografi_snittålder(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
     st.metric(label="Snittålder", value=f"{total:.1f}")
 
 
-def demografi_invånare(vald_stadsdel='Alla', vald_stadsdelsomrade='Alla'):
+def demografi_invånare(demografi_vald_stadsdel='Alla', demografi_vald_stadsdelsomrade='Alla'):
     df = load_folkmangd()
     df = df[df['stadsdelsomrade'].notna()]
 
-    if vald_stadsdel != 'Alla':
-        df = df[df['Stadsdel'] == vald_stadsdel]
-    if vald_stadsdelsomrade != 'Alla':
-        df = df[df['stadsdelsomrade'] == vald_stadsdelsomrade]
+    if demografi_vald_stadsdel != 'Alla':
+        df = df[df['Stadsdel'] == demografi_vald_stadsdel]
+    if demografi_vald_stadsdelsomrade != 'Alla':
+        df = df[df['stadsdelsomrade'] == demografi_vald_stadsdelsomrade]
 
     total = int(df['value'].sum())
     st.metric(label="Antal invånare", value=f"{total:,}".replace(",", " "))
 
 
 # Visar median årsinkomst för Stockholm kommun
-def demografi_inkomst(vald_stadsdel="Alla", vald_stadsdelsomrade="Alla"):
+def demografi_inkomst(demografi_vald_stadsdel="Alla", demografi_vald_stadsdelsomrade="Alla"):
     df = load_inkomst()
 
     # Vi använder bara Stockholm kommun eftersom data inte finns på stadsdelsnivå
@@ -84,7 +84,7 @@ def demografi_inkomst(vald_stadsdel="Alla", vald_stadsdelsomrade="Alla"):
 
 
 # Visar kommunal inkomstskatt för Stockholm
-def demografi_skattesats(vald_stadsdel="Alla", vald_stadsdelsomrade="Alla"):
+def demografi_skattesats(demografi_vald_stadsdel="Alla", demografi_vald_stadsdelsomrade="Alla"):
     df = load_skattesatser()
 
     # Stockholms kommunkod är 0180

@@ -12,6 +12,7 @@ pages = [
     st.Page("pages/demografi.py", title="Demografi"),
     # st.Page("pages/skolor.py", title="Skolor"),
     st.Page("pages/brottsstatistik.py", title="Brottsstatistik"),
+    st.Page("pages/test.py", title="Test"),
     # st.Page("pages/serviceutbud.py", title="Serviceutbud")
 ]
 

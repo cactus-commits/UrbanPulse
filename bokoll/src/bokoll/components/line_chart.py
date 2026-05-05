@@ -19,10 +19,10 @@ def line_chart_brott(vald_stadsdelsomrade):
     st.plotly_chart(fig, use_container_width=True)
 
 
-def line_chart_hyresutveckling(vald_stadsdelsomrade):
+def line_chart_hyresutveckling(demografi_vald_stadsdelsomrade):
     df = load_hyresutveckling()
-    if vald_stadsdelsomrade and vald_stadsdelsomrade != "Alla":
-        df = df[df["stadsdelsomrade "] == vald_stadsdelsomrade.strip()]
+    if demografi_vald_stadsdelsomrade and demografi_vald_stadsdelsomrade != "Alla":
+        df = df[df["stadsdelsomrade "] == demografi_vald_stadsdelsomrade.strip()]
 
     fig = px.line(df, x="År", y="Sum_of_Medelhyra_kvm",
                   color="stadsdelsomrade ")

@@ -6,13 +6,13 @@ import altair as alt
 from bokoll.utils.helpers import load_boende, load_brott_2025
 from bokoll.assets.style.style_bar import FARGER, bygg_bar
 
-def bar_chart(vald_stadsdel="Alla", vald_stadsdelsomrade="Alla"):
+def bar_chart(demografi_vald_stadsdel="Alla", demografi_vald_stadsdelsomrade="Alla"):
     df = load_boende()
 
-    if vald_stadsdel != "Alla":
-        df = df[df["Stadsdel"] == vald_stadsdel]
-    if vald_stadsdelsomrade != "Alla":
-        df = df[df["stadsdelsomrade"] == vald_stadsdelsomrade]
+    if demografi_vald_stadsdel != "Alla":
+        df = df[df["Stadsdel"] == demografi_vald_stadsdel]
+    if demografi_vald_stadsdelsomrade != "Alla":
+        df = df[df["stadsdelsomrade"] == demografi_vald_stadsdelsomrade]
 
     aggregerat = (
         df.groupby("Upplåtelseform_Stor", as_index=False)["value"]
@@ -31,6 +31,7 @@ def bar_chart(vald_stadsdel="Alla", vald_stadsdelsomrade="Alla"):
 def bar_chart_brott_2025(vald_stadsdelsomrade='Alla'):
     df = load_brott_2025()
     df_total = df[df['Brottstyp'] == 'Totalt antal brott'].copy()
+
 
     fig = alt.Chart(df_total).mark_bar().encode(
         x=alt.X('År:Q', title='Antal brott'),
