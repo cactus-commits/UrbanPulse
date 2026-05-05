@@ -16,16 +16,21 @@ from bokoll.components.footer import footer
 from bokoll.components.title import get_title
 
 
+
 def page_layout():
-    load_images("Logotyp")
     section_anchor("toppen")
     section_anchor("oversikt")
+    load_images("Logotyp")
+    col_header1, col_header2, col_header3 = st.columns(3)
+    with col_header1:
+        st.markdown(get_title("### Översikt", "main"))
+    with col_header3:
+        nav_buttons()
     # st.markdown(
     #     "# BoKoll - Få en koll på boende, service och brott i Stockholms stadsdelar")
     # Lägg till en horisontell linje för att separera sektionerna
     # st.markdown("---")
-    # nav_buttons()
-    st.markdown(get_title("### Översikt", "main"))
+    
 
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
@@ -79,10 +84,14 @@ def page_layout():
 
 # '
     section_anchor("demografi")
-    nav_buttons()
     # Lägg till en horisontell linje för att separera sektionerna
     st.markdown("---")
-    st.markdown(get_title("### Demografi", "demografi"))
+    col_demografi1, col_demografi2, col_demografi3 = st.columns(3)
+    with col_demografi1:
+        st.markdown(get_title("### Demografi", "demografi"))
+    with col_demografi3:
+        nav_buttons()
+    
 
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
@@ -150,10 +159,14 @@ def page_layout():
 
 ##############################################################
     section_anchor("brott")
-    nav_buttons()
     # Lägg till en horisontell linje för att separera sektionerna
     st.markdown("---")
-    st.markdown(get_title("### Brottsstatistik", "brott"))
+    col_brott1, col_brott2, col_brott3 = st.columns(3)
+    with col_brott1:
+        st.markdown(get_title("### Brottsstatistik", "brott"))
+    with col_brott3:
+        nav_buttons()
+    
 
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
@@ -193,6 +206,7 @@ def page_layout():
             st.markdown('###### Antal anmälda brott vs Stockholm')
             bar_chart_brott_2025(st.session_state.get(
                 'brott_vald_stadsdelsomrade', 'Alla'))
+        
 
     back_to_top()
     st.markdown("---")

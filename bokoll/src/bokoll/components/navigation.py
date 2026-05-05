@@ -8,10 +8,10 @@ NAV_STYLE = """
 
 BUTTON_STYLE = """
     padding: 6px 16px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    border-radius: 8px;
     cursor: pointer;
-    background: #f0f2f6;
+    background: #003F47;
+    color: white;
     font-size: 14px;
 """
 
