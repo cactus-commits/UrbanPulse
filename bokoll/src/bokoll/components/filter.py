@@ -14,19 +14,24 @@ def sync_main_to_all():
 def sync_brott_to_main():
     st.session_state.vald_stadsdelsomrade = st.session_state.brott_vald_stadsdelsomrade
     st.session_state.demografi_vald_stadsdelsomrade = st.session_state.brott_vald_stadsdelsomrade
+    st.session_state.radar_vald_stadsdelsomrade = st.session_state.brott_vald_stadsdelsomrade
 
 def sync_demografi_to_main():
     st.session_state.vald_stadsdel = st.session_state.demografi_vald_stadsdel
     st.session_state.vald_stadsdelsomrade = st.session_state.demografi_vald_stadsdelsomrade
     st.session_state.brott_vald_stadsdelsomrade = st.session_state.demografi_vald_stadsdelsomrade
+    st.session_state.radar_vald_stadsdelsomrade = st.session_state.demografi_vald_stadsdelsomrade
+    
 
 def sync_radar_to_main():
     st.session_state.vald_stadsdelsomrade = st.session_state.radar_vald_stadsdelsomrade
+    st.session_state.brott_vald_stadsdelsomrade = st.session_state.radar_vald_stadsdelsomrade
+    st.session_state.demografi_vald_stadsdelsomrade = st.session_state.radar_vald_stadsdelsomrade
 
 def reset_filters():
     for key in ['vald_kategori', 'vald_stadsdel', 'vald_stadsdelsomrade',
                 'brott_vald_stadsdel', 'brott_vald_stadsdelsomrade',
-                'demografi_vald_stadsdel', 'demografi_vald_stadsdelsomrade']:
+                'demografi_vald_stadsdel', 'demografi_vald_stadsdelsomrade', 'radar_vald_stadsdelsomrade']:
         if key in st.session_state:
             st.session_state[key] = 'Alla'
 
