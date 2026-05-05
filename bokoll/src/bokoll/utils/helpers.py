@@ -96,3 +96,4 @@ def load_brott_2025():
 def load_brott_befolkning():
     df = pd.read_excel(DATA_PATH / "brott_befolkning_2025.xlsx")
     return df
+
