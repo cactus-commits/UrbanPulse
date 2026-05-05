@@ -83,8 +83,12 @@
 
 
 #root>div:nth-child(1)>div.withScreencast>div>div>div>section>div.stMainBlockContainer.block-container.st-emotion-cache-zy6yx3.eqt0gmo4>div>div.stElementContainer.element-container.st-emotion-cache-13gev4o.e1rw0b1u1>div>div>div.stImage.st-emotion-cache-1dvmtd8.ehg91i90>div>img,
-#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div.stMainBlockContainer.block-container.st-emotion-cache-zy6yx3.eqt0gmo4>div>div.st-emotion-cache-1h5subw.e1rw0b1u4>div>div>div>div.stColumn.st-emotion-cache-hua6f6.e1rw0b1u2>div>div.stElementContainer.element-container.st-emotion-cache-13gev4o.e1rw0b1u1>div>div>div.stImage.st-emotion-cache-1dvmtd8.ehg91i90{
-    width:20% !important; 
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div.stMainBlockContainer.block-container.st-emotion-cache-zy6yx3.eqt0gmo4>div>div.st-emotion-cache-1h5subw.e1rw0b1u4>div>div>div>div.stColumn.st-emotion-cache-hua6f6.e1rw0b1u2>div>div.stElementContainer.element-container.st-emotion-cache-13gev4o.e1rw0b1u1>div>div>div.stImage.st-emotion-cache-1dvmtd8.ehg91i90 {
+    width:35% !important; 
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.stMainBlockContainer.block-container.st-emotion-cache-zy6yx3.eqt0gmo4 > div > div:nth-child(4) > div > div:nth-child(1) > div > div{
+    width: 70% !important;
 }
 
 
@@ -95,6 +99,10 @@
 }
 
 
-#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div.stMainBlockContainer.block-container.st-emotion-cache-zy6yx3.eqt0gmo4>div>div.st-emotion-cache-1h5subw.e1rw0b1u4>div>div>div{
+#root>div:nth-child(1)>div.withScreencast>div>div>div>section>div.stMainBlockContainer.block-container.st-emotion-cache-zy6yx3.eqt0gmo4>div>div.st-emotion-cache-1h5subw.e1rw0b1u4>div>div>div, 
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.stMainBlockContainer.block-container.st-emotion-cache-zy6yx3.eqt0gmo4 > div > div:nth-child(4) > div, 
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.stMainBlockContainer.block-container.st-emotion-cache-zy6yx3.eqt0gmo4 > div > div:nth-child(5) > div, 
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.stMainBlockContainer.block-container.st-emotion-cache-zy6yx3.eqt0gmo4 > div > div:nth-child(12) > div,
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.stMainBlockContainer.block-container.st-emotion-cache-zy6yx3.eqt0gmo4 > div > div:nth-child(19) > div{
     background-color: transparent !important;
 }
