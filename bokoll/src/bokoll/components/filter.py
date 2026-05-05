@@ -6,11 +6,9 @@ df = load_map_data()
 
 
 def sync_main_to_brott():
-    st.session_state.brott_vald_stadsdel = st.session_state.vald_stadsdel
     st.session_state.brott_vald_stadsdelsomrade = st.session_state.vald_stadsdelsomrade
 
 def sync_brott_to_main():
-    st.session_state.vald_stadsdel = st.session_state.brott_vald_stadsdel
     st.session_state.vald_stadsdelsomrade = st.session_state.brott_vald_stadsdelsomrade
 
 def sync_main_to_demografi():
@@ -88,23 +86,13 @@ def filter_layout():
 
 
 def filter_brott():
-    stadsdel_lista = ['Alla'] + sorted(df["stadsdel"].dropna().unique())
     stadsdelsomrade_lista = ['Alla'] + sorted(df["stadsdelsomrade"].dropna().unique())
 
     # Sync from main filter if already set
-    default_stadsdel = st.session_state.get('vald_stadsdel', 'Alla')
     default_omrade = st.session_state.get('vald_stadsdelsomrade', 'Alla')
 
-    col1, col2, col3 = st.columns(3)
+    col2, col3 = st.columns(2)
 
-    with col1:
-        vald_stadsdel = st.selectbox(
-            "Välj stadsdel:",
-            options=stadsdel_lista,
-            index=stadsdel_lista.index(default_stadsdel) if default_stadsdel in stadsdel_lista else 0,
-            key="brott_vald_stadsdel",
-            on_change=sync_brott_to_main 
-        )
 
     with col2:
         vald_stadsdelsomrade = st.selectbox(
@@ -122,8 +110,6 @@ def filter_brott():
 
     if vald_stadsdelsomrade != 'Alla':
         filtered_df = filtered_df[filtered_df['stadsdelsomrade'] == vald_stadsdelsomrade]
-    if vald_stadsdel != 'Alla':
-        filtered_df = filtered_df[filtered_df['stadsdel'] == vald_stadsdel]
 
     return filtered_df
 

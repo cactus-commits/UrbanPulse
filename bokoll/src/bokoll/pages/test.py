@@ -15,10 +15,11 @@ from bokoll.components.navigation import nav_buttons, section_anchor, back_to_to
 
 def page_layout():
     section_anchor("toppen")
-    st.markdown("# Översikt")
+    section_anchor("oversikt")
+    st.markdown("# BoKoll - Få en koll på boende, service och brott i Stockholms stadsdelar")
     nav_buttons()
     st.markdown("---")  # Lägg till en horisontell linje för att separera sektionerna
-
+    st.markdown("# Översikt")
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
         st.markdown("###### Filtrera på kategori och stadsdel")
@@ -65,10 +66,10 @@ def page_layout():
     
 ##############################################################'
     section_anchor("demografi")
-    st.markdown("# Demografi")
     nav_buttons()
     st.markdown("---")  # Lägg till en horisontell linje för att separera sektionerna
-    
+    st.markdown("# Demografi")
+
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
         st.markdown("###### Filtrera på kategori och stadsdel")
@@ -135,10 +136,9 @@ def page_layout():
             
 ##############################################################      
     section_anchor("brott")
-    st.markdown("# Brottsstatistik")
     nav_buttons()
     st.markdown("---")  # Lägg till en horisontell linje för att separera sektionerna
-
+    st.markdown("# Brottsstatistik")
     col_filter = st.columns(1, gap="medium", vertical_alignment="top")
     with col_filter[0]:
         st.markdown("###### Filtrera på kategori och stadsdel")
