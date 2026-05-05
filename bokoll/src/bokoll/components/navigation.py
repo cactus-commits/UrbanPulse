@@ -31,7 +31,7 @@ def back_to_top():
     st.markdown(f"""
         <div style="text-align: center; padding: 8px 0 16px;">
             <a href="#toppen" style="text-decoration:none">
-                <button style="{BUTTON_STYLE}">⬆ Tillbaka till toppen</button>
+                <button style="{BUTTON_STYLE}">Tillbaka till toppen</button>
             </a>
         </div>
     """, unsafe_allow_html=True)
