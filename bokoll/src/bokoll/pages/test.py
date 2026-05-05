@@ -30,8 +30,8 @@ def page_layout():
     # Lägg till en horisontell linje för att separera sektionerna
     # st.markdown("---")
 
-    col_filter = st.columns(1, gap="medium", vertical_alignment="top")
-    with col_filter[0]:
+    col_filter, col_2 = st.columns(2, gap="medium", vertical_alignment="top")
+    with col_filter:
         #st.markdown("###### Filtrera på stadsdel och område")
         filter_df = filter_layout()
 
@@ -60,8 +60,8 @@ def page_layout():
                 total_service_kpi('Vårdcentral', "Vårdcentraler", vald_stadsdel=st.session_state.vald_stadsdel,
                                   vald_stadsdelsomrade=st.session_state.vald_stadsdelsomrade)
 
-    col_kategori = st.columns(1)
-    with col_kategori[0]:
+    col_kategori, col_2 = st.columns(2)
+    with col_kategori:
         #st.markdown("###### Filtrera på kategori")
         filter_df = filter_kategori_only()
 
@@ -90,8 +90,8 @@ def page_layout():
     with col_demografi3:
         nav_buttons()
 
-    col_filter = st.columns(1, gap="medium", vertical_alignment="top")
-    with col_filter[0]:
+    col_filter, col_2= st.columns(2, gap="medium", vertical_alignment="top")
+    with col_filter:
         #st.markdown("###### Filtrera på stadsdel och område")
         filter_df = filter_demografi()
 
@@ -164,8 +164,8 @@ def page_layout():
     with col_brott3:
         nav_buttons()
 
-    col_filter = st.columns(1, gap="medium", vertical_alignment="top")
-    with col_filter[0]:
+    col_filter, col_2 = st.columns(2, gap="medium", vertical_alignment="top")
+    with col_filter:
         #st.markdown("###### Filtrera på område")
         filter_df = filter_brott()
 
