@@ -136,12 +136,12 @@ def total_service_kpi(kategori, label, vald_stadsdel='Alla', vald_stadsdelsomrad
     st.metric(label=label, value=f"{total:,}".replace(",", " "))
 
 
-def kpi_brott(brottstyp, label, vald_stadsdelsomrade='Alla'):
+def kpi_brott(brottstyp, label, brott_vald_stadsdelsomrade='Alla'):
     df = load_brott_per_capita()
     df = df[df['Brottstyp'] == brottstyp]
 
-    if vald_stadsdelsomrade != 'Alla':
-        df = df[df['område'] == vald_stadsdelsomrade]
+    if brott_vald_stadsdelsomrade != 'Alla':
+        df = df[df['område'] == brott_vald_stadsdelsomrade]
 
     result = duckdb.sql("""
         SELECT 

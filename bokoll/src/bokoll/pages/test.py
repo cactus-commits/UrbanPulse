@@ -179,21 +179,21 @@ def page_layout():
                 2, gap="small", vertical_alignment="center")
             with col1:
                 kpi_brott(("Narkotikabrott"), "Narkotikabrott",
-                          vald_stadsdelsomrade=st.session_state.get('brott_vald_stadsdelsomrade', 'Alla'))
+                          brott_vald_stadsdelsomrade=st.session_state.get('brott_vald_stadsdelsomrade', 'Alla'))
                 kpi_brott("Misshandel", "Misshandel",
-                          vald_stadsdelsomrade=st.session_state.get('brott_vald_stadsdelsomrade', 'Alla'))
+                          brott_vald_stadsdelsomrade=st.session_state.get('brott_vald_stadsdelsomrade', 'Alla'))
 
             with col2:
                 kpi_brott("Sexualbrott", "Sexualbrott",
-                          vald_stadsdelsomrade=st.session_state.get('brott_vald_stadsdelsomrade', 'Alla'))
+                          brott_vald_stadsdelsomrade=st.session_state.get('brott_vald_stadsdelsomrade', 'Alla'))
                 kpi_brott("Bostadsinbrott", "Bostadsinbrott",
-                          vald_stadsdelsomrade=st.session_state.get('brott_vald_stadsdelsomrade', 'Alla'))
+                          brott_vald_stadsdelsomrade=st.session_state.get('brott_vald_stadsdelsomrade', 'Alla'))
 
     with col_linechart:
         with styled_container():
             st.markdown("###### Antal anmälda brott")
             line_chart_brott(
-                vald_stadsdelsomrade=st.session_state.get('brott_vald_stadsdelsomrade', 'Alla'))
+                brott_vald_stadsdelsomrade=st.session_state.get('brott_vald_stadsdelsomrade', 'Alla'))
 
     col_barchart2, col1 = st.columns(
         [5, 5], gap="small", vertical_alignment="top")
@@ -205,7 +205,8 @@ def page_layout():
     with col1:
         with styled_container():
             st.markdown('###### Typ av anmälda brott')
-            bar_chart_type_of_crime()
+            bar_chart_type_of_crime(st.session_state.get(
+                'brott_vald_stadsdelsomrade', 'Alla'))
 
     back_to_top()
     st.markdown("---")
